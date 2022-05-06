@@ -4,6 +4,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 - Subiecte
 	- Emotions, what are them ?
 	- Emotion recognition
+	- Purposes ?
 	- Inteligenta artificiala
 		- Invatare supervizata
 		- Invatare nesupervizata
@@ -12,7 +13,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 	- Aplicatia pentru crearea unui raport a candidatului in urma unui interviu
 		- Used tech:
 			- Python (categorizare limbaje de programare), 
-			- Framework-uri: QT framework
+			- Framework-uri: QT framework, MongoDb, stateMachine
 			- Pachete/Biblioteci reprezentative utilizaate: tenserflow (keras), PyAudio, plotting, opencv)
 			- limbajele de programare + frameworkuri + biblioteci utilizare
 			- ierarhizarea limbajelor de programare (jos, mediu, avansat)

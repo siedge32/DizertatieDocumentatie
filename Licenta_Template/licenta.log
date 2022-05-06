@@ -1,0 +1,1838 @@
+This is LuaTeX, Version 1.11.2 (MiKTeX 2.9.7300 64-bit)  (format=lualatex 2020.2.12)  6 MAY 2022 10:44
+ restricted system commands enabled.
+**licenta.tex
+(./licenta.tex
+LaTeX2e <2020-02-02>
+Lua module: luaotfload-main 2020-02-02 3.12 luaotfload entry point
+Lua module: luaotfload-init 2020-02-02 3.12 luaotfload submodule / initializatio
+n
+Lua module: lualibs 2020-02-02 2.70 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-02-02 2.70 ConTeXt Lua libraries -- extended c
+ollection.
+Lua module: luaotfload-log 2020-02-02 3.12 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2020-02-02 3.12 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2020-02-02 3.12 luaotfload submodule / conf
+ig file reader
+luaotfload | conf : Root cache directory is C:/Users/bogdy/AppData/Local/MiKTeX/
+2.9/luatex-cache/generic-dev/names.
+luaotfload | init : Loading fontloader “fontloader-2020-01-26.lua” from kpse
+-resolved path “C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/luatex/lu
+aotfload/fontloader-2020-01-26.lua”.
+Lua-only attribute luaotfload@state = 2
+Lua-only attribute luaotfload@noligature = 3
+Lua-only attribute luaotfload@syllabe = 4
+luaotfload | init : Context OpenType loader version “3.11”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2020-02-02 3.12 luaotfload submodule / callback h
+andling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2020-02-02 3.12 luaotfload submodule / database
+Lua module: luaotfload-unicode 2020-02-02 3.12 luaotfload submodule / Unicode he
+lpers
+Lua module: luaotfload-colors 2020-02-02 3.12 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 5
+Lua module: luaotfload-resolvers 2020-02-02 3.12 luaotfload submodule / resolver
+s
+luaotfload | conf : Root cache directory is C:/Users/bogdy/AppData/Local/MiKTeX/
+2.9/luatex-cache/generic-dev/names.
+Lua module: luaotfload-features 2020-02-02 3.12 luaotfload submodule / features
+Lua module: luaotfload-letterspace 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-embolden 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-notdef 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2020-02-02 3.12 luaotfload submodule / auxiliar
+y functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Lua module: luaotfload-fallback 2020-02-02 3.12 luaotfload submodule / fallback
+Lua module: luaotfload-multiscript 2020-02-02 3.12 luaotfload submodule / multis
+cript
+Lua module: luaotfload-script 2020-02-02 3.12 luaotfload submodule / Script help
+ers
+Lua module: luaotfload-tounicode 2020-02-02 3.12 luaotfload submodule / tounicod
+e
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2020-02-03>
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/report.cls"
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/size12.clo"
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/bogdy/AppData/Local/M
+iKTeX/2.9/luatex-cache/generic-dev/names/luaotfload-names.luc)
+\c@part=\count163
+\c@chapter=\count164
+\c@section=\count165
+\c@subsection=\count166
+\c@subsubsection=\count167
+\c@paragraph=\count168
+\c@subparagraph=\count169
+\c@figure=\count170
+\c@table=\count171
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) ("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex.
+sty"
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pdftexcmds/pdftexc
+mds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/infwarerr/infwar
+err.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/iftex/iftex.sty"
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ltxcmds/ltxcmds.
+sty"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks14
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.
+sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count172
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/kvoptions/kvoption
+s.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/kvsetkeys/kvsetk
+eys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/logreq/logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count173
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/logreq/logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) ("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ifthen.sty
+"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count174
+\c@listtotal=\count175
+\c@listcount=\count176
+\c@liststart=\count177
+\c@liststop=\count178
+\c@citecount=\count179
+\c@citetotal=\count180
+\c@multicitecount=\count181
+\c@multicitetotal=\count182
+\c@instcount=\count183
+\c@maxnames=\count184
+\c@minnames=\count185
+\c@maxitems=\count186
+\c@minitems=\count187
+\c@citecounter=\count188
+\c@maxcitecounter=\count189
+\c@savedcitecounter=\count190
+\c@uniquelist=\count191
+\c@uniquename=\count192
+\c@refsection=\count193
+\c@refsegment=\count194
+\c@maxextratitle=\count195
+\c@maxextratitleyear=\count196
+\c@maxextraname=\count197
+\c@maxextradate=\count198
+\c@maxextraalpha=\count199
+\c@abbrvpenalty=\count266
+\c@highnamepenalty=\count267
+\c@lownamepenalty=\count268
+\c@maxparens=\count269
+\c@parenlevel=\count270
+\blx@tempcnta=\count271
+\blx@tempcntb=\count272
+\blx@tempcntc=\count273
+\blx@maxsection=\count274
+\blx@maxsegment@0=\count275
+\blx@notetype=\count276
+\blx@parenlevel@text=\count277
+\blx@parenlevel@foot=\count278
+\blx@sectionciteorder@0=\count279
+\blx@entrysetcounter=\count280
+\labelnumberwidth=\skip49
+\labelalphawidth=\skip50
+\biblabelsep=\skip51
+\bibitemsep=\skip52
+\bibnamesep=\skip53
+\bibinitsep=\skip54
+\bibparsep=\skip55
+\bibhang=\skip56
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language2
+\c@mincomprange=\count281
+\c@maxcomprange=\count282
+\c@mincompwidth=\count283
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-dm.de
+f"
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count284
+\c@savedafterword=\count285
+\c@annotator=\count286
+\c@savedannotator=\count287
+\c@author=\count288
+\c@savedauthor=\count289
+\c@bookauthor=\count290
+\c@savedbookauthor=\count291
+\c@commentator=\count292
+\c@savedcommentator=\count293
+\c@editor=\count294
+\c@savededitor=\count295
+\c@editora=\count296
+\c@savededitora=\count297
+\c@editorb=\count298
+\c@savededitorb=\count299
+\c@editorc=\count300
+\c@savededitorc=\count301
+\c@foreword=\count302
+\c@savedforeword=\count303
+\c@holder=\count304
+\c@savedholder=\count305
+\c@introduction=\count306
+\c@savedintroduction=\count307
+\c@namea=\count308
+\c@savednamea=\count309
+\c@nameb=\count310
+\c@savednameb=\count311
+\c@namec=\count312
+\c@savednamec=\count313
+\c@translator=\count314
+\c@savedtranslator=\count315
+\c@shortauthor=\count316
+\c@savedshortauthor=\count317
+\c@shorteditor=\count318
+\c@savedshorteditor=\count319
+\c@labelname=\count320
+\c@savedlabelname=\count321
+\c@institution=\count322
+\c@savedinstitution=\count323
+\c@lista=\count324
+\c@savedlista=\count325
+\c@listb=\count326
+\c@savedlistb=\count327
+\c@listc=\count328
+\c@savedlistc=\count329
+\c@listd=\count330
+\c@savedlistd=\count331
+\c@liste=\count332
+\c@savedliste=\count333
+\c@listf=\count334
+\c@savedlistf=\count335
+\c@location=\count336
+\c@savedlocation=\count337
+\c@organization=\count338
+\c@savedorganization=\count339
+\c@origlocation=\count340
+\c@savedoriglocation=\count341
+\c@origpublisher=\count342
+\c@savedorigpublisher=\count343
+\c@publisher=\count344
+\c@savedpublisher=\count345
+\c@language=\count346
+\c@savedlanguage=\count347
+\c@origlanguage=\count348
+\c@savedoriglanguage=\count349
+\c@pageref=\count350
+\c@savedpageref=\count351
+\shorthandwidth=\skip57
+\shortjournalwidth=\skip58
+\shortserieswidth=\skip59
+\shorttitlewidth=\skip60
+\shortauthorwidth=\skip61
+\shorteditorwidth=\skip62
+\locallabelnumberwidth=\skip63
+\locallabelalphawidth=\skip64
+\localshorthandwidth=\skip65
+\localshortjournalwidth=\skip66
+\localshortserieswidth=\skip67
+\localshorttitlewidth=\skip68
+\localshortauthorwidth=\skip69
+\localshorteditorwidth=\skip70
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-unico
+de.def")
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-compa
+t.def"
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-bibte
+x.def"
+File: blx-bibtex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex.
+def"
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count352
+\c@textcitetotal=\count353
+\c@textcitemaxnames=\count354
+\c@biburlbigbreakpenalty=\count355
+\c@biburlbreakpenalty=\count356
+\c@biburlnumpenalty=\count357
+\c@biburlucpenalty=\count358
+\c@biburllcpenalty=\count359
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count360
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/bbx/numer
+ic.bbx"
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/bbx/stand
+ard.bbx"
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count361
+\c@bbx:relatedtotal=\count362
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/cbx/numer
+ic.cbx"
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex.
+cfg"
+File: biblatex.cfg 
+))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/indentfirst.
+sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/titlesec/titlesec.
+sty"
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box45
+\beforetitleunit=\skip71
+\aftertitleunit=\skip72
+\ttl@plus=\dimen135
+\ttl@minus=\dimen136
+\ttl@toksa=\toks16
+\titlewidth=\dimen137
+\titlewidthlast=\dimen138
+\titlewidthfirst=\dimen139
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx.
+sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.
+sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 105.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/luate
+x.def"
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption.st
+y"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption3.s
+ty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen142
+\captionmargin@=\dimen143
+\captionwidth=\dimen144
+\caption@tempdima=\dimen145
+\caption@indent=\dimen146
+\caption@parindent=\dimen147
+\caption@hangindent=\dimen148
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count363
+\c@continuedfloat=\count364
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/subcaption
+.sty"
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count365
+\c@subtable=\count366
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/adjustbo
+x.sty"
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.st
+y"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/xkeyval/xkeyval.
+tex"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/xkeyval/xkvutils
+.tex"
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+)
+\XKV@depth=\count367
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/adjcalc.
+sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-
+ends (calc, etex, pgfmath)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/trimclip
+.sty"
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/collectbox/collect
+box.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box46
+)
+\tc@llx=\dimen149
+\tc@lly=\dimen150
+\tc@urx=\dimen151
+\tc@ury=\dimen152
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/tc-pgf.d
+ef"
+File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/basiclayer/pgf
+.sty"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/utilities/pgfr
+cs.sty"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities/pg
+futil-common.tex"
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen153
+\pgfutil@tempdimb=\dimen154
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities/pg
+futil-common-lists.tex"))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities/pg
+futil-latex.def"
+\pgfutil@abb=\box47
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ms/everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities/pg
+frcs.code.tex"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/pgf.revision
+.tex")
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/basiclayer/pgf
+core.sty"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/systemlayer/pg
+fsys.sty"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlayer/
+pgfsys.code.tex"
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities/pg
+fkeys.code.tex"
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities/pg
+fkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks22
+))
+\pgf@x=\dimen155
+\pgf@y=\dimen156
+\pgf@xa=\dimen157
+\pgf@ya=\dimen158
+\pgf@xb=\dimen159
+\pgf@yb=\dimen160
+\pgf@xc=\dimen161
+\pgf@yc=\dimen162
+\pgf@xd=\dimen163
+\pgf@yd=\dimen164
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count368
+\c@pgf@countb=\count369
+\c@pgf@countc=\count370
+\c@pgf@countd=\count371
+\t@pgf@toka=\toks23
+\t@pgf@tokb=\toks24
+\t@pgf@tokc=\toks25
+\pgf@sys@id@count=\count372
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlayer/
+pgf.cfg"
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlayer/
+pgfsys-luatex.def"
+File: pgfsys-luatex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlayer/
+pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlayer/
+pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count373
+\pgfsyssoftpath@bigbuffer@items=\count374
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlayer/
+pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color
+.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcore.code.tex"
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+.code.tex"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+calc.code.tex"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+util.code.tex")
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+parser.code.tex"
+\pgfmath@dimen=\dimen165
+\pgfmath@count=\count375
+\pgfmath@box=\box48
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+functions.code.tex"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+functions.basic.code.tex")
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+functions.trigonometric.code.tex")
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+functions.random.code.tex")
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+functions.comparison.code.tex")
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+functions.base.code.tex")
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+functions.round.code.tex")
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+functions.misc.code.tex")
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+functions.integerarithmetics.code.tex")))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfmath
+float.code.tex"
+\c@pgfmathroundto@lastzeros=\count376
+))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfint.
+code.tex")
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen166
+\pgf@picmaxx=\dimen167
+\pgf@picminy=\dimen168
+\pgf@picmaxy=\dimen169
+\pgf@pathminx=\dimen170
+\pgf@pathmaxx=\dimen171
+\pgf@pathminy=\dimen172
+\pgf@pathmaxy=\dimen173
+\pgf@xx=\dimen174
+\pgf@xy=\dimen175
+\pgf@yx=\dimen176
+\pgf@yy=\dimen177
+\pgf@zx=\dimen178
+\pgf@zy=\dimen179
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen180
+\pgf@path@lasty=\dimen181
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen182
+\pgf@shorten@start@additional=\dimen183
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box49
+\pgf@hbox=\box50
+\pgf@layerbox@main=\box51
+\pgf@picture@serial@count=\count377
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen184
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen185
+\pgf@pt@y=\dimen186
+\pgf@pt@temp=\dimen187
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorequick.code.tex"
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen188
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen189
+\pgf@sys@shading@range@num=\count378
+\pgf@shadingcount=\count379
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box52
+))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclayer/p
+gfcorerdf.code.tex"
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/modules/pgfm
+oduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box53
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/modules/pgfm
+oduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/compatibility/
+pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen190
+\pgf@nodesepend=\dimen191
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/compatibility/
+pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)))
+Package trimclip Info: No clipping driver 'tc-luatex.def' available.
+(trimclip)             Using fall-back PGF driver.
+)
+\adjbox@Width=\dimen192
+\adjbox@Height=\dimen193
+\adjbox@Depth=\dimen194
+\adjbox@Totalheight=\dimen195
+\adjbox@pwidth=\dimen196
+\adjbox@pheight=\dimen197
+\adjbox@pdepth=\dimen198
+\adjbox@ptotalheight=\dimen199
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifoddpage/ifoddpag
+e.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count380
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/varwidth/varwidth.
+sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box54
+\sift@deathcycles=\count381
+\@vwid@loff=\dimen256
+\@vwid@roff=\dimen257
+))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.
+sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/generic/iftex/ifvtex.sty
+"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count382
+\Gm@cntv=\count383
+\c@Gm@tempcnt=\count384
+\Gm@bindingoffset=\dimen258
+\Gm@wd@mp=\dimen259
+\Gm@odd@mp=\dimen260
+\Gm@even@mp=\dimen261
+\Gm@layoutwidth=\dimen262
+\Gm@layoutheight=\dimen263
+\Gm@layouthoffset=\dimen264
+\Gm@layoutvoffset=\dimen265
+\Gm@dimlist=\toks29
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.
+cfg"))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/mathtools/mathtool
+s.sty"
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count385
+\calc@Bcount=\count386
+\calc@Adimen=\dimen266
+\calc@Bdimen=\dimen267
+\calc@Askip=\skip73
+\calc@Bskip=\skip74
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count387
+\calc@Cskip=\skip75
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/mathtools/mhsetup.
+sty"
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsmath.st
+y"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip76
+
+For additional information on amsmath, use the `?' option.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amstext.st
+y"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks30
+\ex@=\dimen268
+))
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen269
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count388
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count389
+\leftroot@=\count390
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count391
+\DOTSCASE@=\count392
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+\big@size=\dimen270
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count393
+\c@MaxMatrixCols=\count394
+\dotsspace@=\muskip21
+\c@parentequation=\count395
+\dspbrk@lvl=\count396
+\tag@help=\toks31
+\row@=\count397
+\column@=\count398
+\maxfields@=\count399
+\andhelp@=\toks32
+\eqnshift@=\dimen271
+\alignsep@=\dimen272
+\tagshift@=\dimen273
+\tagwidth@=\dimen274
+\totwidth@=\dimen275
+\lineht@=\dimen276
+\@envbody=\toks33
+\multlinegap=\skip77
+\multlinetaggap=\skip78
+\mathdisplay@stack=\toks34
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count400
+\l_MT_multwidth_dim=\dimen277
+\origjot=\skip79
+\l_MT_shortvdotswithinadjustabove_dim=\dimen278
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen279
+\l_MT_above_intertext_sep=\dimen280
+\l_MT_below_intertext_sep=\dimen281
+\l_MT_above_shortintertext_sep=\dimen282
+\l_MT_below_shortintertext_sep=\dimen283
+\xmathstrut@box=\box57
+\xmathstrut@dim=\dimen284
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.
+sty"
+\lst@mode=\count401
+\lst@gtempboxa=\box58
+\lst@token=\toks35
+\lst@length=\count402
+\lst@currlwidth=\dimen285
+\lst@column=\count403
+\lst@pos=\count404
+\lst@lostspace=\dimen286
+\lst@width=\dimen287
+\lst@newlines=\count405
+\lst@lineno=\count406
+\lst@maxwidth=\dimen288
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.s
+ty"
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count407
+\lst@skipnumbers=\count408
+\lst@framebox=\box59
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings.
+cfg"
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/float/float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count409
+\float@exts=\toks36
+\float@box=\box60
+\@float@everytoks=\toks37
+\@floatcapt=\box61
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pythonhighlight/py
+thonhighlight.sty"
+Package: pythonhighlight 2017/02/09 python code highlighting; provided by Olivie
+r Verdier <olivier.verdier@gmail.com>
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fontspec/fontspec.
+sty"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/l3packages/xparse/
+xparse.sty"
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/l3kernel/expl3.sty
+"
+Package: expl3 2020-02-03 L3 programming layer (loader) 
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/l3backend/l3backen
+d-pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count410
+\l__pdf_internal_box=\box62
+))
+Package: xparse 2020-02-03 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count411
+\g__xparse_grabber_int=\count412
+\l__xparse_m_args_int=\count413
+\l__xparse_v_nesting_int=\count414
+)
+Package: fontspec 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2020/02/03 2.7h Font selection for XeLaTeX and LuaLaTeX
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fontspec/fontspec-
+luatex.sty"
+Package: fontspec-luatex 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count415
+\l__fontspec_language_int=\count416
+\l__fontspec_strnum_int=\count417
+\l__fontspec_tmp_int=\count418
+\l__fontspec_tmpa_int=\count419
+\l__fontspec_tmpb_int=\count420
+\l__fontspec_tmpc_int=\count421
+\l__fontspec_em_int=\count422
+\l__fontspec_emdef_int=\count423
+\l__fontspec_strong_int=\count424
+\l__fontspec_strongdef_int=\count425
+\l__fontspec_tmpa_dim=\dimen289
+\l__fontspec_tmpb_dim=\dimen290
+\l__fontspec_tmpc_dim=\dimen291
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/fontenc.sty"
+Package: fontenc 2020/01/25 v2.0m Standard LaTeX package
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fontspec/fontspec.
+cfg")))
+luaotfload | cache : Lookup cache loaded from C:/Users/bogdy/AppData/Local/MiKTe
+X/2.9/luatex-cache/generic-dev/names/luaotfload-lookup-cache.luc.
+
+Package fontspec Info: Could not resolve font "UTSans/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "UTSans/I" (it probably doesn't
+(fontspec)             exist).
+
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'UTSans(0)' created for font 'UT Sans' with
+(fontspec)             options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"UTSans:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"UTSans/B:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/setspace/setspace.
+sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\@quotelevel=\count426
+\@quotereset=\count427
+ (./licenta.aux (./cover/cover.aux) (./cover/innercover.aux))
+\openout1 = licenta.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 70
+.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ts1cmr.fd"
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/lbx/engli
+sh.lbx"
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+
+\openout3 = licenta-blx.bib
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'licenta.bbl' found.
+ (./licenta.bbl)
+Package biblatex Info: Reference section=0 on input line 70.
+Package biblatex Info: Reference segment=0 on input line 70.
+
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/mkii/supp-p
+df.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count428
+\scratchdimen=\dimen292
+\scratchbox=\box63
+\nofMPsegments=\count429
+\nofMParguments=\count430
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count431
+\MPscratchDim=\dimen293
+\MPnumerator=\count432
+\makeMPintoPDFobject=\count433
+\everyMPtoPDFconversion=\toks39
+)
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/epstopdf-pkg/epsto
+pdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
+5.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ ABD: EveryShipout initializing macros
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(110.96556pt, 375.57675pt, 110.96556pt)
+* v-part:(T,H,B)=(110.96556pt, 623.11572pt, 110.96556pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=375.57675pt
+* \textheight=623.11572pt
+* \oddsidemargin=38.69557pt
+* \evensidemargin=38.69557pt
+* \topmargin=1.69557pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count434
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 70.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 70.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 70.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 70.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 70.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 70.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 70.
+LaTeX Font Info:    Redeclaring math accent \check on input line 70.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 70.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 70.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 70.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 70.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 70.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/UTSans(0)/m/n on input line 70.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 70.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/UTSans(0)/m/n on input line 70.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/UTSans(0)/m/n --> TU/UTSans(0)/m/n on input line 70.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/UTSans(0)/m/it on input line 70.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/UTSans(0)/b/n on input line 70.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 70.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 70.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/UTSans(0)/m/n --> TU/UTSans(0)/b/n on input line 70.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/UTSans(0)/b/it on input line 70.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 70.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 70.
+
+\openout2 = ./cover/cover.aux
+(./cover/cover.tex
+<./images/Logo-UT-MI-SPOT-RO.pdf, id=4, 198.0198pt x 83.8332pt>
+File: ./images/Logo-UT-MI-SPOT-RO.pdf Graphic file (type pdf)
+<use ./images/Logo-UT-MI-SPOT-RO.pdf>
+Package luatex.def Info: ./images/Logo-UT-MI-SPOT-RO.pdf  used on input line 5.
+(luatex.def)             Requested size: 300.46254pt x 127.21541pt.
+ [1
+
+
+{C:/Users/bogdy/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}<./images/Logo
+-UT-MI-SPOT-RO.pdf>])
+\openout2 = ./cover/innercover.aux
+ (./cover/innercover.tex
+File: ./images/Logo-UT-MI-SPOT-RO.pdf Graphic file (type pdf)
+<use ./images/Logo-UT-MI-SPOT-RO.pdf>
+Package luatex.def Info: ./images/Logo-UT-MI-SPOT-RO.pdf  used on input line 5.
+(luatex.def)             Requested size: 300.46254pt x 127.21541pt.
+ [1
+
+
+])
+(./licenta.toc)
+\tf@toc=\write5
+
+\openout5 = licenta.toc
+ [1
+
+
+] [2] [1] [2
+
+]
+Overfull \hbox (2.99922pt too wide) in paragraph at lines 97--98
+[]\TU/UTSans(0)/b/n/12 Sem-nalul ana-log \TU/UTSans(0)/m/n/12 reprez-intă un t
+ip de sem-nal con-tinuu, care poate fi clasi-
+ []
+
+[3
+
+]
+Overfull \hbox (7.23514pt too wide) in paragraph at lines 122--124
+\TU/UTSans(0)/m/n/12 Fourier pre-cum și de-spre pro-pri-etățile aces-teia 
+în cadrul pro-cesării sem-nalelor. 
+ []
+
+[4]
+Overfull \hbox (6.17117pt too wide) in paragraph at lines 127--128
+[]\TU/UTSans(0)/m/n/12 Ade-sea folosită în anal-iza vi-brați-ilor, in-gine-r
+ia au-dio și proce-sarea de imag-
+ []
+
+<images/signals.png, id=36, 529.22719pt x 124.96687pt>
+File: images/signals.png Graphic file (type png)
+<use images/signals.png>
+Package luatex.def Info: images/signals.png  used on input line 132.
+(luatex.def)             Requested size: 375.57675pt x 88.68515pt.
+
+Overfull \hbox (2.60315pt too wide) in paragraph at lines 141--142
+[]\TU/UTSans(0)/b/n/12 Trans-for-mata Fourier dis-cretă\TU/UTSans(0)/m/n/12 , 
+aplică tans-for-mata Fourie pe un număr
+ []
+
+
+Overfull \hbox (4.64586pt too wide) in paragraph at lines 141--142
+\TU/UTSans(0)/m/n/12 dis-cret de sample-uri dintr-un sem-nal. Această tehnic
+ă poate fi folosită
+ []
+
+
+Overfull \hbox (18.42319pt too wide) in paragraph at lines 142--143
+[]\TU/UTSans(0)/b/n/12 Trans-for-mata Fourier rapidă\TU/UTSans(0)/m/n/12 , est
+e asemănă-toare cu pro-cedeul menționat
+ []
+
+<images/FT_time_to_freq.png, id=37, 526.21594pt x 296.60812pt>
+File: images/FT_time_to_freq.png Graphic file (type png)
+<use images/FT_time_to_freq.png>
+Package luatex.def Info: images/FT_time_to_freq.png  used on input line 146.
+(luatex.def)             Requested size: 368.34865pt x 207.62427pt.
+[5
+
+<./images/signals.png>]
+Overfull \hbox (7.37521pt too wide) in paragraph at lines 152--153
+\TU/UTSans(0)/m/n/12 adi-a-cente, aces-tea fi-ind reprezen-tate de cu-lo-rile r
+oși, gri și verde având diferite
+ []
+
+[6<./images/FT_time_to_freq.png>]
+Overfull \hbox (1.06317pt too wide) in paragraph at lines 169--171
+\TU/UTSans(0)/m/n/12 Uti-lizând aceste fo-ru-mule, putem afla am-pli-tudinea p
+re-cum și pe-rioada sem-
+ []
+
+
+Overfull \hbox (12.55779pt too wide) in paragraph at lines 169--171
+\TU/UTSans(0)/m/n/12 nalu-lui într-un an-u-mit punct. Aceste două con-cepete 
+ne sunt de fo-los deoarece,
+ []
+
+
+Overfull \hbox (3.3738pt too wide) in paragraph at lines 169--171
+\TU/UTSans(0)/m/n/12 tro-mag-net-ice etc) se pot face prin plotarea aces-tor re
+zul-tate. În sine, graficele
+ []
+
+
+Overfull \hbox (32.4325pt too wide) in paragraph at lines 181--182
+[]\TU/UTSans(0)/m/n/12 Si-nus de-screscă-tor/crescă-tor; Dacă am-pli-tudinea
+ unui si-nus scade, frecvența
+ []
+
+[7]
+Overfull \hbox (7.14447pt too wide) in paragraph at lines 190--191
+[]\TU/UTSans(0)/m/n/12 Anal-iza echipa-mentelor ro-ta-tive pre-cum rul-menți; 
+Trans-for-mata Fourier
+ []
+
+
+Overfull \hbox (1.16188pt too wide) in paragraph at lines 190--191
+\TU/UTSans(0)/m/n/12 poate fi folosită pen-tru a iden-ti-fica un potențial ru
+l-ment stri-cat. Fiecare
+ []
+
+[8]
+Overfull \hbox (4.781pt too wide) in paragraph at lines 197--198
+\TU/UTSans(0)/m/n/12 lui, fi-ind di-fi-cilă in-ter-pretarea lor dintr-o sin-gu
+ră op-er-ație. O tehnică asemănă-
+ []
+
+
+Overfull \hbox (7.36707pt too wide) in paragraph at lines 197--198
+\TU/UTSans(0)/m/n/12 toare cu trans-for-mata Fourier reprez-intă Short Time Fo
+urier Trans-form (STFT),
+ []
+
+<images/windowing.PNG, id=60, 673.01437pt x 296.60812pt>
+File: images/windowing.PNG Graphic file (type png)
+<use images/windowing.PNG>
+Package luatex.def Info: images/windowing.PNG  used on input line 202.
+(luatex.def)             Requested size: 375.57675pt x 165.52463pt.
+<images/spectogram.PNG, id=61, 893.58844pt x 501.37312pt>
+File: images/spectogram.PNG Graphic file (type png)
+<use images/spectogram.PNG>
+Package luatex.def Info: images/spectogram.PNG  used on input line 212.
+(luatex.def)             Requested size: 268.0786pt x 150.41309pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (8.25385pt too wide) in paragraph at lines 219--220
+\TU/UTSans(0)/m/n/12 mită cat-e-gorie. În spri-jinul cer-ințelor noas-tre, v
+om vorbi de-spre Mel-frequency
+ []
+
+[9<./images/windowing.PNG>] [10<./images/spectogram.PNG>]
+Overfull \hbox (3.95514pt too wide) in paragraph at lines 223--224
+\TU/UTSans(0)/m/n/12 mații refer-i-toare frame-ului anal-izat, fi-ind foarte a
+semănă-toare cu o secvență
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
+
+ []
+
+
+Overfull \hbox (6.50317pt too wide) in paragraph at lines 249--250
+[]\TU/UTSans(0)/m/n/12 Es-timăm in-te-si-tatea sem-nalu-lui pen-tru fiecare fe
+r-eas-tră (pe-ri-odogram); 
+ []
+
+[11
+
+]
+Overfull \hbox (1.58313pt too wide) in paragraph at lines 256--257
+\TU/UTSans(0)/m/n/12 vari-ază foarte mult), făcând ast-fel posi-bilă rețin
+erea unui număr cât mai mare
+ []
+
+<images/mel_filterbank.PNG, id=75, 398.99063pt x 327.47343pt>
+File: images/mel_filterbank.PNG Graphic file (type png)
+<use images/mel_filterbank.PNG>
+Package luatex.def Info: images/mel_filterbank.PNG  used on input line 260.
+(luatex.def)             Requested size: 119.6981pt x 98.24278pt.
+[12<./images/mel_filterbank.PNG>] [13]
+<images/AI_ML_DL.PNG, id=83, 642.4pt x 405.515pt>
+File: images/AI_ML_DL.PNG Graphic file (type png)
+<use images/AI_ML_DL.PNG>
+Package luatex.def Info: images/AI_ML_DL.PNG  used on input line 281.
+(luatex.def)             Requested size: 321.19922pt x 202.75699pt.
+
+Overfull \hbox (2.3071pt too wide) in paragraph at lines 288--289
+\TU/UTSans(0)/m/n/12 care se ocupă cu în-vățarea unor sis-teme com-plexe s
+ă ex-e-cute an-u-mite sarcini
+ []
+
+[14
+
+<./images/AI_ML_DL.PNG>]
+Overfull \hbox (6.97916pt too wide) in paragraph at lines 301--302
+[]\TU/UTSans(0)/b/n/12 În-vațare prin ”în-tărire” \TU/UTSans(0)/m/n/12 
+(re-in-force-ment), unde se pre-supune ca un agent
+ []
+
+
+Overfull \hbox (12.62312pt too wide) in paragraph at lines 306--307
+\TU/UTSans(0)/m/n/12 aju-torul rețelelor neu-rale (în gen-eral cele con-volu
+ționare), de-tectarea obiectelor
+ []
+
+[15] [16]
+<images/mlp.PNG, id=94, 533.74406pt x 371.88937pt>
+File: images/mlp.PNG Graphic file (type png)
+<use images/mlp.PNG>
+Package luatex.def Info: images/mlp.PNG  used on input line 346.
+(luatex.def)             Requested size: 214.0815pt x 149.16168pt.
+<images/back_propagation.PNG, id=95, 374.14781pt x 222.8325pt>
+File: images/back_propagation.PNG Graphic file (type png)
+<use images/back_propagation.PNG>
+Package luatex.def Info: images/back_propagation.PNG  used on input line 352.
+(luatex.def)             Requested size: 214.0815pt x 127.50206pt.
+
+Overfull \hbox (54.34624pt too wide) in paragraph at lines 345--356
+[][]  [] 
+ []
+
+[17
+
+] [18<./images/mlp.PNG><./images/back_propagation.PNG>]
+Overfull \hbox (12.60323pt too wide) in paragraph at lines 376--377
+\TU/UTSans(0)/m/n/12 duce din di-men-sion-al-i-tatea imag-inii, micșorând din
+ cos-tul com-putațional.
+ []
+
+<images/cnn.PNG, id=105, 551.05875pt x 289.83281pt>
+File: images/cnn.PNG Graphic file (type png)
+<use images/cnn.PNG>
+Package luatex.def Info: images/cnn.PNG  used on input line 387.
+(luatex.def)             Requested size: 385.73848pt x 202.88158pt.
+
+Overfull \hbox (10.16173pt too wide) in paragraph at lines 387--388
+ [] 
+ []
+
+[19
+
+]
+Overfull \hbox (17.18318pt too wide) in paragraph at lines 394--395
+\TU/UTSans(0)/m/n/12 apli-cate suc-ce-siv asupra pozelor dobân-desc ca-pa-bil-
+i-tatea de a in-ter-preta diferite
+ []
+
+[20<./images/cnn.PNG>]
+<images/autoencoder.PNG, id=113, 519.44063pt x 306.39468pt>
+File: images/autoencoder.PNG Graphic file (type png)
+<use images/autoencoder.PNG>
+Package luatex.def Info: images/autoencoder.PNG  used on input line 402.
+(luatex.def)             Requested size: 375.57675pt x 221.53436pt.
+ [21
+
+<./images/autoencoder.PNG>]
+Overfull \hbox (16.36313pt too wide) in paragraph at lines 416--417
+[]\TU/UTSans(0)/m/n/12 Putem ob-serva cum arhi-tec-turile celor două sub-rețe
+le sunt fă-cute în oglindă.
+ []
+
+
+Overfull \hbox (26.97517pt too wide) in paragraph at lines 423--424
+[]\TU/UTSans(0)/m/n/12 În ur-mă-torul capi-tol, vom in-tro-duce apli-cația P
+i-anify, o apli-cație de transpunere
+ []
+
+[22]
+Overfull \hbox (6.90184pt too wide) in paragraph at lines 434--435
+\TU/UTSans(0)/m/n/12 niu este acela de a în-deplini o an-u-mită funcțion-al-
+i-tate cât mai speci-fică. Putem
+ []
+
+
+Overfull \hbox (18.91919pt too wide) in paragraph at lines 437--438
+[]\TU/UTSans(0)/m/n/12 Diferite lim-baje de pro-gra-mare oferă diferite metode
+ de dez-voltare, făcându-
+ []
+
+[23
+
+]
+Overfull \hbox (0.23116pt too wide) in paragraph at lines 445--446
+[]\TU/UTSans(0)/m/n/12 Lim-ba-jul C++ este un lim-baj com-pi-lat care se în-ca
+drează în cat-e-go-ria mid-
+ []
+
+
+Overfull \hbox (12.32986pt too wide) in paragraph at lines 447--448
+\TU/UTSans(0)/m/n/12 de com-pi-la-tor). Da-torită aces-tui atribut, C++ este u
+ti-lizat în nu-meroase domenii
+ []
+
+[24]
+Overfull \hbox (3.07118pt too wide) in paragraph at lines 452--453
+\TU/UTSans(0)/m/n/12 ușur-ința in-ter-pretării co-du-lui de către pro-gram-
+a-tori, fa-vorizând spațierea față
+ []
+
+
+Overfull \hbox (2.04317pt too wide) in paragraph at lines 454--455
+[]\TU/UTSans(0)/m/n/12 Fi-ind un lim-baj de nivel înalt avem ca avan-taje ur-m
+ă-toarele atribute: com-
+ []
+
+[25]
+Overfull \hbox (0.64713pt too wide) in paragraph at lines 470--471
+[]\TU/UTSans(0)/m/n/12 ca-pac-i-tatea de a ex-e-cuta tehnici pre-cum fil-trarea
+ și seg-mentare asupra
+ []
+
+
+Overfull \hbox (12.6352pt too wide) in paragraph at lines 475--476
+[]\TU/UTSans(0)/m/n/12 Obiec-tivul primu-lui modul, ”Mid-i-fi-care”, este a
+cela de a transpune o melodie,
+ []
+
+
+Overfull \hbox (15.84583pt too wide) in paragraph at lines 477--478
+\TU/UTSans(0)/m/n/12 ea find uti-lizată cu scop gen-eral în cadul apli-cație
+i. Pen-tru sub-mod-u-lul reprezan-
+ []
+
+[26] [27]
+<images/pianify_signal_plot.PNG, id=137, 795.72281pt x 196.48407pt>
+File: images/pianify_signal_plot.PNG Graphic file (type png)
+<use images/pianify_signal_plot.PNG>
+Package luatex.def Info: images/pianify_signal_plot.PNG  used on input line 515.
+
+(luatex.def)             Requested size: 375.57675pt x 92.73727pt.
+ [28
+
+<./images/pianify_signal_plot.PNG>]
+Overfull \hbox (17.6218pt too wide) in paragraph at lines 525--526
+\TU/UTSans(0)/m/n/12 aceste tipuri de anal-iză. Sur-prinderea noas-tră a fost
+ de avea rezul-tate asemănă-
+ []
+
+
+Overfull \hbox (3.53516pt too wide) in paragraph at lines 529--530
+[]\TU/UTSans(0)/m/n/12 Având aceste tehnici, am tre-cut la ur-mă-torul pas, c
+el al iden-ti-ficării notelor
+ []
+
+[29]
+Overfull \hbox (4.47916pt too wide) in paragraph at lines 537--538
+\TU/UTSans(0)/m/n/12 Pen-tru acest caz am cal-cu-lat dis-tanța me-die a frecve
+nței iden-ti-fi-cată la fiecare
+ []
+
+
+Overfull \hbox (10.79913pt too wide) in paragraph at lines 544--545
+[]\TU/UTSans(0)/m/n/12 unde n reprez-intă numărul cheii pe care dorim să o t
+ran-for-măm în frecvența
+ []
+
+
+Overfull \hbox (25.16714pt too wide) in paragraph at lines 551--552
+[]\TU/UTSans(0)/m/n/12 Frecvențele ma-p-ate pe fer-e-stre nu au fost în-dea-j
+uns pen-tru a putea transpune
+ []
+
+[30]
+Overfull \hbox (0.28716pt too wide) in paragraph at lines 564--565
+\TU/UTSans(0)/m/n/12 pa-sul an-te-rior (frecvențele ma-p-ate pe fer-e-strele c
+ore-spun-ză-toare), am reușit
+ []
+
+[31]
+Overfull \hbox (6.94843pt too wide) in paragraph at lines 580--581
+\TU/UTSans(0)/m/n/12 cun-de-lor; Dupa ma-parea fă-cută la pa-sul an-te-rior e
+ste nece-sar să sortăm
+ []
+
+
+Overfull \hbox (7.22499pt too wide) in paragraph at lines 585--586
+\TU/UTSans(0)/m/n/12 liza-to-rilor să uti-lizeze o orgă vir-tu-ală MIDI pe p
+ost de clapele pi-anu-lui. Alegerea
+ []
+
+[32
+
+]
+<images/synhesia.PNG, id=155, 720.44156pt x 535.2497pt>
+File: images/synhesia.PNG Graphic file (type png)
+<use images/synhesia.PNG>
+Package luatex.def Info: images/synhesia.PNG  used on input line 589.
+(luatex.def)             Requested size: 288.17151pt x 214.09608pt.
+ [33<./images/synhesia.PNG>] [34
+
+] [35]
+Overfull \hbox (24.34322pt too wide) in paragraph at lines 622--623
+[]\TU/UTSans(0)/m/n/12 La fel cum este menționat și în cadrul capi-tolu-lui 
+”Co-e-fi-ci-etenții Mel-frequency
+ []
+
+[36]
+Overfull \hbox (9.88974pt too wide) in paragraph at lines 637--638
+\TU/UTSans(0)/m/n/12 roni. Acest lu-cru face ca rețeaua să în-vețe alte met
+ode de a propaga
+ []
+
+
+Overfull \hbox (10.99118pt too wide) in paragraph at lines 643--644
+\TU/UTSans(0)/m/n/12 scopul sep-a-rării celor două in-stru-mente dintr-o melo
+diei și a transpunerii
+ []
+
+[37]
+Overfull \hbox (22.93518pt too wide) in paragraph at lines 652--654
+[]\TU/UTSans(0)/m/n/12 În acest capi-tol vom de-scrie ghidul de uti-lizare al 
+mod-u-l-u-lui de ”Re-cunoaștere”
+ []
+
+<images/pianify_mainwindow.PNG, id=173, 851.43094pt x 280.04625pt>
+File: images/pianify_mainwindow.PNG Graphic file (type png)
+<use images/pianify_mainwindow.PNG>
+Package luatex.def Info: images/pianify_mainwindow.PNG  used on input line 657.
+(luatex.def)             Requested size: 340.56635pt x 112.0165pt.
+<images/pianify_recognizeviewPNG.PNG, id=174, 631.60968pt x 333.49594pt>
+File: images/pianify_recognizeviewPNG.PNG Graphic file (type png)
+<use images/pianify_recognizeviewPNG.PNG>
+Package luatex.def Info: images/pianify_recognizeviewPNG.PNG  used on input line
+ 667.
+(luatex.def)             Requested size: 252.63939pt x 133.39601pt.
+
+Overfull \hbox (13.7472pt too wide) in paragraph at lines 673--674
+[]\TU/UTSans(0)/m/n/12 Pen-tru în-ceput, vom de-talia in-for-mații de-spre ce
+le două in-stru-mente afișate
+ []
+
+[38<./images/pianify_mainwindow.PNG><./images/pianify_recognizeviewPNG.PNG>]
+Overfull \hbox (5.41118pt too wide) in paragraph at lines 681--682
+[]\TU/UTSans(0)/m/n/12 Având datele pre-proce-sate într-o formă validă, se 
+va putea face o predicție
+ []
+
+
+Overfull \hbox (6.84717pt too wide) in paragraph at lines 681--682
+\TU/UTSans(0)/m/n/12 tatele uti-liza-toru-lui, acesta va putea vizual-iza ra-po
+r-tul celor două in-stru-mente.
+ []
+
+
+Overfull \hbox (5.26314pt too wide) in paragraph at lines 683--684
+\TU/UTSans(0)/m/n/12 nevoiți să alegem o val-oare nu-mer-ică în-treagă car
+e reprez-intă numărul maxim
+ []
+
+[39]
+Overfull \hbox (15.37112pt too wide) in paragraph at lines 690--691
+[]\TU/UTSans(0)/m/n/12 Ex-tragerea notelor pre-dom-i-nante în funcție de val-
+oarea aleaăa la numărul
+ []
+
+
+Overfull \hbox (18.20721pt too wide) in paragraph at lines 692--693
+[]\TU/UTSans(0)/m/n/12 Ma-parea notelor iden-ti-cate îm-pre-ună cu in-stru-me
+n-tul iden-ti-fi-cat în funcție
+ []
+
+[40]
+Overfull \hbox (0.81917pt too wide) in paragraph at lines 707--708
+[]\TU/UTSans(0)/m/n/12 Cu aju-torul mon-i-tor-izării stării rul-menților, pu
+tem accesa în timp real situ-
+ []
+
+
+Overfull \hbox (15.07123pt too wide) in paragraph at lines 709--710
+\TU/UTSans(0)/m/n/12 mon-i-tor-izării echipa-mentelor ro-ta-tive con-sti-tuie 
+pi-loni de bază în anal-iza datelor
+ []
+
+
+Overfull \hbox (2.00316pt too wide) in paragraph at lines 711--712
+\TU/UTSans(0)/m/n/12 aces-tea fi-ind înzes-trate cu ca-pac-i-tatea de a re-cun
+oaște și de a în-văța pattern-
+ []
+
+[41
+
+]
+<images/bearing_signal.PNG, id=189, 353.06906pt x 299.61937pt>
+File: images/bearing_signal.PNG Graphic file (type png)
+<use images/bearing_signal.PNG>
+Package luatex.def Info: images/bearing_signal.PNG  used on input line 717.
+(luatex.def)             Requested size: 247.14665pt x 209.73212pt.
+<images/image_bearing.PNG, id=190, 530.73282pt x 149.05687pt>
+File: images/image_bearing.PNG Graphic file (type png)
+<use images/image_bearing.PNG>
+Package luatex.def Info: images/image_bearing.PNG  used on input line 727.
+(luatex.def)             Requested size: 265.36575pt x 74.52824pt.
+ [42<./images/bearing_signal.PNG><./images/image_bearing.PNG>]
+<images/CWRU.jpg, id=196, 536.0025pt x 317.185pt>
+File: images/CWRU.jpg Graphic file (type jpg)
+<use images/CWRU.jpg>
+Package luatex.def Info: images/CWRU.jpg  used on input line 746.
+(luatex.def)             Requested size: 268.0006pt x 158.5921pt.
+ [43
+
+<./images/CWRU.jpg>]
+<images/waterfall_bearing_normal.png, id=200, 1445.4pt x 722.7pt>
+File: images/waterfall_bearing_normal.png Graphic file (type png)
+<use images/waterfall_bearing_normal.png>
+Package luatex.def Info: images/waterfall_bearing_normal.png  used on input line
+ 763.
+(luatex.def)             Requested size: 361.34912pt x 180.67455pt.
+ [44<./images/waterfall_bearing_normal.png>] [45]
+<images/Cm-Architecture.png, id=208, 404.51125pt x 629.35126pt>
+File: images/Cm-Architecture.png Graphic file (type png)
+<use images/Cm-Architecture.png>
+Package luatex.def Info: images/Cm-Architecture.png  used on input line 800.
+(luatex.def)             Requested size: 161.80162pt x 251.73604pt.
+
+Overfull \hbox (6.76234pt too wide) in paragraph at lines 809--810
+\TU/UTSans(0)/m/n/12 fi-cienți MFC obțin-uți cu aju-torul pa-chetu-lui Li-br
+osa, spe-cial-izat pe proce-
+ []
+
+[46
+
+<./images/Cm-Architecture.png>]
+<images/PCA_DE_12k_MFCC.PNG, id=213, 417.05812pt x 382.42876pt>
+File: images/PCA_DE_12k_MFCC.PNG Graphic file (type png)
+<use images/PCA_DE_12k_MFCC.PNG>
+Package luatex.def Info: images/PCA_DE_12k_MFCC.PNG  used on input line 819.
+(luatex.def)             Requested size: 169.00838pt x 154.97615pt.
+<images/PCA_FE_12k_MFCC.PNG, id=214, 417.05812pt x 381.67593pt>
+File: images/PCA_FE_12k_MFCC.PNG Graphic file (type png)
+<use images/PCA_FE_12k_MFCC.PNG>
+Package luatex.def Info: images/PCA_FE_12k_MFCC.PNG  used on input line 825.
+(luatex.def)             Requested size: 169.00838pt x 154.67108pt.
+ [47<./images/PCA_DE_12k_MFCC.PNG><./images/PCA_FE_12k_MFCC.PNG>] [48]
+Overfull \hbox (8.8898pt too wide) in paragraph at lines 863--864
+\TU/UTSans(0)/m/n/12 carea notelor și re-cunoașterea in-stru-mentelor. Fap-tu
+l că în cadrul unei melodii,
+ []
+
+[49
+
+]
+
+LaTeX Font Warning: Font shape `TU/UTSans(0)/m/it' undefined
+(Font)              using `TU/UTSans(0)/m/n' instead on input line 869.
+
+
+Overfull \hbox (50.24026pt too wide) in paragraph at lines 870--870
+[]\TU/UTSans(0)/m/it/12 Mel Fre-quency Cep-stral Co-ef-fi-cient (MFCC). $\TU/lm
+tt/m/n/12 http : / / practicalcryptography .
+ []
+
+
+Overfull \hbox (9.97214pt too wide) in paragraph at lines 870--870
+\TU/lmtt/m/n/12 cepstral - coefficients - mfccs/$\TU/UTSans(0)/m/it/12 . Ac-ces
+sed: 04.05.2020 (cit. on p. 11). 
+ []
+
+
+Overfull \hbox (9.65883pt too wide) in paragraph at lines 870--870
+\TU/lmtt/m/n/12 / / machinelearningmastery . com / supervised - and - unsupervi
+sed -
+ []
+
+
+Overfull \hbox (10.33214pt too wide) in paragraph at lines 870--870
+\TU/lmtt/m/n/12 machine - learning - algorithms/$\TU/UTSans(0)/m/it/12 . Ac-ces
+sed: 05.05.2020 (cit. on p. 15). 
+ []
+
+
+Overfull \hbox (1.79128pt too wide) in paragraph at lines 870--870
+[]\TU/UTSans(0)/m/it/12 Lu-cian M. Sasu. In-teligență ar-ti-fi-cială. $\TU/l
+mtt/m/n/12 https : / / github . com / lmsasu /
+ []
+
+
+Overfull \hbox (8.0281pt too wide) in paragraph at lines 870--870
+\TU/lmtt/m/n/12 cursuri / tree / master / InteligentaArtificiala / curs/$\TU/UT
+Sans(0)/m/it/12 . Ac-cessed:
+ []
+
+
+Overfull \hbox (28.1988pt too wide) in paragraph at lines 870--870
+\TU/lmtt/m/n/12 codeforwin . org / 2017 / 05 / programming - languages - classi
+fication .
+ []
+
+[50
+
+
+]
+Overfull \hbox (24.58682pt too wide) in paragraph at lines 870--870
+\TU/lmtt/m/n/12 www . sciencedirect . com / science / article / pii / S13890417
+17303261$\TU/UTSans(0)/m/it/12 .
+ []
+
+[51]
+<images/plagiat.PNG, id=233, 1095.3422pt x 75.28125pt>
+File: images/plagiat.PNG Graphic file (type png)
+<use images/plagiat.PNG>
+Package luatex.def Info: images/plagiat.PNG  used on input line 874.
+(luatex.def)             Requested size: 438.12912pt x 30.11195pt.
+
+Overfull \hbox (62.55237pt too wide) in paragraph at lines 874--875
+ [] 
+ []
+
+[52
+
+<./images/plagiat.PNG>] (./licenta.aux (./cover/cover.aux)
+(./cover/innercover.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'licenta.run.xml'.
+
+\openout1 = licenta.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 25393 strings out of 481391
+ 125171,1373583 words of node,token memory allocated
+ 661 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 26 attribute, 69 glue_spec
+, 26 attribute_list, 2 write nodes
+   avail lists: 1:2,2:427,3:220,4:66,5:405,6:42,7:3757,8:117,9:226,10:12,11:279,
+12:1
+ 41522 multiletter control sequences out of 65536+200000
+ 66 fonts using 6187475 bytes
+ 72i,8n,77p,1405b,1111s stack positions out of 5000i,500n,10000p,200000b,50000s
+<c:/users/bogdy/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmmon
+o12-regular.otf><C:/Users/bogdy/AppData/Local/Microsoft/Windows/Fonts/utsans-reg
+ular.otf><C:/Users/bogdy/AppData/Local/Microsoft/Windows/Fonts/utsans-bold.otf><
+C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmex10.pfb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bogdy/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bogdy/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/bogd
+y/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
+Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb>
+Output written on licenta.pdf (56 pages, 1997057 bytes).
+
+PDF statistics: 288 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
+
