@@ -1,0 +1,95 @@
+NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
+- Abstract
+- Introducere
+- Subiecte
+	- Emotions, what are them ?
+	- Emotion recognition
+	- Inteligenta artificiala
+		- Invatare supervizata
+		- Invatare nesupervizata
+		- Antrenare utilizand placa video 
+		- Cuda, Nvidia etc
+	- Aplicatia pentru crearea unui raport a candidatului in urma unui interviu
+		- Used tech:
+			- Python (categorizare limbaje de programare), 
+			- Framework-uri: QT framework
+			- Pachete/Biblioteci reprezentative utilizaate: tenserflow (keras), PyAudio, plotting, opencv)
+			- limbajele de programare + frameworkuri + biblioteci utilizare
+			- ierarhizarea limbajelor de programare (jos, mediu, avansat)
+		- Prezentarea modulelor: 
+			- emotion detection through sound, 
+			- text
+			- video
+		- Facial emotion regonition
+			- Face detection
+				- Open CV (prezentare, diferite exemple la ce se poate folosi si la ce a fost folosit in aplicatie)
+				- Features
+				- Eyes, mouth, jaw, eyes closed/opened, glasses on/off 
+			- Dataset (infos, etc)
+			- preprocessing (some images from pynb, graphs etc)
+			- Training (different models)
+				- modele (layere folosite), normalizare, shape
+				- Image generator pentru a scapa de overfitting
+			- Accuracy, matrix confusion
+			- Testing
+			- Using with opencv, pentru capturare imagini din cameraweb
+			- Detalii de implementare (poate bucati de cod reprezentative)
+		- Audio emotion recognition
+			- Dataset (infos, etc)
+			- preprocessing (some images from pynb, graphs etc)
+				- Fourier Transform, 
+				- Short Fourier Transform, 
+				- Spectogram, 
+				- Melspectogram, 
+				- Windowing 
+			- Training - layere utilizate(LSTM, Layer)
+				- LSTM
+				- TimeDistributed
+				- Adding Sinus Noise pentru a scapa de oferfitting
+			- Accuracy, matrix confusion
+			- Testing
+		- Text emotion recognition
+			- Dataset (infos etc)
+			- Transformare (preprocesare)
+				- fiecare text trece prin urmatorul proces:
+					- curatare cu diferite regex-uri
+					- apoi fiecare text: 
+						- este tokenizat pe propozitii (sent_tokenize) iar apoi pentru fiecare propozitie:
+						- se imparte pe cuvinte folosind wordpunct_tokenize, iar apoi pentru fiecare cuvant se specifica ce parte a propozitiei este :
+							ADJ	adjective	new, good, high, special, big, local
+							ADP	adposition	on, of, at, with, by, into, under
+							ADV	adverb	really, already, still, early, now
+							CONJ	conjunction	and, or, but, if, while, although
+							DET	determiner, article	the, a, some, most, every, no, which
+							NOUN	noun	year, home, costs, time, Africa
+							NUM	numeral	twenty-four, fourth, 1991, 14:24
+							PRT	particle	at, on, out, over per, that, up, with
+							PRON	pronoun	he, their, her, its, my, I, us
+							VERB	verb	is, say, told, given, playing, would
+							.	punctuation marks	. , ; !
+							X	other	ersatz, esprit, dunno, gr8, univeristy
+						
+							si va arata ceva de genul ('hello', 'NN')
+						-  pentru fiecare pereche de genul se vor face urmatoarele operatii
+							- token = token.lower() if self.lower else token
+							- token = token.strip() if self.strip else token
+							- token = token.strip('_') if self.strip else token
+							- token = token.strip('*') if self.strip else token
+							- daca face parte din enlgish stop words, se sare
+							- se foloseste de WordNet pentru a lematiza (https://www.machinelearningplus.com/nlp/lemmatization-examples-python/) impreuna cu ‘part-of-speech’ tag corect 
+							- vectorizare
+				- Predictie
+					- cum  este gandit pipeline-ul ?
+					- layere-le utilizate
+					- de ce sunt aceste layere utilizate ?
+						
+						- Generarea fisei candidatului ????
+						- Setari pentru activare/dezactivare
+		
+		- Prezentarea aplicatiei propiu zisa
+			- Interfata 
+			- Ghid de utilizare
+			- Live interviu/inregistrat
+			- Generarea raportului candidatului
+	- Imbunatariri viitoare
+	- Concluzie
