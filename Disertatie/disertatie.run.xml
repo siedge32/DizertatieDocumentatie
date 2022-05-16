@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>dizertatie.aux</file>
-      <file>dizertatie-blx.bib</file>
+      <file>disertatie.aux</file>
+      <file>disertatie-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>dizertatie.bbl</file>
+      <file>disertatie.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -68,20 +68,20 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>dizertatie</infile>
+      <infile>disertatie</infile>
     </cmdline>
     <input>
-      <file>dizertatie.aux</file>
+      <file>disertatie.aux</file>
     </input>
     <output>
-      <file>dizertatie.bbl</file>
+      <file>disertatie.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>dizertatie.bbl</file>
+      <file>disertatie.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>dizertatie.aux</file>
-      <file>dizertatie-blx.bib</file>
+      <file>disertatie.aux</file>
+      <file>disertatie-blx.bib</file>
     </requires>
     <requires type="editable">
       <file>bibliography.bib</file>

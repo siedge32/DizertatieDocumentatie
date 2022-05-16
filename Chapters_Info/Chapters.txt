@@ -1,33 +1,65 @@
 NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
-- Abstract
+- Abstract	DONE
 - Introducere
+	- Emotion recognition using
+		- audio	DONE
+		- video 
+		- text
+	- Other types of emotion regonition (ex. Human Body gesture)
+	- Aplicatii similare
+		- ex 1
+		- ex 2
+	- Motivatie DONE
+	- Obiective
+	- Utilitate (vezi utilitate in Google Docs)
+	- Structurarea lucrarii: prezentare in mare despre aplicatii
 - Subiecte
-	- Emotions, what are them ?
-	- Emotion recognition
-	- Purposes ?
-	- Inteligenta artificiala
-		- Invatare supervizata
-		- Invatare nesupervizata
-		- Antrenare utilizand placa video 
-		- Cuda, Nvidia etc
-	- Aplicatia pentru crearea unui raport a candidatului in urma unui interviu
-		- Used tech:
-			- Python (categorizare limbaje de programare), 
-			- Framework-uri: QT framework, MongoDb, stateMachine
-			- Pachete/Biblioteci reprezentative utilizaate: tenserflow (keras), PyAudio, plotting, opencv)
-			- limbajele de programare + frameworkuri + biblioteci utilizare
+	- Notiuni teoretice necesare
+		- Inteligenta artificiala
+			- Clasificare tipuri de invatare:
+				- Invatare supervizata
+				- Invatare nesupervizata
+			- Antrenare utilizand placa video
+			- Cuda, Nvidia etc
+		- Procesare Digitala de emnal
+			- preprocessing (some images from pynb, graphs etc)
+				- Fourier Transform,
+				- Short Fourier Transform,
+				- Spectogram,
+				- Melspectogram,
+				- Windowing
+		- Procesarea imaginilor
+			- preprocessing (some images from pynb, graphs etc) + de vazut ce a mai fost folosit
+		- Procesarea textului (minimal)
+			- TO DO
+	- Tehnologii utilizate:
 			- ierarhizarea limbajelor de programare (jos, mediu, avansat)
+			- Python (categorizare limbaje de programare)
+			- Distributia Anaconda
+			- IDE: Pycharm, Jupyter Notebook
+			- Framework-uri: QT framework, MongoDb, StateMachine
+			- Pachete/Biblioteci reprezentative utilizaate: tenserflow (keras), PyAudio, matplotlib(plotting), opencv, librosa)
+			- desing pattern-uri: Singleton, state machine
+	- Aplicatia pentru crearea unui raport a candidatului in urma unui interviu
 		- Prezentarea modulelor: 
-			- emotion detection through sound, 
+			- emotion detection through sound 
 			- text
 			- video
+			- speech to text
+		- Audio emotion recognition
+			- Dataset (infos, etc)
+			- Training - layere utilizate(LSTM, Layer)
+				- LSTM
+				- TimeDistributed
+				- Adding Sinus Noise pentru a scapa de oferfitting
+			- Accuracy, matrix confusion
+			- Testing
 		- Facial emotion regonition
 			- Face detection
 				- Open CV (prezentare, diferite exemple la ce se poate folosi si la ce a fost folosit in aplicatie)
 				- Features
 				- Eyes, mouth, jaw, eyes closed/opened, glasses on/off 
 			- Dataset (infos, etc)
-			- preprocessing (some images from pynb, graphs etc)
 			- Training (different models)
 				- modele (layere folosite), normalizare, shape
 				- Image generator pentru a scapa de overfitting
@@ -35,21 +67,8 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 			- Testing
 			- Using with opencv, pentru capturare imagini din cameraweb
 			- Detalii de implementare (poate bucati de cod reprezentative)
-		- Audio emotion recognition
-			- Dataset (infos, etc)
-			- preprocessing (some images from pynb, graphs etc)
-				- Fourier Transform, 
-				- Short Fourier Transform, 
-				- Spectogram, 
-				- Melspectogram, 
-				- Windowing 
-			- Training - layere utilizate(LSTM, Layer)
-				- LSTM
-				- TimeDistributed
-				- Adding Sinus Noise pentru a scapa de oferfitting
-			- Accuracy, matrix confusion
-			- Testing
-		- Text emotion recognition
+		- Text emotion recognition -> Prezentare minima deoarece cristi se va ocupa
+			- Speech to text (de prezentat)
 			- Dataset (infos etc)
 			- Transformare (preprocesare)
 				- fiecare text trece prin urmatorul proces:
@@ -83,14 +102,30 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 					- cum  este gandit pipeline-ul ?
 					- layere-le utilizate
 					- de ce sunt aceste layere utilizate ?
-						
-						- Generarea fisei candidatului ????
-						- Setari pentru activare/dezactivare
-		
 		- Prezentarea aplicatiei propiu zisa
-			- Interfata 
 			- Ghid de utilizare
-			- Live interviu/inregistrat
+			- Interfata (white theme/dark theme) + explicare context State Machine
+			- Activarea/Dezactivarea modulelor
+			- Selectarea microfonului
+			- Modul identificare a emotiilor
+				- Buton Start, Stop, Pause
+				- identificarea emotiilor la 4 secunde pentru audio
+				- identificarea emotiilor la 4 secunde pentru video
+				- identificarea emotiilor/caracterului din text
 			- Generarea raportului candidatului
+				- salvarea in mongodb + mongofs
+				- ce se salveaza
+				- aducerea date
+			- Vizualizarea tuturor rapoartelor persoanei care este intervievata
+				- campurile afisate
+				- delete
+				- export (TO DO)
+			- Modul vizualizare raport
+				- explicatie imagine video
+				- explicatie spectograma audio
+				- label video pentru predictie
+				- label audio pentru predictie
+				- label text pentru predictie
+				- highlight text
 	- Imbunatariri viitoare
-	- Concluzie
+	- Concluzii

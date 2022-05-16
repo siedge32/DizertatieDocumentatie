@@ -1,0 +1,83 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{emotion_recognition_survery}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CVKV}{%
+         family={C.\bibnamedelima Vinola},
+         familyi={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+         given={K.\bibnamedelima Vimaladeví},
+         giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CVKV1}
+    \strng{fullhash}{CVKV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 16.05.2022}
+    \field{title}{A Survey on Human Emotion Recognition Approaches, Databases
+  and Applications}
+  \endentry
+
+  \entry{audio_emotion_recognition0}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ACNGIIT}{%
+         family={Anagnostopoulos C\bibnamedelima N},
+         familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+         suffix={Iliou\bibnamedelima T},
+         suffixi={I\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Giannoukos\bibnamedelima I.},
+         giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ACNITGI1}
+    \strng{fullhash}{ACNITGI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Artificial Intelligence Review, 2015, 43(2):155-177.
+  (in NETHERLANDS)}
+    \field{note}{Accessed: 16.05.2022}
+    \field{title}{Features and classifiers for emotion recognition from speech:
+  a survey from 2000 to 2011}
+  \endentry
+
+  \entry{articol_ibima}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BHABLAR}{%
+         family={Bogdan\bibnamedelima HANGANU},
+         familyi={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+         suffix={Lucian Andrei\bibnamedelima RADU},
+         suffixi={L\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+         given={Alexandra\bibnamedelima BAICOIANU},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BHLARAB1}
+    \strng{fullhash}{BHLARAB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://ibima.org/accepted-paper/machine-learning-for-condition-monitoring-latest-trend-and-review/}}
+    \field{note}{Accessed: 20.05.2020}
+    \field{title}{Machine Learning For Condition Monitoring: Latest Trend And
+  Review}
+  \endentry
+\enddatalist
+\endinput
