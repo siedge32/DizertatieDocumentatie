@@ -1,27 +1,29 @@
 NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 - Abstract	DONE
-- Introducere
-	- Emotion recognition using
+- Introducere DONe
+	- Emotion recognition using Done
 		- audio	DONE
-		- video 
-		- text
-	- Other types of emotion regonition (ex. Human Body gesture)
-	- Aplicatii similare
-		- ex 1
-		- ex 2
+		- video DONE
+		- text  DONE
+	- Other types of emotion regonition (ex. Human Body gesture) DONE
+	- Aplicatii similare DONE
+		- ex 1 DONE
+		- ex 2 DONE
+	- Diferenta DONE
 	- Motivatie DONE
-	- Obiective
-	- Utilitate (vezi utilitate in Google Docs)
-	- Structurarea lucrarii: prezentare in mare despre aplicatii
+	- Obiective DONE
+	- Utilitate (vezi utilitate in Google Docs) DONE
+	- Structurarea lucrarii: prezentarea capitolelor urmatoare DONE
 - Subiecte
 	- Notiuni teoretice necesare
 		- Inteligenta artificiala
 			- Clasificare tipuri de invatare:
 				- Invatare supervizata
 				- Invatare nesupervizata
+				- Invatare prin intarire (reinforcemnt)
 			- Antrenare utilizand placa video
 			- Cuda, Nvidia etc
-		- Procesare Digitala de emnal
+		- Procesare Digitala de semnal
 			- preprocessing (some images from pynb, graphs etc)
 				- Fourier Transform,
 				- Short Fourier Transform,
@@ -107,7 +109,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 			- Interfata (white theme/dark theme) + explicare context State Machine
 			- Activarea/Dezactivarea modulelor
 			- Selectarea microfonului
-			- Modul identificare a emotiilor
+			- Modul intervievare
 				- Buton Start, Stop, Pause
 				- identificarea emotiilor la 4 secunde pentru audio
 				- identificarea emotiilor la 4 secunde pentru video

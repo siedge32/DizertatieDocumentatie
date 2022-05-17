@@ -58,26 +58,63 @@
   a survey from 2000 to 2011}
   \endentry
 
-  \entry{articol_ibima}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=BHABLAR}{%
-         family={Bogdan\bibnamedelima HANGANU},
-         familyi={B\bibinitperiod\bibinitdelim H\bibinitperiod},
-         suffix={Lucian Andrei\bibnamedelima RADU},
-         suffixi={L\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
-  R\bibinitperiod},
-         given={Alexandra\bibnamedelima BAICOIANU},
-         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+  \entry{google_speech_to_text}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://cloud.google.com/speech-to-text/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{Google Speech to Text}
+  \endentry
+
+  \entry{big_five_personality_wiki}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://en.wikipedia.org/wiki/Big_Five_personality_traits/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{Big Five personality traits}
+  \endentry
+
+  \entry{open_cv}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://opencv.org/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{OpenCv}
+  \endentry
+
+  \entry{human_body_lang_darwin}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=DC}{%
+         family={Darwin},
+         familyi={D\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Prodger},
+         familyi={P\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
       }}%
     }
-    \strng{namehash}{BHLARAB1}
-    \strng{fullhash}{BHLARAB1}
+    \strng{namehash}{DCPP1}
+    \strng{fullhash}{DCPP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-  \field{howpublished}{\url{https://ibima.org/accepted-paper/machine-learning-for-condition-monitoring-latest-trend-and-review/}}
-    \field{note}{Accessed: 20.05.2020}
-    \field{title}{Machine Learning For Condition Monitoring: Latest Trend And
-  Review}
+    \field{howpublished}{Oxford University Press, USA, 1998}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{The expression of the emotions in man and animals}
+  \endentry
+
+  \entry{noldus}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.noldus.com/facereader/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{Noldus FaceReader}
+  \endentry
+
+  \entry{imotions}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://imotions.com/biosensor/fea-facial-expression-analysis/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{IMotions Fea - Facial Expression Analysis}
   \endentry
 \enddatalist
 \endinput
