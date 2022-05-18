@@ -152,30 +152,133 @@
 	În urmatorele capitole, vom trece printr-o inițiere în inteligența artficială, procesare digitală de semnal, procesare de imagini și text. Având aceste cunoștiințe asimilate, următoarele subiecte propuse care vor fi comentate se vor afla în sfera tehnologiilor utilizate, fără de care nu s-ar fi putut crea aceste teste, precum și aplicația "Multimodal Emotion Detection". 
 	\clearpage
 	
-	% Diacritice
 	\section{Noțiuni teoretice}
 	\subsection{Inteligența artificială}
-	David Fogel a definit inteligenta ca fiind "abilitatea unui sistem de a se adapta astfel încât să își poată îndeplini scopurile cu succes". Astfel, o masinarie programata dotata cu inteligenta artificiala este un sistem complex capabil sa faca decizii, fara nevoia interventiei unei persoane, simuland inteligenta umana. Perturbarea functionarii unui astfel de sistem poate altera fluxul evenimentelor in luarea deciziilor, ajungand astfel la rezultate nejustificabile. Principalele subcategorii ale I.A. sunt: machine learning (invatare automata) si deep learning (invatare profunda).
+	David Fogel a definit inteligența ca fiind "abilitatea unui sistem de a se adapta astfel încât să își poată îndeplini scopurile cu succes". Astfel, o mașinărie programată și dotată cu inteligență artificială este un sistem complex capabil să facă decizii, fără nevoia intervenției unei persoane, simulând inteligența umană. Perturbarea funcționării unui astfel de sistem poate altera fluxul evenimentelor în luarea deciziilor, ajungând astfel la rezultate nejustificabile. Principalele subcategorii ale I.A. sunt: machine learning (învățare automată) și deep learning (învățare profundă).
 		
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=0.8]{images/AI_ML_DL.png}
 		\end{center}
-		\caption{Dezvoltarea inteligentei artificiale\newline
+		\caption{Dezvoltarea inteligenței artificiale\newline
 			\hspace{\linewidth}https://towardsdatascience.com/artificial-intelligence-vs-machine-learning-vs-deep-learning-2210ba8cc4ac/}
 		\label{fig:AI_ML_DL}
 	\end{figure}
 	
-	In Figura \ref{fig:AI_ML_DL} se observa ca ...
+	Așa cum se observă în Figura \ref{fig:AI_ML_DL}, putem afirmă că inteligența artificială este un termen mai vast care cuprinde celelalte două subcategorii. Aplicațiile care utilizează acest tip de tehnologie imită funcțiile cognitive pe care oamenii le asociază cu mințile umane, cum ar fi învățarea sau rezolvarea anumitor probleme.
+	
+	Învățarea automată (machine learning) înglobează algoritmii clasici pentru diferite tipuri de sarcini, precum regresia sau clasificarea. Acești algoritmi sunt dependenți în permanență de datele utilizate în procesul antrenării. Cu cât sunt mai multe date și cu cât aceste date sunt mai relevante pentru problema care încearcă să se soluționeze, randamentul acestora va crește. Antrenarea lor reprezintă cel mai important pas, deoarece în acest proces, se presupune minimizarea funcției de eroare (loss function). Rolul acesteia este de a stabili valorile de adevăr între ce a fost prezis, și adevărata clasă a datelor respective. În raport cu răspunsul funcției de eroare în cauză, anumite valori denumite greutăți (weights) vor fi actualizate.
+	
+	În învățarea automată există două categorii de date din care se poate învăța: date etichetate și date neetichetate. În prima categorie, atât parametrii de intrare cât și cei de ieșire sunt într-o formă ușor de citit pentru mașină, fiind nevoie de o cantitate mare de timp pentru a putea eticheta. În cazul datelor neetichetate, este nevoie de o soluție mai complexă pentru a putea utiliza acele informații. Astfel, reies la suprafață trei tipuri de învățare în machine learning:
+	\begin{itemize}
+		\item Învățare supervizată: este una din cele mai de bază tipuri de învățare automată. Chiar dacă este antrenat cu date etichetate, acest gen de învățare este unul foarte puternic. Se folosește un set de date (sau o parte din acest set de date, în general referindu-ne ca set de antrenare), care servește algoritmului cu scop de pregătire, iar alt set de date pentru a testa performanțele modelului.
+		\item Învățare nesupervizată: principalul avantaj al acestei categorii este capacitatea algoritmilor de a lucra cu seturi de date neetichetate, eficientizând timpul programatorului. Permit astfel algoritmilor să exploreze și să găsească diferite șabloane și asocieri în seturile de date.
+		\item Învățare prin "întărire" (reinforcement): se inspiră direct din modelul în care ființele umane învață din experiențele din viața de zi cu zi. Dispune de un algoritm care se îmbunătățește pe sine și învață din situații noi folosind o metodă de "încearcă și greșește" (în engleză trial and error). Rezultatele favorabile sunt încurajate sau "întărite", iar rezultatele greșite sunt descurajate sau "pedepsite".
+	\end{itemize}
+	
+	Referitor la Figura \ref{fig:AI_ML_DL}, se poate constanta că machine learning este un domeniu destul de îmbătrânit, care încorporează metode și algoritmi, precum: Naive Bayes Classifier, Support Vector Machine, Random Forest. 
+
+	Recent, în industria inteligenței articiale, a apărut conceptul de deep learning, care asamblează rețele artificiale neurale cu mai multe straturi. Deep learning poate fi definit ca un subset al învățării automate, care încearcă rezolvarea problemelor mai complexe prin găsirea unor diferite șabloane (pattern-uri) în date, acestea pentru oameni fiind insesizabile cu ochiul liber.
+
+	Avantajul pe care îl aduc aceste tipuri de rețele față de cele tradiționale, este dat de eliminarea necesității de a extrage caracteristici (feature) din cadrul setului de date. Rezultatul extragerii caracteristicilor din setul de date definește o reprezentare abstractă a datelor. Acest proces este de obieci destul de complicat, care necesită cunoștințe detaliate în aria specifică a problemei care se încearcă soluționarea. Pasul extragerii trebuie revizuit de multiple ori, testat și rafinat pentru a obține rezultate optime.
+	
+	\clearpage
+	
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[scale=0.7]{images/ML_DL.png}
+		\end{center}
+		\caption{Analogie învățare automată și învățare profundă\newline
+			\hspace{\linewidth}https://www.researchgate.net/figure/Comparison-between-ML-and-Dl-algorithm\_fig5\_344628869/}
+		\label{fig:ML_DL}
+	\end{figure}
+
+	Pe de altă parte, în Figura \ref{fig:ML_DL}, se poate observa cum în cazul învățării profunde, pasul de extragere a caracteristicilor nu mai este necesar să fie executat de către programator, ci devine parte în procesul de antrenare a rețelei artificiale. Datele sunt brute și abstractizate astfel încât să poată fi memorate de diversele straturi ale algoritmului inteligent. Această reprezentare comprimată a datelor de intrare este utilizată pentru a construi rezultatul.
+
+	Cu ajutorul rețelelor neurale profunde, acestea au făcut posibilă înțelegerea a seturilor de date complexe, precum semnalul audio reprezentând vocea umană, expresiile faciale și textul asociat cu fraze. Datele de antrenare folosite (care vor fi prezentate în capitolele următoare), sunt etichetate, făcând astfel posibilă identificare emoțiilor și a personalității candidatului. În secțiunea următoare, vom prezenta în mod minimalist modelele utilizate în aplicație:
+	\begin{itemize}
+		\item Rețele neurale convoluționale
+		\item Rețele neurale recurente
+	\end{itemize} 
+
+	\clearpage
+	\subsubsection{Rețele neurale convoluționale}
+	O rețea neurală convolutională este un de algoritm inteligent care face parte din clasa modelelor deep learning. În general folosite în vederea artificială (computer vision), CNN (convolutional neural network) primește ca date de intrare, în majoritatea cazurilor, imagini (sau date care au fost structurate sub forma imaginilor), iar în urmă diferitelor operațiuni, se vor găsi pattern-uri în datele de antrenare, nevizibile unei persoane în mod natural. Sunt distinse printre alte tipuri de modele datorită performanțelor ridicate cu date care provin din: imagini, vorbit 	sau semnal audio.
+	
+	Din punct de vedere structural, o rețea neurală convolutională este alcătuită din următoarele componente:
+	\begin{itemize}
+		\item \textbf{Date de intrare}: cum este menționat mai sus, input-ul poate să provină din mai multe categorii, având și canale diferite de culori. Nu există o limită privind dimensiunea datelor, deoarece, scopul întregului proces este de a reduce dimensionalitatea, păstrând datele într-o formă compresată, fără pierderi de informații.
+		\item \textbf{Strart(uri) de convoluție}: este elementul de bază al unei astfel de rețele, fiind locul în care majoritatea calculelor au loc. În funcție de dimensionalitatea datelor (matrici 2d sau 3d), va avea loc operația de convoluție, cu ajutorul unor măști (kernel). În urma acestui proces, se vor extrage anumite trăsături importante din cadrul datelor de intrare, care vor ajuta în determinarea apartenenței la o anumită clasă. De exemplu, printr-o speculație, putem considera din Figura \ref{fig:cnn}, în urma unui proces de convoluție, că se poate determina dacă piciorul mamiferului este sau nu al unei zebre. În urmă acestui proces, în funcție de numărul filtrelor, pasul (stride) și padding, se obțin hărți ale caracteristicilor (feature maps).
+		\item \textbf{Strat(uri) de pooling}: au rolul de a reduce substanțial dimensiunea spațială, scăzând cantitatea de parametrii utilizați pentru calcule în rețea. Totodată, poate controla și "supra-adaptarea" (overfitting) rețelei. Printre tipurile de straturi de pooling, putem menționa următoarele:
+		\begin{itemize}
+			\item \textbf{Max pooling}: fiind cea mai comună abordare, deoarece oferă cele mai bune rezultate, max pooling va selecta elementul maxim din harta caracteristicilor (porțiunea filtrată de către mască)
+			\item \textbf{Average pooling}: cum reiese și din nume, va selecta valoare medie din porțiunea filtrată de mască
+		\end{itemize}
+		\item \textbf{Strat(uri) de conectare}: sunt folosite cu scopul conectării neuronilor către stratul de ieșire, unde în funcție de valorile ponderilor fiecărui neuron în parte, se va putea face calculul posibilității apartenenței la o anumită clasă
+	\end{itemize} 
+	
+	\clearpage
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[scale=0.29]{images/cnn.png}
+		\end{center}
+		\caption{Rețea neurală convoluțională\newline
+			\hspace{\linewidth}https://developersbreach.com/convolution-neural-network-deep-learning/}
+		\label{fig:cnn}
+	\end{figure}
+	
+	Împreună cu informațiile pe care le-am dobândit în urmă prezentării legate de rețelele neurale convolutionale, putem comenta asupra Figurii \ref{fig:cnn}. Din datele folosite pentru antrenare, filtrele aplicate succesiv ne vor ajută să găsim caracteristici. Transmise mai departe către stratul conectat, se va putea face interpretarea rezultatului, în funcție de gradul de apartenența la fiecare clasă în parte. Rezultatul va fi exprimat în procentaj, iar output-ul cu procentajul cel mai ridicat va exprima clasa decisă.
+	\clearpage
+	\subsubsection{Rețele neurale recurente}
+	% Diacritice
+	Retelele neurale recurente sunt un tip robust de retea neurala, folositoare pentru procesarea datelor secventiale, ordinea lor avand importanta. Derivate din retelele cu propagare inainte (feedforward), RNN-urile (recurrent neural network) prezinta un comportament asemanator cu cel al creierului uman.
+	
+	La fel ca ceilalti algoritmi de deep learning, retelele neurale recurente sunt relativ vechi, fiind conceputa in 1980, dar doar in ultimii ani a fost descoperit cu adevart potentialul acestora. Cresterea in puterea computationala, accesul la cantitati masive de date pe care le putem utiliza si aparitia straturilor cu memorie lunga pe durata scurta (long short-term memory), au adus RNN-urile in prim plan.
+	
+	Dupa cum mentioneaza Lex Fridman ("Ori de cate ori exista o secventa de date temporale, unde continutul spatial este mai important decat cel al fiecarui cadru individual"), retelele neurale recurente au oferit suport pe parcursul lucrarii pentru predictia datelor cu stransa legatura temporala. Aceste retele si-au indeplinit scopul in aplicatia "Multimodel Emotion Recognition" deoarece atat datele audio cat si cele video depinde de ordinea lor in timp.
+	
+	Datele secventiale sunt doar date ordonate in functide de un anumite criteriu. Spre exemplu, putem mentiona ca date secventiale datele financiare sau chiar secventa de ADN. Cele mai populare date secventiale sunt reprezentate de catre seria temporala, in care sunt enumerate in ordine cronologica. Datele provenite din vorbit, care sunt utilizate in aplicatie pentru a prezice emotia, sunt adevate acestei retele datorita sortarii cronologice standard.
+	
+	Pentru a intelege arhitectura acestor retele, trebuia mai intai sa avem cunostinte referitoare la mecanismul utilizat de aceasta retea, propagarea inainte. Intr-o retea neurala feed-forward, informatiile se misca doar intr-o singura directie: de la stratul de intrare, prin straturile ascunse, pana la nivelul de iesire. Informatia se deplaseaza direct prin retea si nu atinge acelasi un neuron de doua ori. Retelele simple nu au niciun mecanism de memorare, cu privire la intrarea pe care o primesc, fiind slabe in a prezice ce urmeaza. Intr-un RNN, informatia circula sub forma unei bucle. Cand se ia o decizie, se va evalua input-ul curent cat si ce a invatat din experientele anterioare.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.47]{images/fwd_recc.png}
+		\end{center}
+		\caption{Propagare recurentă și înainte\newline
+			\hspace{\linewidth}https://builtin.com/data-science/recurrent-neural-networks-and-lstm/}
+		\label{fig:fwd_recc}
+	\end{figure} 
+
+	In Figura \ref{fig:fwd_recc}, este ilustrata diferenta dintre fluxul de intratre intr-o reatea neurala recurenta si o retea cu propagare inainte.
+	
+	O retea neurala feed-forward atribuie, ca toti ceilalti algoritmi de deep learning, o matrice de ponderi care va fi aplicata asupra datelor de intrare, urmand mai apoi sa produca rezultatul. Totodata, va avea loc procesul de propagare inapoi (back propagation) petru actualizarea ponderiilor. 
+	
+	Propagarea inapoi este utilizata pentru a calcula gradientul unei functii de eroare in raport cu ponderile unei retele neurale. Algoritmul isi parcurge calea inapoi prin straturile retelei, calculand derivatele partiale a ponderilor. Aceasta tehnica este folosita pentru a reduce marjele de eroare in timpul antrenamentului.
+	
+	Mai jost sunt listate diferentele dintre o retea normala si una recurenta, in contextul celor doua propagari:
+	\begin{itemize}
+		\item Propagarea inainte: in acest pas, RNN-ul va inainta prin aplicarea ponderilor si pentru datele anterior procesate
+		\item Propagarea inapoi: o astfel de retea modifica greutatile atat prin gradient descent cat si prin propagarea inversa in timp (back propagation through time)
+	\end{itemize}
+
+	Principalele neajunsuri in cazul acestor algoritmi au aparut datorita gradientului. Primul este denumit "Explozia gradientului" (Expploading Gradient) si apare in cazurile cand se asigneaza valori semnificativ de mari pentru ponderi. Aceasta este usor rezolvabila prin truncarea/plafonarea acestuia. A doua problema o reprezinta "Gradientul care dispare" (Vanishing Gradient), care apare atunci cand valorile gradientilor sunt prea mici, si modelul inceteaza sa invete ori o face intr-un timp prea mare. Pentru a rezolva aceasta problema, au fost introduse retelele cu LSTM (Long Short-Term Memory).
+	
+	Retelele LSTM sunt o extensie pentru RNN-uri, unde se extinde durata memoriei interne. Sunt folosite ca elemente de baza pentru straturile retelelor recurente. LSTM-urile asociaza alte inca un set diferit de ponderi folosit pentru a oferi un grad de importanta asupra datelor noi. In functie de aceste ponderi, datele noi vor putea impacta sau nu pe cele deja existente.
+	
+	Aceste straturi ofera suport retelelor recurente sa-si "aminteasca" input-urile pentru o perioada mai lunga de timp. Functionalitate lor este asemanatoare cu cea a unui calculator, avand capabilitati de citire, scriere sau stergere. Aceasta memorie poate fi privita precum o celula cu porti, care decide daca sa stocheze informatia, sa o stearga, in functie de importanta pe care trebuie sa o acorde.
+	
+	\clearpage
+	\subsubsection{Antrenare utilizând procesorul grafic, CUDA}
+	
 	\clearpage
    \printbibliography
    \clearpage
-   %\lstlistoflistings
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[scale=0.4]{images/plagiat.PNG}
 		\end{center}
-		\caption{Licență similaritate}
+		\caption{Licență similaritate }
 		\label{fig:sim}
 	\end{figure} 	
 \end{document}

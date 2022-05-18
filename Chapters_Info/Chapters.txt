@@ -1,10 +1,12 @@
 NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
+16.05
 - Abstract	DONE
-- Introducere DONe
-	- Emotion recognition using Done
-		- audio	DONE
-		- video DONE
-		- text  DONE
+- Introducere DONE
+17.05
+- Emotion recognition using Done
+	- audio	DONE
+	- video DONE
+	- text  DONE
 	- Other types of emotion regonition (ex. Human Body gesture) DONE
 	- Aplicatii similare DONE
 		- ex 1 DONE
@@ -14,15 +16,22 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 	- Obiective DONE
 	- Utilitate (vezi utilitate in Google Docs) DONE
 	- Structurarea lucrarii: prezentarea capitolelor urmatoare DONE
+
 - Subiecte
 	- Notiuni teoretice necesare
 		- Inteligenta artificiala
-			- Clasificare tipuri de invatare:
-				- Invatare supervizata
-				- Invatare nesupervizata
-				- Invatare prin intarire (reinforcemnt)
-			- Antrenare utilizand placa video
-			- Cuda, Nvidia etc
+			- I.A. in general DONE
+18.05
+			- Machine Learning DONE
+			- Clasificare tipuri de invatare: DONE
+				- Invatare supervizata DONE
+				- Invatare nesupervizata DONE
+				- Invatare prin intarire (reinforcemnt) DONE
+			- Deep Learning Done
+				- CNN
+				- RNN
+19.05
+			- Antrenare utilizand placa video, Cuda, Nvidia etc
 		- Procesare Digitala de semnal
 			- preprocessing (some images from pynb, graphs etc)
 				- Fourier Transform,
@@ -32,6 +41,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- Windowing
 		- Procesarea imaginilor
 			- preprocessing (some images from pynb, graphs etc) + de vazut ce a mai fost folosit
+20.05
 		- Procesarea textului (minimal)
 			- TO DO
 	- Tehnologii utilizate:
@@ -42,6 +52,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 			- Framework-uri: QT framework, MongoDb, StateMachine
 			- Pachete/Biblioteci reprezentative utilizaate: tenserflow (keras), PyAudio, matplotlib(plotting), opencv, librosa)
 			- desing pattern-uri: Singleton, state machine
+21.05
 	- Aplicatia pentru crearea unui raport a candidatului in urma unui interviu
 		- Prezentarea modulelor: 
 			- emotion detection through sound 
@@ -69,7 +80,8 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 			- Testing
 			- Using with opencv, pentru capturare imagini din cameraweb
 			- Detalii de implementare (poate bucati de cod reprezentative)
-		- Text emotion recognition -> Prezentare minima deoarece cristi se va ocupa
+22.05
+		- Text emotion recognition -> Prezentare minima deoarece Cristi are ownership
 			- Speech to text (de prezentat)
 			- Dataset (infos etc)
 			- Transformare (preprocesare)
@@ -114,6 +126,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- identificarea emotiilor la 4 secunde pentru audio
 				- identificarea emotiilor la 4 secunde pentru video
 				- identificarea emotiilor/caracterului din text
+23.05
 			- Generarea raportului candidatului
 				- salvarea in mongodb + mongofs
 				- ce se salveaza
@@ -129,5 +142,9 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- label audio pentru predictie
 				- label text pentru predictie
 				- highlight text
+24.05
 	- Imbunatariri viitoare
 	- Concluzii
+	- Corectare 
+	- Mici modificari legate de structura
+	- Schimbat sintagme care apac ca plagiat
