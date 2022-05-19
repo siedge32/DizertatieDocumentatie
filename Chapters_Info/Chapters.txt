@@ -28,19 +28,17 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- Invatare nesupervizata DONE
 				- Invatare prin intarire (reinforcemnt) DONE
 			- Deep Learning Done
-				- CNN
-				- RNN
+				- CNN DONE
+				- RNN DONE
 19.05
-			- Antrenare utilizand placa video, Cuda, Nvidia etc
+			- Antrenare utilizand placa video, Cuda, Nvidia etc DONE
 		- Procesare Digitala de semnal
-			- preprocessing (some images from pynb, graphs etc)
-				- Fourier Transform,
-				- Short Fourier Transform,
-				- Spectogram,
-				- Melspectogram,
-				- Windowing
-		- Procesarea imaginilor
-			- preprocessing (some images from pynb, graphs etc) + de vazut ce a mai fost folosit
+			- scurta prezentare DONE
+			- preprocessing 
+				- Fourier Transform DONE
+				- Short Fourier Transform DONE
+				- Spectogram and Melspectogram DONE
+		- Procesarea imaginilor	-> Scos deoarece nu exista subiecte indeajus de vorbit fara aplicatia concreta
 20.05
 		- Procesarea textului (minimal)
 			- TO DO
@@ -49,7 +47,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 			- Python (categorizare limbaje de programare)
 			- Distributia Anaconda
 			- IDE: Pycharm, Jupyter Notebook
-			- Framework-uri: QT framework, MongoDb, StateMachine
+			- Framework-uri: QT framework, MongoDb
 			- Pachete/Biblioteci reprezentative utilizaate: tenserflow (keras), PyAudio, matplotlib(plotting), opencv, librosa)
 			- desing pattern-uri: Singleton, state machine
 21.05
@@ -67,6 +65,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- Adding Sinus Noise pentru a scapa de oferfitting
 			- Accuracy, matrix confusion
 			- Testing
+22.05
 		- Facial emotion regonition
 			- Face detection
 				- Open CV (prezentare, diferite exemple la ce se poate folosi si la ce a fost folosit in aplicatie)
@@ -80,7 +79,6 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 			- Testing
 			- Using with opencv, pentru capturare imagini din cameraweb
 			- Detalii de implementare (poate bucati de cod reprezentative)
-22.05
 		- Text emotion recognition -> Prezentare minima deoarece Cristi are ownership
 			- Speech to text (de prezentat)
 			- Dataset (infos etc)

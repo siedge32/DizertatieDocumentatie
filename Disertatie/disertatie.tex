@@ -230,16 +230,15 @@
 	Împreună cu informațiile pe care le-am dobândit în urmă prezentării legate de rețelele neurale convolutionale, putem comenta asupra Figurii \ref{fig:cnn}. Din datele folosite pentru antrenare, filtrele aplicate succesiv ne vor ajută să găsim caracteristici. Transmise mai departe către stratul conectat, se va putea face interpretarea rezultatului, în funcție de gradul de apartenența la fiecare clasă în parte. Rezultatul va fi exprimat în procentaj, iar output-ul cu procentajul cel mai ridicat va exprima clasa decisă.
 	\clearpage
 	\subsubsection{Rețele neurale recurente}
-	% Diacritice
-	Retelele neurale recurente sunt un tip robust de retea neurala, folositoare pentru procesarea datelor secventiale, ordinea lor avand importanta. Derivate din retelele cu propagare inainte (feedforward), RNN-urile (recurrent neural network) prezinta un comportament asemanator cu cel al creierului uman.
-	
-	La fel ca ceilalti algoritmi de deep learning, retelele neurale recurente sunt relativ vechi, fiind conceputa in 1980, dar doar in ultimii ani a fost descoperit cu adevart potentialul acestora. Cresterea in puterea computationala, accesul la cantitati masive de date pe care le putem utiliza si aparitia straturilor cu memorie lunga pe durata scurta (long short-term memory), au adus RNN-urile in prim plan.
-	
-	Dupa cum mentioneaza Lex Fridman ("Ori de cate ori exista o secventa de date temporale, unde continutul spatial este mai important decat cel al fiecarui cadru individual"), retelele neurale recurente au oferit suport pe parcursul lucrarii pentru predictia datelor cu stransa legatura temporala. Aceste retele si-au indeplinit scopul in aplicatia "Multimodel Emotion Recognition" deoarece atat datele audio cat si cele video depinde de ordinea lor in timp.
-	
-	Datele secventiale sunt doar date ordonate in functide de un anumite criteriu. Spre exemplu, putem mentiona ca date secventiale datele financiare sau chiar secventa de ADN. Cele mai populare date secventiale sunt reprezentate de catre seria temporala, in care sunt enumerate in ordine cronologica. Datele provenite din vorbit, care sunt utilizate in aplicatie pentru a prezice emotia, sunt adevate acestei retele datorita sortarii cronologice standard.
-	
-	Pentru a intelege arhitectura acestor retele, trebuia mai intai sa avem cunostinte referitoare la mecanismul utilizat de aceasta retea, propagarea inainte. Intr-o retea neurala feed-forward, informatiile se misca doar intr-o singura directie: de la stratul de intrare, prin straturile ascunse, pana la nivelul de iesire. Informatia se deplaseaza direct prin retea si nu atinge acelasi un neuron de doua ori. Retelele simple nu au niciun mecanism de memorare, cu privire la intrarea pe care o primesc, fiind slabe in a prezice ce urmeaza. Intr-un RNN, informatia circula sub forma unei bucle. Cand se ia o decizie, se va evalua input-ul curent cat si ce a invatat din experientele anterioare.
+	Rețelele neurale recurente sunt un tip robust de rețea neurală, folositoare pentru procesarea datelor secvențiale, ordinea lor având importantă. Derivate din rețelele cu propagare înainte (feedforward), RNN-urile (recurrent neural network) prezintă un comportament asemănător cu cel al creierului uman.
+
+	La fel că ceilalți algoritmi de deep learning, rețelele neurale recurente sunt relativ vechi, fiind concepute în 1980, dar doar în ultimii ani a fost descoperit cu adevărat potențialul acestora. Creșterea în puterea computațională, accesul la cantități masive de date pe care le putem utiliza și apariția straturilor cu memorie lungă pe durata scurtă (long short-term memory), au adus RNN-urile în prim plan.
+
+	După cum menționează Lex Fridman ("Ori de câte ori există o secvență de date temporale, unde conținutul spațial este mai important decât cel al fiecărui cadru individual"), rețelele neurale recurente au oferit suport pe parcursul lucrării pentru predicția datelor cu strânsă legătură temporală. Aceste rețele și-au îndeplinit scopul în aplicația "Multimodel Emotion Recognition" deoarece atât datele audio cât și cele video depind de ordinea lor în timp.
+
+	Datele secvențiale sunt doar date ordonate în funcție de un anumite criteriu. Spre exemplu, putem menționa că date secvențiale, datele financiare sau chiar secvența de ADN. Cele mai populare date secvențiale sunt reprezentate de către seria temporală, în care sunt enumerate în ordine cronologică. Datele provenite din vorbit, care sunt utilizate în aplicație pentru a prezice emoția, sunt adecvate acestei rețele datorită sortării cronologice standard.
+
+	Pentru a înțelege arhitectură acestor rețele, trebuia mai întâi să avem cunoștințe referitoare la mecanismul utilizat de această rețea, propagarea înainte. Într-o rețea neurală feed-forward, informațiile se mișcă doar într-o singură direcție: de la stratul de intrare, prin straturile ascunse, până la nivelul de ieșire. Informația se deplasează direct prin rețea și nu atinge același un neuron de două ori. Rețelele simple nu au niciun mecanism de memorare, cu privire la intrarea pe care o primesc, fiind slabe în a prezice ce urmează. Într-un RNN, informația circulă sub formă unei bucle. Când se ia o decizie, se va evalua input-ul curent cât și ce a învățat din experiențele anterioare.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -250,30 +249,136 @@
 		\label{fig:fwd_recc}
 	\end{figure} 
 
-	In Figura \ref{fig:fwd_recc}, este ilustrata diferenta dintre fluxul de intratre intr-o reatea neurala recurenta si o retea cu propagare inainte.
+	În Figura \ref{fig:fwd_recc}, este ilustrată diferența dintre fluxul de intrare într-o rețea neurala recurentă și o rețea cu propagare înainte.
 	
-	O retea neurala feed-forward atribuie, ca toti ceilalti algoritmi de deep learning, o matrice de ponderi care va fi aplicata asupra datelor de intrare, urmand mai apoi sa produca rezultatul. Totodata, va avea loc procesul de propagare inapoi (back propagation) petru actualizarea ponderiilor. 
+	O rețea neurala feed-forward atribuie, că toți ceilalți algoritmi de deep learning, o matrice de ponderi care va fi aplicată asupra datelor de intrare, urmând mai apoi să producă rezultatul. Totodată, va avea loc procesul de propagare înapoi (back propagation) petru actualizarea ponderilor. 
 	
-	Propagarea inapoi este utilizata pentru a calcula gradientul unei functii de eroare in raport cu ponderile unei retele neurale. Algoritmul isi parcurge calea inapoi prin straturile retelei, calculand derivatele partiale a ponderilor. Aceasta tehnica este folosita pentru a reduce marjele de eroare in timpul antrenamentului.
+	Propagarea înapoi este utilizată pentru a calcula gradientul unei funcții de eroare în raport cu ponderile unei rețele neurale. Algoritmul își parcurge calea înapoi prin straturile rețelei, calculând derivatele parțiale ale ponderilor. Această tehnică este folosită pentru a reduce marjele de eroare în timpul antrenamentului.
 	
-	Mai jost sunt listate diferentele dintre o retea normala si una recurenta, in contextul celor doua propagari:
+	Mai jost sunt listate diferențele dintre o rețea normală și una recurentă, în contextul celor două propagări:
 	\begin{itemize}
-		\item Propagarea inainte: in acest pas, RNN-ul va inainta prin aplicarea ponderilor si pentru datele anterior procesate
-		\item Propagarea inapoi: o astfel de retea modifica greutatile atat prin gradient descent cat si prin propagarea inversa in timp (back propagation through time)
+		\item Propagarea înainte: în acest pas, RNN-ul va înainta prin aplicarea ponderilor și pentru datele anterior procesate
+		\item Propagarea înapoi: o astfel de rețea modifică greutățile atât prin gradient descent cât și prin propagarea inversă în timp (back propagation through time)
+	\end{itemize}
+	
+	Principalele neajunsuri în cazul acestor algoritmi au apărut datorită gradientului. Primul este denumit "Explozia gradientului" (Expploading Gradient) și apare în cazurile când se asignează valori semnificativ de mari pentru ponderi. Această este ușor rezolvabilă prin trunchierea/plafonarea acestuia. A două problemă o reprezintă "Gradientul care dispare" (Vanishing Gradient), care apare atunci când valorile gradienților sunt prea mici, iar modelul încetează să învețe ori o face într-un timp prea mare. Pentru a rezolva această problema, au fost introduse straturile LSTM (Long Short-Term Memory).
+	
+	LSTM sunt o extensie pentru RNN-uri, unde se prelungește durata memoriei interne. Sunt folosite că elemente de baza pentru straturile rețelelor recurente. LSTM-urile asociază încă un set diferit de ponderi folosit pentru a oferi un grad de importanță asupra datelor noi. În funcție de aceste ponderi, datele noi vor putea impacta sau nu pe cele deja existente.
+	
+	Aceste straturi oferă suport rețelelor recurente să-și "amintească" input-urile pentru o perioada mai lungă de timp. Funcționalitate lor este asemănătoare cu cea a unui calculator, având capabilități de citire, scriere sau ștergere. Această memorie poate fi privită precum o celulă cu porți, care decide dacă să stocheze informația, să o șteargă, în funcție de importanța pe care trebuie să o acorde.
+	
+	Antrenarea utilizând astfel de rețele poate deveni una costisitoare datorită cantităților mari de date și a complexității calculelor. Procesorul central devine depășit de această ușoare, iar timpul necesar antrenării pentru acești algoritmi poate crește. Soluționarea în acest caz vine prin utilizarea procesorului grafic, acolo unde placă video permite acest lucru.
+	
+	\clearpage
+	% Diacritice
+	\subsubsection{Antrenare utilizând procesorul grafic}
+	Procesorul grafic (graphical proccesing unit), dezvoltate initial pentru accelerarea procesarii grafice, pot imbunatati performanetele calculelor realizate intr-o retea neurala cu mai multe straturi. Au devenit in o parte esentiala a  infrastructurii intelgientei artificiale, iar procesoarele grafice noi au devenit specializate in acest domeniu.
+	
+	Principalul beneficiu al utilziarii procesorului grafic este dat de paralalizarea sau procesarea simultana a datelor. Exista patru tipuri de arhitecturi folosite pentru procesarea datelor in mod paraparalel :
+	
+	\begin{itemize}
+		\item Instructiune unica, date unice
+		\item Instructiune unica, date multiple
+		\item Instrucituni multiple, date unice
+		\item Instructiiuni multiple, date multiple
+	\end{itemize}
+	
+	Scopul initial al procesoarelor grafice erau pentru procesarea video, astfel solicitand utilizatorii sa inteleaga limbaje specifice precum OpenGL. In 2007, odata cu lansarea framework-ului (cadru de lucru) NVIDIA CUDA \cite{cuda}, aria utilizarii procesoarelor grafice a fost extinsa. CUDA se bazeaza pe limbajul de programare C si ofera un API pe care dezvoltatorii il pot folosi pentru a aplica puterea de computatie oferita de placa video in sarcinile de machine learning.
+	
+	Odata ce NVIDIA a introdus CUDA, au fost dezvoltate mai multe framework-uri pentru invatarea profunda, precum PyTorch si TensorFlow. Aceste tehnologii se folosesc de capabilitatiile oferite de CUDA, oferind o accesibilate mai mare pentru implementarile moderne de deep learning.
+	
+	Procesoarele grafice pot efectua calcula simultan. Acest lucru permite distribuirea proceselor de instruire si poate accelera semnificati operatiile de invatare automata. Folosind numarul mare de nuclee, putem utiliza mai putine resurse fara a sacrifica eficenta sau putere.
+	
+	Cand se defineste o arhitectura pentru retelele deep learning, urmatorii factori pot influenta decizia de a utiliza sau nu un procesor grafic:
+	\begin{itemize}
+		\item Latimea bandei de memorie: datorita meoria video dedica (VRAM), GPU-urile pot ofer latimea de banda necesara pentru a acomoda seturi de date
+		\item Dimensiunea setului de date: procesoarele grafice legate in paralel scaleaza mult mai rapid decat procesoarele centrale, permitand procesarea a unor seturi de date masiv din punc de vedere cantitav
+	\end{itemize}
+	
+	Datorita puterii de procesare a placilor grafice, modelele de deep learning folosite in aplictie au fost antrenate cu ajutorul cu procesorul grafic. Placa video utilizata in cauza este un GeForece RTX 2060 (editia laptop), oferind 1920 procesoare CUDA si 240 procesoare Tensor.
+	\clearpage
+	
+	\subsection{Procesare digitală de semnal}
+	Aceste tehnici complexe de procesare au fost utilizate in aplicatie pentru identificarea emotiei din voce. Aceasta procesare nu va identifica cuvintele rostite de candidat, ci va incerca in functie de anvelopa acustica, sa determina starea persoanei care este intervievata.
+	
+	In mod natural, vocea este transmisa urechii umane printr-o unda acustica care se deplaseaza prin intermediul aerului, cu viteza sunetului. Din momentul in care este inregistrata de catre un microfon, sunteul este transmis printr-un fir ca un semnal electric care se deplaseaza cu viteza luminii. Pentru a face acest eveniment posibil, semnalul acustric generat de corzile vocale umane trebuie mai intai transformat intr-un semnal electric si apoi convertit intr-o forma acustica, pentru a putea fi inteles de catre oammeni. Semnalul electric convertit este in mod conventional intr-o forma analogica. Adica este reprezentat ca o tensiune care variaza continuu intr-un interval dat (0 si 1). Datorta degradarii semnalului electric in cazul stocarii, a deplasarii acestuia pe distante lungi sau a procesarii de catre un calculator, se prefera transformarea lui intr-o forma digitala.
+	
+	Indiferent de domeniul utilizat (timpului sau frecventolor), urmatorii termeni prezentati mai jos vor ajuta in intelegarea procesului de identificare a emotiilor:
+	
+	\begin{itemize}
+		\item Rata de esantionare (Sample rate): reprezinta numarul de date (sample-uri) care sunt inregistrate intr-o secunda. Cu cant avem rata de esantionare mai mare, cu atat calitatea semnalului va fi mai ridicata. Spre exemplu, rata de esantionare folosita in general pentru scrierea CD-urilor cu muzica este de 44.1 KHz (kilo Hertzi). Asta inseamna ca o data la o secunda 44100 de date sunt inregistrate, pe care le putem studia.
+		\item Fereastra (Window): semnalul poate fi segmentat intr-un numarul egal de sample-uri
+		\item Numarul de linii spectrale: simbolizeaza numarul de frecvente identificate in urma transformarii din domeniul timpului in cel al frecventelor
 	\end{itemize}
 
-	Principalele neajunsuri in cazul acestor algoritmi au aparut datorita gradientului. Primul este denumit "Explozia gradientului" (Expploading Gradient) si apare in cazurile cand se asigneaza valori semnificativ de mari pentru ponderi. Aceasta este usor rezolvabila prin truncarea/plafonarea acestuia. A doua problema o reprezinta "Gradientul care dispare" (Vanishing Gradient), care apare atunci cand valorile gradientilor sunt prea mici, si modelul inceteaza sa invete ori o face intr-un timp prea mare. Pentru a rezolva aceasta problema, au fost introduse retelele cu LSTM (Long Short-Term Memory).
-	
-	Retelele LSTM sunt o extensie pentru RNN-uri, unde se extinde durata memoriei interne. Sunt folosite ca elemente de baza pentru straturile retelelor recurente. LSTM-urile asociaza alte inca un set diferit de ponderi folosit pentru a oferi un grad de importanta asupra datelor noi. In functie de aceste ponderi, datele noi vor putea impacta sau nu pe cele deja existente.
-	
-	Aceste straturi ofera suport retelelor recurente sa-si "aminteasca" input-urile pentru o perioada mai lunga de timp. Functionalitate lor este asemanatoare cu cea a unui calculator, avand capabilitati de citire, scriere sau stergere. Aceasta memorie poate fi privita precum o celula cu porti, care decide daca sa stocheze informatia, sa o stearga, in functie de importanta pe care trebuie sa o acorde.
+	Datele inregistarte de catre microfon se vor afla in domeniul timpului. In aceeasta sfera, principalul neajuns este reperzentat de insuficienta de operatii folositoare pe care le putem utiliza in identificarea emotiilor vocii. Pentru a satisface cerintele necesare analizei sentimentelor din voce, vom efectua trecerea din domeniul timpului in cel al frecventelor utilizand Transformata Fourier \cite{ft}.
 	
 	\clearpage
-	\subsubsection{Antrenare utilizând procesorul grafic, CUDA}
+	\subsubsection{Transformata Fourier}
+	Fiind folosita in multiple domenii precum procesarea imaginiilor, studiul semnalalelor (incluzand cele acustice), transformata Fourier este un procedeu matematic care ne ajuta la trecerea unui semnal din domeniul timpului in cel al frecventelor. Avantajul analizei in acest domeniu este dat gama diversificata de informatii precum si de operatii pe care le putem folosi.
+	
+	O puternica unealta matematica, transformata Fourier (Jean-Baptiset Joseph Fourier) asuma faptul ca un semnal poate fi descompus ca o suma de sinusuri/cosinusuri.
+	
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[width=\linewidth]{images/signals.png}
+		\end{center}
+		\caption{Semnal ca fiind o sumă de sinusuri\newline
+			\hspace{\linewidth}https://community.sw.siemens.com/s/article/what-is-the-fourier-transform}
+		\label{fig:singal_to_sinuses}
+	\end{figure}
+	
+	Din Figura \ref{fig:singal_to_sinuses} se poate observa cum un semnal definit de aplitudine si timp, poate descompus intr-o suma de sinusuri, de frecvente diferite.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.7]{images/FT_time_to_freq}
+		\end{center}
+		\caption{Domeniul frecvențelor \newline
+			\hspace{\linewidth}https://community.sw.siemens.com/s/article/what-is-the-fourier-transform}
+		\label{fig:signal_to_freq}
+	\end{figure}
+
+	Datorita motivelor enuntate in pagina anterioara care justifica necesitatea tranformarii in domeniul frecventelor, vom explica acest fenomen cu ajutorul Figurii \ref{fig:signal_to_freq}. Putem observa ca semnalul reprezentat de culoarea mov este descompus din alte trei semnale. In urma aplicarii transformatei Fourier peste acest semnal, liniile spectrale reprezinta principalele frecvente recunoscute.
+	
+	Din punct de vedere matematic, transformata Fourier este :
+	\begin{equation}
+		\label{ft_equation}
+		S_x(f) = \int_{-\infty}^{+\infty} x(t)e^{-j2 \pi ft} dt
+	\end{equation}
+	
+	unde $S_x(f)$ reprezintă frecvența măsurată în Hz iar $x(t)$ este semnalul în domeniul timpului. Rezultatul acestei operații este un număr complex (spre exemplu $a + bj$ este un număr complex întrucât a reprezintă partea reală iar b partea imaginară).
+	
+	\subsubsection{Transformata Fourier pe termen scurt}
+	Adesea, transformata Fourier este evitata in a fi folosita in forma ei simpla in practica. Motivul este dat de variatiile prea bruste si multiple pe care semnalul le poate avea in domeniul timpului. Interpretarea unui semnal dintr-un singur segment devine problematica si costisitoare din punct de vedere al performantelor. O solutie fezabila este segmantarea semnalului in intervale mici, care mai apoi vor fi interpretate in mod individual. Aceasta tehnica poarta numele de transformata Fourier pe termen scurt (short time Fourier Transform, STFT).
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=\linewidth]{images/windowing.PNG}	
+		\end{center}
+		\caption{Domeniul frecvențelor \newline
+			\hspace{\linewidth}https://nl.mathworks.com/help/signal/ref/stft.html}
+		\label{fig:windowing}
+	\end{figure}
+
+	Dupa cum se poate observa in Figura \ref{fig:windowing}, se aplica succesiv transformata Fourier pe segmente mici de date. Lungimea unui segment este aleasa in mod arbitrar, dar se recomanda sa se foloseasca puteri ale lui 2, pentru a spori eficienta algortimului. Acest proces este documentat ca fiind etapa de "windowing". O propietate speciala pe care o are acest procedeu este dat de intercalarea segmentelor. Prin utilizarea ferestrei in mod intercalat, vom avea posibilitatea de a obtine valorile frecventelor intr-un mod mai determinist.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=\linewidth]{images/spectogram.PNG}	
+		\end{center}
+		\caption{Spectograma unui fișier audio folosit în antrenare}
+		\label{fig:spectogram}
+	\end{figure} 
+
+	Rezultatul obtinut in urma aplicarii trasnformatei Fouerir pe termen scurt poate fi interpret sub forma unui grafic care poarta denumirea de spectograma sau "waterfall" (cascada). In exemplul din Figura \ref{fig:spectogram}, intr-un spatiu cartezian XOY, axa OX reprezinta timpul iar cealalta axa arata puterea lui. In functie de intensitatea culorilor, putem determina degradarea precum si anvelopa acustica a semnalului sonor.
 	
 	\clearpage
-   \printbibliography
-   \clearpage
+	\subsection{Procesarea imaginilor}
+	
+	\clearpage
+    \printbibliography
+    \clearpage
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[scale=0.4]{images/plagiat.PNG}

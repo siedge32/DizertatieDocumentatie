@@ -116,5 +116,19 @@
     \field{note}{Accessed: 17.05.2022}
     \field{title}{IMotions Fea - Facial Expression Analysis}
   \endentry
+
+  \entry{cuda}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://developer.nvidia.com/cuda-zone/}}
+    \field{note}{Accessed: 19.05.2022}
+    \field{title}{NVIDIA CUDA}
+  \endentry
+
+  \entry{ft}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://ro.wikipedia.org/wiki/Transformata_Fourier/}}
+    \field{note}{Accessed: 19.05.2022}
+    \field{title}{Transformata Fourier}
+  \endentry
 \enddatalist
 \endinput
