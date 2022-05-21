@@ -38,19 +38,26 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- Fourier Transform DONE
 				- Short Fourier Transform DONE
 				- Spectogram and Melspectogram DONE
-		- Procesarea imaginilor	-> Scos deoarece nu exista subiecte indeajus de vorbit fara aplicatia concreta
+		- Procesarea imaginilor	-> Scos deoarece nu exista subiecte indeajuns de vorbit fara aplicatia concreta
 20.05
-		- Procesarea textului (minimal)
+		- Procesarea textului (minimal) -> Scos deoarece nu exista subiecte indeajuns de vorbit fara aplicatia concreta
 			- TO DO
 	- Tehnologii utilizate:
-			- ierarhizarea limbajelor de programare (jos, mediu, avansat)
-			- Python (categorizare limbaje de programare)
-			- Distributia Anaconda
-			- IDE: Pycharm, Jupyter Notebook
-			- Framework-uri: QT framework, MongoDb
-			- Pachete/Biblioteci reprezentative utilizaate: tenserflow (keras), PyAudio, matplotlib(plotting), opencv, librosa)
+			- scurta introducere	DONE
+			- ierarhizarea limbajelor de programare (jos, avansat) DONE
+			- Python (categorizare limbaje de programare)	DONE
+				- Distributia Anaconda 		DONE
+			- IDE: Pycharm, Jupyter Notebook DONE
+			- Framework-uri: QT framework 
+				- introducere 	DONE
+				- Pyqt DONE	
+				- QT Designer DONE
+				- Layout, widgets, buttons, sliders, labels , QML etc DONE
+				- Prezentare layout-uri DONE
+22.05
+			- Pachete/Biblioteci reprezentative utilizaate: tenserflow (keras), PyAudio, matplotlib(plotting), opencv, librosa, MongoDb)
 			- desing pattern-uri: Singleton, state machine
-21.05
+
 	- Aplicatia pentru crearea unui raport a candidatului in urma unui interviu
 		- Prezentarea modulelor: 
 			- emotion detection through sound 
@@ -65,7 +72,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- Adding Sinus Noise pentru a scapa de oferfitting
 			- Accuracy, matrix confusion
 			- Testing
-22.05
+23.05
 		- Facial emotion regonition
 			- Face detection
 				- Open CV (prezentare, diferite exemple la ce se poate folosi si la ce a fost folosit in aplicatie)
@@ -124,7 +131,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- identificarea emotiilor la 4 secunde pentru audio
 				- identificarea emotiilor la 4 secunde pentru video
 				- identificarea emotiilor/caracterului din text
-23.05
+24.05
 			- Generarea raportului candidatului
 				- salvarea in mongodb + mongofs
 				- ce se salveaza
@@ -140,7 +147,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- label audio pentru predictie
 				- label text pentru predictie
 				- highlight text
-24.05
+25.05
 	- Imbunatariri viitoare
 	- Concluzii
 	- Corectare 

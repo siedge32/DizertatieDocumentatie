@@ -66,7 +66,7 @@
 \setmainfont{UT Sans}
 
 \usepackage{setspace}
-\setstretch{1.1} % 
+\setstretch{1.1}
 
 \begin{document}
 	
@@ -83,7 +83,7 @@
 	\clearpage
 	
 	\section{Introducere}
-	Aplicația "Multimodal Emotion Detection" are ca audiență persoanele care doresc să facă o analiză a candidatului care a trecut printr-un proces de intervievare. Fiind scrisă în limbajul de programare Python, permite o manevrare concisă a datelor inregistrate, care pot fi mai apoi vizualizate de către utilizator prin intermediul framework-ului GUI (Graphical User Interface) QT (pronunțat "cute"). 
+	Aplicația "Multimodal Emotion Detection" are ca audiență persoanele care doresc să facă o analiză a candidatului care a trecut printr-un proces de intervievare. Fiind scrisă în limbajul de programare Python, permite o manevrare concisă a datelor inregistrate, care pot fi mai apoi vizualizate de către utilizator prin intermediul framework-ului GUI (Graphical User Interface) Qt (pronunțat "cute"). 
 	
 	În cadrul lucrării, se propune recunoașterea emoțiilor utilizatorului într-un mod inteligent, utilizând tehnici și metode de Machine Learning si Deep Learning. Aceste două procedee sunt subcategorii ale domeniului numit inteligență artificială, domeniu care a început să se modeleze în funcție de nevoile oamenilor.
 	
@@ -270,54 +270,52 @@
 	Antrenarea utilizând astfel de rețele poate deveni una costisitoare datorită cantităților mari de date și a complexității calculelor. Procesorul central devine depășit de această ușoare, iar timpul necesar antrenării pentru acești algoritmi poate crește. Soluționarea în acest caz vine prin utilizarea procesorului grafic, acolo unde placă video permite acest lucru.
 	
 	\clearpage
-	% Diacritice
 	\subsubsection{Antrenare utilizând procesorul grafic}
-	Procesorul grafic (graphical proccesing unit), dezvoltate initial pentru accelerarea procesarii grafice, pot imbunatati performanetele calculelor realizate intr-o retea neurala cu mai multe straturi. Au devenit in o parte esentiala a  infrastructurii intelgientei artificiale, iar procesoarele grafice noi au devenit specializate in acest domeniu.
+	Procesorle grafice (graphical proccesing unit), dezvoltate inițial pentru accelerarea procesării grafice, pot îmbunătăți performanțele calculelor realizate într-o rețea neurala cu mai multe straturi. Au devenit o parte esențială a  infrastructurii inteligenței artificiale, iar procesoarele grafice noi au devenit specializate în acest domeniu.
 	
-	Principalul beneficiu al utilziarii procesorului grafic este dat de paralalizarea sau procesarea simultana a datelor. Exista patru tipuri de arhitecturi folosite pentru procesarea datelor in mod paraparalel :
+	Principalul beneficiu al utilizării procesorului grafic este dat de paralelizarea sau procesarea simultană a datelor. Există patru tipuri de arhitecturi folosite pentru procesarea datelor în mod pparalel :
 	
 	\begin{itemize}
-		\item Instructiune unica, date unice
-		\item Instructiune unica, date multiple
-		\item Instrucituni multiple, date unice
-		\item Instructiiuni multiple, date multiple
+		\item Instrucțiune unică, date unice
+		\item Instrucțiune unică, date multiple
+		\item Instrucțiuni multiple, date unice
+		\item Instrucțiuni multiple, date multiple
 	\end{itemize}
 	
-	Scopul initial al procesoarelor grafice erau pentru procesarea video, astfel solicitand utilizatorii sa inteleaga limbaje specifice precum OpenGL. In 2007, odata cu lansarea framework-ului (cadru de lucru) NVIDIA CUDA \cite{cuda}, aria utilizarii procesoarelor grafice a fost extinsa. CUDA se bazeaza pe limbajul de programare C si ofera un API pe care dezvoltatorii il pot folosi pentru a aplica puterea de computatie oferita de placa video in sarcinile de machine learning.
+	Scopul inițial al procesoarelor grafice erau pentru procesarea video, astfel solicitând utilizatorii să înțeleagă limbaje specifice precum OpenGL. În 2007, odată cu lansarea framework-ului (cadru de lucru) NVIDIA CUDA \cite{cuda}, aria utilizării procesoarelor grafice a fost extinsă. CUDA se bazează pe limbajul de programare C și oferă un API (application programmin interface) pe care dezvoltatorii îl pot folosi pentru a aplica puterea de computație oferită de placa video în sarcinile de machine learning.
 	
-	Odata ce NVIDIA a introdus CUDA, au fost dezvoltate mai multe framework-uri pentru invatarea profunda, precum PyTorch si TensorFlow. Aceste tehnologii se folosesc de capabilitatiile oferite de CUDA, oferind o accesibilate mai mare pentru implementarile moderne de deep learning.
+	Odată ce NVIDIA a introdus CUDA, au fost dezvoltate mai multe framework-uri pentru învățarea profundă, precum PyTorch și TensorFlow. Aceste tehnologii se folosesc de capabilitățile oferite de CUDA, oferind o accesibilitate mai mare pentru implementările moderne de deep learning.
 	
-	Procesoarele grafice pot efectua calcula simultan. Acest lucru permite distribuirea proceselor de instruire si poate accelera semnificati operatiile de invatare automata. Folosind numarul mare de nuclee, putem utiliza mai putine resurse fara a sacrifica eficenta sau putere.
+	Procesoarele grafice pot efectua calcule simultan. Acest lucru permite distribuirea proceselor de instruire și poate accelera semnificativ operațiile de învățare automată. Folosind numărul mare de nuclee, putem utiliza mai puține resurse fără a sacrifica eficiența sau puterea.
 	
-	Cand se defineste o arhitectura pentru retelele deep learning, urmatorii factori pot influenta decizia de a utiliza sau nu un procesor grafic:
+	Când se definește o arhitectură pentru rețelele deep learning, următorii factori pot influență decizia de a utiliza sau nu un procesor grafic:
 	\begin{itemize}
-		\item Latimea bandei de memorie: datorita meoria video dedica (VRAM), GPU-urile pot ofer latimea de banda necesara pentru a acomoda seturi de date
-		\item Dimensiunea setului de date: procesoarele grafice legate in paralel scaleaza mult mai rapid decat procesoarele centrale, permitand procesarea a unor seturi de date masiv din punc de vedere cantitav
+		\item Lățimea bandei de memorie: datorită memoriei video dedicată (VRAM), GPU-urile pot oferi lățimea de bandă necesară pentru a acomoda seturi de date
+		\item Dimensiunea setului de date: procesoarele grafice legate în paralel scalează mult mai rapid decât procesoarele centrale, permițând procesarea a unor seturi de date masiv din punct de vedere cantitativ
 	\end{itemize}
 	
-	Datorita puterii de procesare a placilor grafice, modelele de deep learning folosite in aplictie au fost antrenate cu ajutorul cu procesorul grafic. Placa video utilizata in cauza este un GeForece RTX 2060 (editia laptop), oferind 1920 procesoare CUDA si 240 procesoare Tensor.
+	
+	Datorită puterii de procesare a plăcilor grafice, modelele de deep learning folosite în aplicație au fost antrenate cu ajutorul procesorului grafic. Placă video utilizată în cauză este un GeForece RTX 2060 (ediția laptop), oferind 1920 procesoare CUDA și 240 procesoare Tensor.
 	\clearpage
-	
-	\subsection{Procesare digitală de semnal}
-	Aceste tehnici complexe de procesare au fost utilizate in aplicatie pentru identificarea emotiei din voce. Aceasta procesare nu va identifica cuvintele rostite de candidat, ci va incerca in functie de anvelopa acustica, sa determina starea persoanei care este intervievata.
-	
-	In mod natural, vocea este transmisa urechii umane printr-o unda acustica care se deplaseaza prin intermediul aerului, cu viteza sunetului. Din momentul in care este inregistrata de catre un microfon, sunteul este transmis printr-un fir ca un semnal electric care se deplaseaza cu viteza luminii. Pentru a face acest eveniment posibil, semnalul acustric generat de corzile vocale umane trebuie mai intai transformat intr-un semnal electric si apoi convertit intr-o forma acustica, pentru a putea fi inteles de catre oammeni. Semnalul electric convertit este in mod conventional intr-o forma analogica. Adica este reprezentat ca o tensiune care variaza continuu intr-un interval dat (0 si 1). Datorta degradarii semnalului electric in cazul stocarii, a deplasarii acestuia pe distante lungi sau a procesarii de catre un calculator, se prefera transformarea lui intr-o forma digitala.
-	
-	Indiferent de domeniul utilizat (timpului sau frecventolor), urmatorii termeni prezentati mai jos vor ajuta in intelegarea procesului de identificare a emotiilor:
-	
-	\begin{itemize}
-		\item Rata de esantionare (Sample rate): reprezinta numarul de date (sample-uri) care sunt inregistrate intr-o secunda. Cu cant avem rata de esantionare mai mare, cu atat calitatea semnalului va fi mai ridicata. Spre exemplu, rata de esantionare folosita in general pentru scrierea CD-urilor cu muzica este de 44.1 KHz (kilo Hertzi). Asta inseamna ca o data la o secunda 44100 de date sunt inregistrate, pe care le putem studia.
-		\item Fereastra (Window): semnalul poate fi segmentat intr-un numarul egal de sample-uri
-		\item Numarul de linii spectrale: simbolizeaza numarul de frecvente identificate in urma transformarii din domeniul timpului in cel al frecventelor
-	\end{itemize}
 
-	Datele inregistarte de catre microfon se vor afla in domeniul timpului. In aceeasta sfera, principalul neajuns este reperzentat de insuficienta de operatii folositoare pe care le putem utiliza in identificarea emotiilor vocii. Pentru a satisface cerintele necesare analizei sentimentelor din voce, vom efectua trecerea din domeniul timpului in cel al frecventelor utilizand Transformata Fourier \cite{ft}.
+	\subsection{Procesare digitală de semnal}
+	Aceste tehnici complexe de procesare au fost utilizate în aplicație pentru identificarea emoției din voce. Această procesare nu va identifica cuvintele rostite de candidat, ci va încerca în funcție de anvelopa acustică, să determina starea persoanei care este intervievată.
+
+	În mod natural, vocea este transmisă urechii umane printr-o undă acustică care se deplasează prin intermediul aerului, cu viteză sunetului. Din momentul în care este înregistrată de către un microfon, sunetul este transmis printr-un fir ca un semnal electric care se deplasează cu viteză luminii. Pentru a face acest eveniment posibil, semnalul acustic generat de corzile vocale umane trebuie mai întâi transformat într-un semnal electric și apoi convertit într-o formă acustică, pentru a putea fi înțeles de către oameni. Semnalul electric convertit este în mod convențional într-o formă analogică. Adică este reprezentat ca o tensiune care variază continuu într-un interval dat (0 și 1). Datorată degradării semnalului electric în cazul stocării, a deplasării acestuia pe distanțe lungi sau a procesării de către un calculator, se preferă transformarea lui într-o formă digitală.
+
+	Indiferent de domeniul utilizat (timpului sau frecventelor), următorii termeni prezentați mai jos vor ajută în înțelegerea procesului de identificare a emoțiilor:
 	
-	\clearpage
-	\subsubsection{Transformata Fourier}
-	Fiind folosita in multiple domenii precum procesarea imaginiilor, studiul semnalalelor (incluzand cele acustice), transformata Fourier este un procedeu matematic care ne ajuta la trecerea unui semnal din domeniul timpului in cel al frecventelor. Avantajul analizei in acest domeniu este dat gama diversificata de informatii precum si de operatii pe care le putem folosi.
-	
-	O puternica unealta matematica, transformata Fourier (Jean-Baptiset Joseph Fourier) asuma faptul ca un semnal poate fi descompus ca o suma de sinusuri/cosinusuri.
+  	\begin{itemize} 
+  		\item Rata de eșantionare (Sample rate): reprezintă numărul de date (sample-uri) care sunt înregistrate într-o secundă. Cu cât avem rată de eșantionare mai mare, cu atât calitatea semnalului va fi mai ridicată. Spre exemplu, rata de eșantionare folosită în general pentru scrierea CD-urilor cu muzică este de 44.1 KHz (kilo Hertzi). Asta înseamnă că o dată la o secundă, 44100 de date sunt înregistrate, pe care le putem studia. 
+  		\item Fereastră (Window): semnalul poate fi segmentat într-un numărul egal de sample-uri \item Numărul de linii spectrale: simbolizează numărul de frecvențe identificate în urmă transformării din domeniul timpului în cel al frecvențelor 
+  	\end{itemize} 
+ 	 Datele inregistarte de către microfon se vor află în domeniul timpului. În această sferă, principalul neajuns este reprezentat de insuficiența de operații folositoare pe care le putem utiliza în identificarea emoțiilor vocii. Pentru a satisface cerințele necesare analizei sentimentelor din voce, vom efectua trecerea din domeniul timpului în cel al frecvențelor utilizând Transformată Fourier \cite{ft}. 
+  
+ 	 \clearpage 
+  	\subsubsection{Transformata Fourier} 
+  	Fiind folosită în multiple domenii precum procesarea imaginiilor, studiul semnalelor (incluzând cele acustice), transformata Fourier este un procedeu matematic care ne ajută la trecerea unui semnal din domeniul timpului în cel al frecvențelor. Avantajul analizei în acest domeniu este dat gama diversificată de informații precum și de operații pe care le putem folosi. 
+  	
+  	O puternică unealtă matematică, transformata Fourier (Jean-Baptiset Joseph Fourier) asumă faptul că un semnal poate fi descompus ca o suma de sinusuri/cosinusuri.
 	
 	\begin{figure}[h]
 		\begin{center}
@@ -327,8 +325,8 @@
 			\hspace{\linewidth}https://community.sw.siemens.com/s/article/what-is-the-fourier-transform}
 		\label{fig:singal_to_sinuses}
 	\end{figure}
-	
-	Din Figura \ref{fig:singal_to_sinuses} se poate observa cum un semnal definit de aplitudine si timp, poate descompus intr-o suma de sinusuri, de frecvente diferite.
+
+	Din Figura \ref{fig:singal_to_sinuses} se poate observa cum un semnal definit de amplitudine și timp, poate fi descompus într-o sumă de sinusuri, de frecvențe diferite.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -339,8 +337,8 @@
 		\label{fig:signal_to_freq}
 	\end{figure}
 
-	Datorita motivelor enuntate in pagina anterioara care justifica necesitatea tranformarii in domeniul frecventelor, vom explica acest fenomen cu ajutorul Figurii \ref{fig:signal_to_freq}. Putem observa ca semnalul reprezentat de culoarea mov este descompus din alte trei semnale. In urma aplicarii transformatei Fourier peste acest semnal, liniile spectrale reprezinta principalele frecvente recunoscute.
-	
+	Datorită motivelor enunțate în pagină anterioară care justifică necesitatea transformării în domeniul frecvențelor, vom explica acest fenomen cu ajutorul Figurii \ref{fig:signal_to_freq}. Putem observă că semnalul reprezentat de culoarea mov este compus din alte trei semnale. În urmă aplicării transformatei Fourier peste acest semnal, liniile spectrale vor reprezenta principalele frecvențe recunoscute.
+
 	Din punct de vedere matematic, transformata Fourier este :
 	\begin{equation}
 		\label{ft_equation}
@@ -350,7 +348,7 @@
 	unde $S_x(f)$ reprezintă frecvența măsurată în Hz iar $x(t)$ este semnalul în domeniul timpului. Rezultatul acestei operații este un număr complex (spre exemplu $a + bj$ este un număr complex întrucât a reprezintă partea reală iar b partea imaginară).
 	
 	\subsubsection{Transformata Fourier pe termen scurt}
-	Adesea, transformata Fourier este evitata in a fi folosita in forma ei simpla in practica. Motivul este dat de variatiile prea bruste si multiple pe care semnalul le poate avea in domeniul timpului. Interpretarea unui semnal dintr-un singur segment devine problematica si costisitoare din punct de vedere al performantelor. O solutie fezabila este segmantarea semnalului in intervale mici, care mai apoi vor fi interpretate in mod individual. Aceasta tehnica poarta numele de transformata Fourier pe termen scurt (short time Fourier Transform, STFT).
+	Adesea, transformata Fourier este evitată în a fi folosită în forma ei simplă în practică. Motivul este dat de variațiile prea bruște și multiple pe care semnalul le poate avea în domeniul timpului. Interpretarea unui semnal dintr-un singur segment devine problematică și costisitoare din punct de vedere al performanțelor. O soluție fezabilă este segmentarea semnalului în intervale mici, care mai apoi vor fi interpretate în mod individual. Această tehnică poartă numele de transformata Fourier pe termen scurt (short time Fourier Transform, STFT).
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -361,7 +359,7 @@
 		\label{fig:windowing}
 	\end{figure}
 
-	Dupa cum se poate observa in Figura \ref{fig:windowing}, se aplica succesiv transformata Fourier pe segmente mici de date. Lungimea unui segment este aleasa in mod arbitrar, dar se recomanda sa se foloseasca puteri ale lui 2, pentru a spori eficienta algortimului. Acest proces este documentat ca fiind etapa de "windowing". O propietate speciala pe care o are acest procedeu este dat de intercalarea segmentelor. Prin utilizarea ferestrei in mod intercalat, vom avea posibilitatea de a obtine valorile frecventelor intr-un mod mai determinist.
+	După cum se poate observa în Figura \ref{fig:windowing}, se aplică succesiv transformata Fourier pe segmente mici de date. Lungimea unui segment este aleasă în mod arbitrar, dar se recomandă să se folosească puteri ale lui 2, pentru a spori eficiența algoritmului. Acest proces este documentat ca fiind etapa de "windowing". O proprietate specială pe care o are acest procedeu este dat de intercalarea segmentelor. Prin utilizarea ferestrei în mod intercalat, vom avea posibilitatea de a obține valorile frecvențelor într-un mod mai determinist.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -371,10 +369,69 @@
 		\label{fig:spectogram}
 	\end{figure} 
 
-	Rezultatul obtinut in urma aplicarii trasnformatei Fouerir pe termen scurt poate fi interpret sub forma unui grafic care poarta denumirea de spectograma sau "waterfall" (cascada). In exemplul din Figura \ref{fig:spectogram}, intr-un spatiu cartezian XOY, axa OX reprezinta timpul iar cealalta axa arata puterea lui. In functie de intensitatea culorilor, putem determina degradarea precum si anvelopa acustica a semnalului sonor.
+	Rezultatul obținut în urmă aplicării transformatei Fourier pe termen scurt poate fi interpret sub formă unui grafic care poartă denumirea de spectogramă sau "waterfall" (cascadă). În exemplul din Figura \ref{fig:spectogram}, într-un spațiu cartezian XOY, axa OX reprezintă timpul iar cealaltă axa arată puterea lui. În funcție de intensitatea culorilor, putem determina degradarea precum și anvelopa acustică a semnalului sonor.
 	
 	\clearpage
-	\subsection{Procesarea imaginilor}
+	% diacritice
+	\subsection{Tehnologii utilizate}
+	"Multimodal Emotion Recognition" este o aplicație în care au fost folosite o serie de tehnologii. Aceste unelte fac posibilă atât navigarea printr-o interfață grafică prietenoasă utilizatorului, cât și cele mai importante funcționalități de bază, precum identificarea emoțiilor. Este o aplicație desktop, care oferă utilizatorului posibilitatea de a revizui un interviu, cu scopul identificării unor momente cheie, care au fost omise în procesul interviului.
+	
+	În funcție de cerințele și necesitățile aplicației, direcția aleasă în materie de tehnologii și limbaje de programare trebuie să fie una justificabilă. Așteptările construite în faza de proiecție, testare sau design trebuiesc menținute, iar rezultatul să fie sustenabil în raport cu tehnologiile alese pentru a realiza aplicația dorită. Primul pas înspre proiectare a fost alegerea unui limbaj de programare, care să satisfacă așteptările create. Această alegere poate deveni un grea, atunci când se ia în calcul beneficiile și dezavantajele fiecărui limbaj de programare. Având în vedere decizia care trebuie făcută, limbajele de programare se grupează în 2 categorii:
+	\begin{itemize}
+		\item Limbaje de nivel jos: sunt folosite pentru a scrie programe în raport la arhitectură și hardware-ul specific unui anumit tip de computer. Sunt aproape de limbajul nativ al unui calculator (binar), devenind astfel greu de înțeles de către programatori.
+		Programele scrise în limbaje de nivel jos sunt rapide și eficiente din punct de vedere al memoriei. Acestea sunt utilizate în principal pentru a dezvolta sisteme de operare, drivere de dispozitiv, baze de date și aplicații care necesită acces direct la hardware. La rândul lor, se împart în două categorii: limbaj mașină și limbaj de asamblare.
+		\item Limbaje de nivel înalt: sunt similare cu limbajul uman, prietenoase cu programatorii, ușor de scris, depanat și întreținut. Ele nu interacționează direct cu hardware-ul, ci mai degrabă, se concentrează cu operațiile complexe, eficientizarea scrisului de cod și lizibilitatea lui. Ca exemple, putem oferi: Python, Java, C\# etc. Programele concepute în limbaje de nivel înalt necesită compilator/interpretor (fiind la rândul ei un criteriu de clasificare) care să traducă codul sursă în limbajul mașinii. De asemenea, în funcție de paradigmă utilizată, limbaje de programare de nivel înalt se pot clasifică în: funcțională, procedurală și obiect orientată.
+	\end{itemize}
+	
+	Acest program este conceput și scris în întregime utilizând limbajul de programare Python \cite{python}. Motivele care susțin decizia făcută sunt: capabilitatea de a programa în diferite paradigme (folositoare în etapă explorării și testării unor funcționalități), compatibilitatea cu majoritatea platformelor și a sistemelor de operare precum și accesul la o multitudine de biblioteci care au ajutat in cadrul dezvoltării aplicației.
+	
+	\clearpage
+	\subsection{Python}
+	Python este un limbaj de programare care face partea din categoria limbajelor interpretate. Aparitia acestui limbaj are loc la sfarsitul anului 1980 iar prima lansarea oficiala se intampla in 1991, fiind utiliza intern in cadrul companiei Google. Printre valorile utilizate, creatorul acestui limbaj, Guido van Rossum, abordeaza usurinta interpretarii codului, favorizand un stil identare fata cel folosind parantezele.
+	
+	Oferind suport pentru multiple paradigme de programre (functionala, procedurala si obiect orientata), python utilizeaza ca alte limbaje de nivel inalt un mecanism numit "garbage collector". Cu ajutorul acestui sistem, programatorul scapa de necesitatea eliberarii in mod manual a memoriei utilizate in timpul executiei programului. Acesta functie, gestioneaza in mod automat zonele de memorie utilizate, iar printr-o interna, dealoca zona atunci cand aceasta nu mai este accesata. 
+	
+	Adesea, utilizat impreuna cu limbajul de programare python este un sistem care sa administreze pachetele instalate, mediile de lucru create precum si versiunea limbajului utilizata. Distributia Anaconda este un astfel de sistem, avantajos de folosit atunci cand dorims sa lucram cu diferite pachete pentru manipularea datelor (nupmy, pandas) sau pentru invatarea automata (scikit-learn). Daca sunt nevoie de pachete suplimentare dupa instalarea acestei distributii, din aplicatia de administrare se pot instala manual bibliotecile necesare. O unealta folositoare care se instaleaza odata cu aceasta distrbutie este Jupyter Notebook. Este o aplciatie web folosita pentru rularea si editarea codului python, fiind executat local, fara a fi nevoie de acces la internet. Nucleul utilizat (kernel) faciliteaza rularea sucventiala a codului, facand posibila ca variabilele sa fie stocate si accesibile din memorie pe toata durata vietii. 
+	
+	\subsection{Qt}
+	Qt (pronunțat cute) este un framework open-source de tipul GUI (graphical user interface), folosit în general pentru creare interfețelor grafice. Această tehnologie este realizată și inițial dedicată limbajului de programare C++. Însă, după o perioada de timp, s-a creat o interfață API, prin care codul Qt poate fi apelat și dintr-o manieră pitonică. Printre pachetele care oferă suport în acest sens, putem menționa: PyQt, PySide (dezvoltat de Qt Company). 
+
+	Printre uneltele puse la dispoziție de către Qt, Qt Desginer a facilitat crearea interfeței grafice într-o manieră interactivă și dinamică. Această aplicație grafică ne pune la îndemna o serie funcționalități pentru adăugare de diverse elemente, cu ajutorul cărora putem construi o fereastră dorită. După cum se poate observă în Figura \ref{fig:qt_designer}, în panoul din stânga avem acces la o multitudine de "widget"-uri, fiecare dintre ele având un comportament și aspect diferit. Acestea sunt principalele componente pe care le putem folosi pentru a crea un window, dar Qt ne pune la dispoziție și un modul, prin care utilizatorul își poate crea elementele propii într-o mod customizabil.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.4]{images/qt_designer.png}
+		\end{center}
+		\caption{Qt Designer}
+		\label{fig:qt_designer}
+	\end{figure} 
+
+	Printre principalele elemente utilizate preponderent în aplicație, le vom menționa pe următoarele (precum și informații referiatoare la utilizarea lor în implementarea curentă):
+	\begin{itemize}
+		\item Aspect (layout): acest element este folositor atunci când se dorește organizarea elementelor copil după anumite reguli. Ce le mai utilizate layout-uri sunt:
+		\begin{itemize}
+			\item Tip vertical: așezarea widget-urile copii va avea loc într-o manieră verticală, ca o stivă;
+			\item Tip orizontal: constrânge ca widget-utile copii să fie așezate, în funcție de direcția aleasă, într-un mod longitudinal;
+			\item Tip grilă: în funcție de dimensiunea aleasă, fiecare element copil utilizat în acest aspect va fi așezat într-un mod tabelar;
+		\end{itemize}
+		\item Elemente interactive:
+		\begin{itemize}
+			\item Buton: element de baza în aplicație, prin suprascrierea comportamentului unui buton, a fost posibilă interacționarea cu funcțiile aplicației (recunoașterea emoțiilor, suspendarea acestui proces sau oprirea);
+			\item Casetă cu alegere: în general utilizat atunci când se dorește că utilizatorul să aleagă între variante multiple;
+			\item Check box: folositor pentru valori binare (adevărat sau fals);
+			\item Glisor: acest element ne va ajută pentru derularea interviului salvat, în momentul în care se dorește vizualizarea lui;
+			\item Zona de text: utilizate pentru a oferi candidatului capacitatea de a-și introduce numele;
+			\item Eticheta: diferite informații legate la starea aplicației;
+			\item Tabel: folosit atunci când se dorește vizualizarea rapoartelor salvate
+		\end{itemize}
+	\end{itemize}
+	
+	\subsection{Biblioteci utilizate}
+	
+	
+	\subsection{Șabloane de proiectare}
+	
+	%\bigskip
 	
 	\clearpage
     \printbibliography
