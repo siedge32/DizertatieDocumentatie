@@ -24,7 +24,6 @@
 \graphicspath{ {./images/} }
 
 
-
 \usepackage[margin=3.2cm]{geometry}
 %\usepackage[none]{hyphenat}
 
@@ -68,6 +67,7 @@
 \usepackage{setspace}
 \setstretch{1.1}
 
+
 \begin{document}
 	
 	\include{./cover/cover}
@@ -77,27 +77,31 @@
 	\newpage
 	\pagenumbering{arabic}
 	\section{Abstract}	
-	Această lucrare de disertație este elaborată în jurul problematicii identificării emoțiilor unei persoane. Utilizând metode de învățare automată, datele sunt înregistrate prin intermediul unor canale multiple (audio, video și text). Expresiile faciale, obținute prin intermediul canalului video, reflectă în mod intuitiv starea mentală a unei persoane, fiind una dintre cele mai bogate și importante forme de comunicare inter-umană. Tonalitatea vocii care se adresează în timpul comunicării ne poate oferi informații valoroase referitoare la starea de spirit. Mesajul care este transmis prin intermediul vocii, ne oferă informații referitoare la personalitatea individului, fiind de ajutor mai departe în procesul de analiză.
+	Această lucrare de disertație este elaborată în jurul problematicii identificării emoțiilor unei persoane. Utilizând metode de învățare automată, datele sunt înregistrate prin intermediul unor canale multiple (audio, video și text). 
+	
+	Expresiile faciale, obținute prin intermediul canalului video, reflectă în mod intuitiv starea mentală a unei persoane, fiind una dintre cele mai bogate și importante forme de comunicare inter-umană. Tonalitatea vocii care se adresează în timpul comunicării ne poate oferi informații valoroase referitoare la starea de spirit. Mesajul care este transmis prin intermediul vocii, ne oferă informații referitoare la personalitatea individului, fiind de ajutor mai departe în procesul de analiză.
 	Datele stocate sunt mai apoi prelucrate folosind tehnici de procesare specifice fiecărui canal. Pentru input-ul audio este folosită procesarea digitală de semnal, cu următoarele tehnici reprezentative: Transformata Fourier, Transformata Fourier pe termen scurt, Coeficienți Mels. Procesare de imagini pentru canalul video vine în adăugare cu: scalare de date, transformare imaginii în greyscale, iar pentru text este de menționat: tokenizare, lematizare. Fiecare bloc de date preprocesat în mod corespunzător canalului părinte, va trece mai departe prin pasul de recunoaștere cu ajutorul metodelor de învățare automată.
+	
+	
 	În această lucrare au fost realizate o serie de experimente pentru: procesarea datelor, antrenarea modelelor de machine learning. Finalizarea acestor teste a avut ca urmare dezvoltarea aplicației "Multimodal Emotion Detection" care să vină în sprijinul procesului de intervievare.
 	\clearpage
 	
 	\section{Introducere}
-	Aplicația "Multimodal Emotion Detection" are ca audiență persoanele care doresc să facă o analiză a candidatului care a trecut printr-un proces de intervievare. Fiind scrisă în limbajul de programare Python, permite o manevrare concisă a datelor inregistrate, care pot fi mai apoi vizualizate de către utilizator prin intermediul framework-ului GUI (Graphical User Interface) Qt (pronunțat "cute"). 
+	Aplicația "Multimodal Emotion Detection" are ca audiență persoanele care doresc să facă o analiză a candidatului care a trecut printr-un proces de intervievare. Fiind scrisă în limbajul de programare Python, permite o manevrare concisă a datelor inregistrate, care pot fi mai apoi vizualizate de către utilizator prin intermediul framework-ului GUI (Graphical User Interface) Qt.
 	
-	În cadrul lucrării, se propune recunoașterea emoțiilor utilizatorului într-un mod inteligent, utilizând tehnici și metode de Machine Learning si Deep Learning. Aceste două procedee sunt subcategorii ale domeniului numit inteligență artificială, domeniu care a început să se modeleze în funcție de nevoile oamenilor.
+	În cadrul lucrării, se propune recunoașterea emoțiilor utilizatorului într-un mod inteligent, utilizând tehnici și metode de machine learning si deep learning. Aceste două procedee sunt subcategorii ale domeniului numit inteligență artificială (IA), domeniu care a început să se modeleze si dezvolte în funcție de nevoile oamenilor.
 	
 	Dezvoltarea rapidă a inteligenței artificale, "Big data science" și a tehnologiei "Block chain" a provocat multiple schimbări în structura socială umană. În majoritatea proceselor unde este nevoie de interacțiune umană, se implementează automatizări care să sporească eficiența, să folosească resursele umane, software și hardware în mod cât mai eficace. La nivel industrial, sistemele automatizate inteligente sunt deja folosite in uzine, frabici, având rolul de a asigura în permanență buna funcționare a întregului ansamblu. Atât eficiența cât și performanțele acestor sisteme sunt motivate de către costul redus de mentenanță. La un nivel mai aproape de către utilizatori, putem realiza că inteligența artificială a început tot mai des să facă parte din viața de zi cu zi, ajungând în stadiul să devină indispensabil oamenilor.
 	
-	În zilele noastre, interacțiunea dintre oameni și I.A. este în continuă creștere, ajungand să intre treptat în viața noastră de zi cu zi. De la asistenți virtuali (care au rolul de a sprijini utilizatorul prin intermediul interpretării comenziilor vocale), până la reclame personalizate, aceste sisteme inteligente interacționează din ce în ce mai mult cu ființe umane. Deoarece este un subiect în care interesul este unul foarte crescut, relația între om și mașinăria inteligentă poate să ajungă la un nivel mai inalt, prin integrarea cu emoțiile utilizatorului. Acesta este un domeniu crucial de cercetare, oferind diverse oportunități și aplicări pentru oameni.
+	În zilele noastre, interacțiunea dintre oameni și IA este în continuă creștere, ajungand să intre treptat în viața noastră de zi cu zi. De la asistenți virtuali (care au rolul de a sprijini utilizatorul prin intermediul interpretării comenziilor vocale), până la reclame personalizate, aceste sisteme inteligente interacționează din ce în ce mai mult cu ființe umane. Deoarece este un subiect în care interesul este unul foarte crescut, relația între om și mașinăria inteligentă poate să ajungă la un nivel mai inalt, prin integrarea cu emoțiile utilizatorului. Acesta este un domeniu crucial de cercetare, oferind diverse oportunități și aplicări pentru oameni.
 	
 	Astfel, în următorul capitol va fi explicat despre fiecare din cele trei tipuri de recunoaștere a emoției utilizate, precum și modul în care acestea interacționează cu utilizatorul. Vor fi prezentate exemple de alte categorii a recunoașterii de emoții, care nu au fost încadrate în această lucrare, precum și aplicațiile care sunt deja în domeniul comercial și sunt utilizate.
 	
 	\clearpage
 	\section{Recunoașterea emoțiilor}
-	Un aspect cheie în această sferă care să sporească parteneriatul între om și mașină este dat de înțelegerea emoțiilor umane. Emoția este un factor important atât în comunicarea verbală, cât și în comunicarea nonverbală (gesticulare, expresiile corpului). Identificarea stărilor unei persoane poate ajuta o mașină să înțeleagă intențiile utilizatorului, în scopul de a-i oferi o interacțiune mai potrivită. Printe primele studii care au fost făcute pentru integrarea sistemelor inteligente cu emoțiile umane, aceastea s-au reflectat în identificarea emoțillor prin voce, deoarece comunicarea verbala este una dintre cele mai rapide forme de socialiare, cu cel mai mare impact in istorie.
+	În general, o relație între doi indivizi se bazează pe încredere și întelegere. Pentru a putea crea un parteneriat, un algoritm inteligent trebuie să fie cabail să înțeleagă emoțiile umane. Emoția este un factor important atât în comunicarea verbală, cât și în comunicarea nonverbală (gesticulare, expresiile corpului). Identificarea stărilor unei persoane poate ajuta o mașină să înțeleagă intențiile utilizatorului, în scopul de a-i oferi o interacțiune mai potrivită. Printe primele studii care au fost făcute pentru integrarea sistemelor inteligente cu emoțiile umane, aceastea s-au reflectat în identificarea emoțillor prin voce, deoarece comunicarea verbala este una dintre cele mai rapide forme de socialiare, cu cel mai mare impact in istorie.
 	
-	Fiind una dintre cele mai consacrate aptiduni prin care o ființă inteligentă s-a putut diferenția și avansa în lanțul trofic, comunicarea verbală reprezintă un semnal complex, în care sunt transmise informații referitoare la mesaj, legate de emițător precum și de emoțiile transmise de acesta. Fiind o serie complexa, capacitatea sistemului care face identificarea emotiilor trebuie sa fie pe măsură, pentru a analiza cu acuratețe starea subiectului, oferindu-i astfel o experiență cât se poate de autentică. Nu numai atât, utilizând o astfel de recunoaștere, poate ajuta la crearea unor interfețe usor navigabile("Recunoașterea emoțiilor prin vorbire este deosebit de utilă pentru aplicațiile din domeniul interacțiunii om-mașină deoarece ajută la crearea unor interfețe usor de utilizat"\cite{emotion_recognition_survery}).
+	Fiind una dintre cele mai consacrate aptiduni prin care o ființă inteligentă s-a putut diferenția și avansa în lanțul trofic, comunicarea verbală reprezintă un semnal complex, în care sunt transmise informații referitoare la mesaj, legate de emițător precum și de emoțiile transmise de acesta. Fiind o serie complexa, capacitatea sistemului care face identificarea emotiilor trebuie sa fie pe măsură, pentru a analiza cu acuratețe starea subiectului, oferindu-i astfel o experiență cât se poate de autentică. Nu numai atât, utilizând o astfel de recunoaștere, poate ajuta la crearea unor interfețe usor navigabile ("Recunoașterea emoțiilor prin vorbire este deosebit de utilă pentru aplicațiile din domeniul interacțiunii om-mașină deoarece ajută la crearea unor interfețe usor de utilizat"\cite{emotion_recognition_survery}).
 	
 	Deoarece semnalul audio conține și alte informații precum emoția transmisă de către emițător, algortimul de recunoaștere a emoțiilor umane prin extragerea trăsăturilor acustice capturate în vorbire, devine "baza pentru realizarea unei interacțiuni om-calculator mai armonioasă și mai eficientă, având o mare importanță în cercetare, precum și aplicativă"\cite{audio_emotion_recognition0}.
 	
@@ -116,16 +120,16 @@
 	
 	În zilele noastre, se consideră că există 5 categorii de personalități (Figura \ref{fig:ocean}), având acronimul OCEAN. Mai jos, vom prezenta aceste personalități de bază:
 	\begin{itemize}
-		\item Openness (Deschidere): această trăsătură prezintă caracteristici precum imaginația și perspicacitatea. Oamenii care au punctat mai mult în această trăsătură tind să aibe o arie mai mare de interese. Sunt curioși de fire, dornici să dobândească aptitudini noi și să se bucure de orice experiență acumulată.
+		\item Deschidere (Openness): această trăsătură prezintă caracteristici precum imaginația și perspicacitatea. Oamenii care au punctat mai mult în această trăsătură tind să aibe o arie mai mare de interese. Sunt curioși de fire, dornici să dobândească aptitudini noi și să se bucure de orice experiență acumulată.
 		
-		\item Conscientiousness (Conştiinciozitate): printre caracteristicile de baza ale acestei trăsături, putem include un nivel ridicat de atenție, control bun al impulsurilor și comportamente care coduduc spre îndeplinirea obiectivelor. Oamenii care se încadrează acestei categorii tind să fie mai organizați și atenți la detalii. Ei planifică din timp, se gândesc la modul în care comportamentul lor îi afectează pe alții și sunt atenți la termenele limită.
+		\item Conştiinciozitate (Conscientiousness): printre caracteristicile de baza ale acestei trăsături, putem include un nivel ridicat de atenție, control bun al impulsurilor și comportamente care coduduc spre îndeplinirea obiectivelor. Oamenii care se încadrează acestei categorii tind să fie mai organizați și atenți la detalii. Ei planifică din timp, se gândesc la modul în care comportamentul lor îi afectează pe alții și sunt atenți la termenele limită.
 		
-		\item Extraversion (Extraversie): se caracterizează prin excitabilitate, sociabilitate și cantități mari de expresivitate emoțională. Oamenii care au un nivel ridicat de extraversie tind să capete energie în situații sociale. A fi în preajma altor persoane îi ajută să se simtă plini de energie și entuziasm.
+		\item Extraversie (Extraversion): se caracterizează prin excitabilitate, sociabilitate și cantități mari de expresivitate emoțională. Oamenii care au un nivel ridicat de extraversie tind să capete energie în situații sociale. A fi în preajma altor persoane îi ajută să se simtă plini de energie și entuziasm.
 		Oamenii care au un nivel scăzut de extraversie (sau introvertiți) tind să fie mai rezervați și au mai puțină energie în mediile sociale. În urma evenimentelor sociale se pot simți extenuați, iar introvertiții necesită adesea o perioadă de singurătate și tăcere pentru a își putea "reîncărca bateriile".
 		
-		\item Agreeableness (Agreabilitate): pentru această personalitate, sunt incluse atribute precum încrederea, altruismul, bunătatea, afecțiunea și alte comportamente pro-sociale. Oamenii cu grad ridicat de agreabilitate tind să fie mai cooperativi, în timp ce aceia care au punctat mai slab pentru acest atribut, tind să fie competitivi și uneori chiar manipulativi.
+		\item Agreabilitate (Agreeableness ): pentru această personalitate, sunt incluse atribute precum încrederea, altruismul, bunătatea, afecțiunea și alte comportamente pro-sociale. Oamenii cu grad ridicat de agreabilitate tind să fie mai cooperativi, în timp ce aceia care au punctat mai slab pentru acest atribut, tind să fie competitivi și uneori chiar manipulativi.
 		
-		\item Neuroticism (Nevrotism): este un atribut caracterizat prin tristețe, melancolie și inconsevcență emoțională. Persoanele care au această trăsătură au tendința de a experimenta schimbări de dispoziție, anxietate, iritabilitate și tristețe. Aceia care au punctat scăzut în acest caz, tind să fie mai stabili și rezistenți emoționali.
+		\item Nevrotism (Neuroticism): este un atribut caracterizat prin tristețe, melancolie și inconsevcență emoțională. Persoanele care au această trăsătură au tendința de a experimenta schimbări de dispoziție, anxietate, iritabilitate și tristețe. Aceia care au punctat scăzut în acest caz, tind să fie mai stabili și rezistenți emoționali.
 	\end{itemize} 
 	
 	Nu în cele din urmă, dupa procesul de recunoaștere a trăsăturilor și emoțiilor transmise din voce, mai apoi interpretate în mod contextual prin procesare de text, urmează recunoașterea emoțiilor din cadrul expresiilor faciale. Pentru a putea fi în stare să facem o astfel de analiză, este nevoie identificarea unui chip uman (în engleză "face detection"). Pentru a facilita acest proces, prin intermediual camerei web care ne oferă flux de date video, biblioteca OpenCv\cite{open_cv} ne oferă suport pentru mijloace de identificare a fețelor candidaților. Având acest rezultat intermediar, este posibilă recunoașterea emoțiilor pe baza expresiilor faciale. Principalele stări emotive din cadrul fluxului video sunt aceleasi ca cele din audio.
@@ -140,21 +144,21 @@
 		\item iMotions cu "Facial Expression Analysis" \cite{imotions}: este un software specializat atât în analiza imaginilor cât și a datelor biosenzoristice. Modulul oferă 20 de măsuri de expresie facială (unități de acțiune), 7 emoții de bază, repere faciale, indici comportamentali, cum ar fi orientarea capului și atenția.
 	\end{itemize}
 	
-	Diferența pe care o aduce aplicația prezentată în lucrare ("Multimodal Emotion Detection") este reprezentată de capacitate recunoașterii în timp real a emoțiilor prin intermediul altor input-uri, precum și a feedback-ului constant. Un alt aspect important prin care se diferențiază aplicația în cauză este dat de "Modulul de vizualizare a raportului", prin care se poate vedea la fiecare segment de date, textul care a fost spus, emoțiile prezise din input-ul audio, video, cât și o spectogramă pentru intervalul selectat de date în care s-a efectuat predicția.
+	Diferența pe care o aduce aplicația prezentată în lucrare curentă, "Multimodal Emotion Detection",  este reprezentată de capacitate recunoașterii în timp real a emoțiilor prin intermediul altor input-uri, precum și a feedback-ului constant. Un alt aspect important prin care se diferențiază aplicația în cauză este dat de "Modulul de vizualizare a raportului", prin care se poate vedea la fiecare segment de date, textul care a fost spus, emoțiile prezise din input-ul audio, video, cât și o spectogramă pentru intervalul selectat de date în care s-a efectuat predicția.
 	
 	Gama de public cărui este adresată această aplicație este reprezentată în general de persoanele care trec prin procesul de intervievare. Dar asta nu înseamnă că recunoaștere emoțiilor se limitează la această aplicativitate. Mai jos sunt listate o serie de utilizări:
 	\begin{itemize}
 		\item Marketing personalizat: un studiu realizat de OneSpot Research a arătat că în proporție de 88\% dintre consumatorii chestionați au declarat că un conținut mai personalizat îi face să se simtă mai bine cu privire la un anumit brand.
-		\item Diagnostic medical: o aplicativitate în care poate sprijinii medicii cu diagnosticarea afecțiunilor nevrotice precum depresia sau demența, utilizând analiza vocală
+		\item Diagnostic medical: o aplicabilitate în care poate sprijinii medicii cu diagnosticarea afecțiunilor nevrotice precum depresia sau demența, utilizând analiza vocală
 		\item Educație: diferite software-uri didactice în variantă prototip au fost elaborate pentru a se acomoda la emoția copiilor. Când copilul exprimă frustrare pentru că o sarcină este prea simplă sau dificilă, programul se adaptează astfel încât sarcina să se schimbe într-o formă mai adecvată.
 	\end{itemize}
 	
-	În urmatorele capitole, vom trece printr-o inițiere în inteligența artficială, procesare digitală de semnal, procesare de imagini și text. Având aceste cunoștiințe asimilate, următoarele subiecte propuse care vor fi comentate se vor afla în sfera tehnologiilor utilizate, fără de care nu s-ar fi putut crea aceste teste, precum și aplicația "Multimodal Emotion Detection". 
+	În următoarele capitole, vom trece printr-o inițiere în inteligența artficială, procesare digitală de semnal, procesare de imagini și text, toate aceste componente fiind esențtiale în dezvoltarea aplicației de față. Având aceste cunoștiințe asimilate, următoarele subiecte propuse care vor fi comentate se vor afla în sfera tehnologiilor utilizate, fără de care nu s-ar fi putut crea aceste teste, precum și aplicația "Multimodal Emotion Detection". 
 	\clearpage
 	
 	\section{Noțiuni teoretice}
 	\subsection{Inteligența artificială}
-	David Fogel a definit inteligența ca fiind "abilitatea unui sistem de a se adapta astfel încât să își poată îndeplini scopurile cu succes". Astfel, o mașinărie programată și dotată cu inteligență artificială este un sistem complex capabil să facă decizii, fără nevoia intervenției unei persoane, simulând inteligența umană. Perturbarea funcționării unui astfel de sistem poate altera fluxul evenimentelor în luarea deciziilor, ajungând astfel la rezultate nejustificabile. Principalele subcategorii ale I.A. sunt: machine learning (învățare automată) și deep learning (învățare profundă).
+	David Fogel a definit inteligența ca fiind "abilitatea unui sistem de a se adapta astfel încât să își poată îndeplini scopurile cu succes". Astfel, o mașinărie programată și dotată cu inteligență artificială este un sistem complex capabil să facă decizii, fără nevoia intervenției unei persoane, simulând inteligența umană. Perturbarea funcționării unui astfel de sistem poate altera fluxul evenimentelor în luarea deciziilor, ajungând astfel la rezultate nejustificabile. Principalele subcategorii ale IA sunt: machine learning și deep learning.
 		
 	\begin{figure}[h]
 		\begin{center}
@@ -167,7 +171,7 @@
 	
 	Așa cum se observă în Figura \ref{fig:AI_ML_DL}, putem afirmă că inteligența artificială este un termen mai vast care cuprinde celelalte două subcategorii. Aplicațiile care utilizează acest tip de tehnologie imită funcțiile cognitive pe care oamenii le asociază cu mințile umane, cum ar fi învățarea sau rezolvarea anumitor probleme.
 	
-	Învățarea automată (machine learning) înglobează algoritmii clasici pentru diferite tipuri de sarcini, precum regresia sau clasificarea. Acești algoritmi sunt dependenți în permanență de datele utilizate în procesul antrenării. Cu cât sunt mai multe date și cu cât aceste date sunt mai relevante pentru problema care încearcă să se soluționeze, randamentul acestora va crește. Antrenarea lor reprezintă cel mai important pas, deoarece în acest proces, se presupune minimizarea funcției de eroare (loss function). Rolul acesteia este de a stabili valorile de adevăr între ce a fost prezis, și adevărata clasă a datelor respective. În raport cu răspunsul funcției de eroare în cauză, anumite valori denumite greutăți (weights) vor fi actualizate.
+	Machine learning înglobează algoritmii clasici pentru diferite tipuri de sarcini, precum regresia sau clasificarea. Acești algoritmi sunt dependenți în permanență de datele utilizate în procesul antrenării. Cu cât sunt mai multe date și cu cât aceste date sunt mai relevante pentru problema care încearcă să se soluționeze, randamentul acestora va crește. Antrenarea lor reprezintă cel mai important pas, deoarece în acest proces, se presupune minimizarea funcției de eroare (loss function). Rolul acesteia este de a stabili valorile de adevăr între ce a fost prezis, și adevărata clasă a datelor respective. În raport cu răspunsul funcției de eroare în cauză, anumite valori denumite greutăți (weights) vor fi actualizate.
 	
 	În învățarea automată există două categorii de date din care se poate învăța: date etichetate și date neetichetate. În prima categorie, atât parametrii de intrare cât și cei de ieșire sunt într-o formă ușor de citit pentru mașină, fiind nevoie de o cantitate mare de timp pentru a putea eticheta. În cazul datelor neetichetate, este nevoie de o soluție mai complexă pentru a putea utiliza acele informații. Astfel, reies la suprafață trei tipuri de învățare în machine learning:
 	\begin{itemize}
@@ -180,7 +184,7 @@
 
 	Recent, în industria inteligenței articiale, a apărut conceptul de deep learning, care asamblează rețele artificiale neurale cu mai multe straturi. Deep learning poate fi definit ca un subset al învățării automate, care încearcă rezolvarea problemelor mai complexe prin găsirea unor diferite șabloane (pattern-uri) în date, acestea pentru oameni fiind insesizabile cu ochiul liber.
 
-	Avantajul pe care îl aduc aceste tipuri de rețele față de cele tradiționale, este dat de eliminarea necesității de a extrage caracteristici (feature) din cadrul setului de date. Rezultatul extragerii caracteristicilor din setul de date definește o reprezentare abstractă a datelor. Acest proces este de obieci destul de complicat, care necesită cunoștințe detaliate în aria specifică a problemei care se încearcă soluționarea. Pasul extragerii trebuie revizuit de multiple ori, testat și rafinat pentru a obține rezultate optime.
+	Avantajul pe care îl aduc aceste tipuri de rețele față de cele tradiționale, este dat de eliminarea necesității de a extrage caracteristici din cadrul setului de date. Rezultatul extragerii caracteristicilor din setul de date definește o reprezentare abstractă a datelor. Acest proces este de obieci destul de complicat, care necesită cunoștințe detaliate în aria specifică a problemei care se încearcă soluționarea. Pasul extragerii trebuie revizuit de multiple ori, testat și rafinat pentru a obține rezultate optime.
 	
 	\clearpage
 	
@@ -228,13 +232,16 @@
 	\end{figure}
 	
 	Împreună cu informațiile pe care le-am dobândit în urmă prezentării legate de rețelele neurale convolutionale, putem comenta asupra Figurii \ref{fig:cnn}. Din datele folosite pentru antrenare, filtrele aplicate succesiv ne vor ajută să găsim caracteristici. Transmise mai departe către stratul conectat, se va putea face interpretarea rezultatului, în funcție de gradul de apartenența la fiecare clasă în parte. Rezultatul va fi exprimat în procentaj, iar output-ul cu procentajul cel mai ridicat va exprima clasa decisă.
+	
+	În contextul aplicației "Multimodal Emotion Detection", acest tip de algoritm a fost utilizat cu preponderență în cazul identificării emoțiilor fluxul video. Prin intermediul acestor rețele, în imaginile procesate din input-ul video se vor găsi diferite asemănări, neuronii excitându-se atunci când un șablon recunoscut este detectat, fiind posibil ca emoțiile candidatului unui interviu să fie recunoscute. 
+	
 	\clearpage
 	\subsubsection{Rețele neurale recurente}
 	Rețelele neurale recurente sunt un tip robust de rețea neurală, folositoare pentru procesarea datelor secvențiale, ordinea lor având importantă. Derivate din rețelele cu propagare înainte (feedforward), RNN-urile (recurrent neural network) prezintă un comportament asemănător cu cel al creierului uman.
 
 	La fel că ceilalți algoritmi de deep learning, rețelele neurale recurente sunt relativ vechi, fiind concepute în 1980, dar doar în ultimii ani a fost descoperit cu adevărat potențialul acestora. Creșterea în puterea computațională, accesul la cantități masive de date pe care le putem utiliza și apariția straturilor cu memorie lungă pe durata scurtă (long short-term memory), au adus RNN-urile în prim plan.
 
-	După cum menționează Lex Fridman ("Ori de câte ori există o secvență de date temporale, unde conținutul spațial este mai important decât cel al fiecărui cadru individual"), rețelele neurale recurente au oferit suport pe parcursul lucrării pentru predicția datelor cu strânsă legătură temporală. Aceste rețele și-au îndeplinit scopul în aplicația "Multimodel Emotion Recognition" deoarece atât datele audio cât și cele video depind de ordinea lor în timp.
+	După cum menționează Lex Fridman ("Ori de câte ori există o secvență de date temporale, unde conținutul spațial este mai important decât cel al fiecărui cadru individual"), rețelele neurale recurente au oferit suport pe parcursul lucrării pentru predicția datelor cu strânsă legătură temporală. Aceste rețele și-au îndeplinit scopul în aplicația "Multimodel Emotion Recognition" deoarece atât datele audio cât și cele scrise depind de ordinea lor în timp.
 
 	Datele secvențiale sunt doar date ordonate în funcție de un anumite criteriu. Spre exemplu, putem menționa că date secvențiale, datele financiare sau chiar secvența de ADN. Cele mai populare date secvențiale sunt reprezentate de către seria temporală, în care sunt enumerate în ordine cronologică. Datele provenite din vorbit, care sunt utilizate în aplicație pentru a prezice emoția, sunt adecvate acestei rețele datorită sortării cronologice standard.
 
@@ -282,7 +289,7 @@
 		\item Instrucțiuni multiple, date multiple
 	\end{itemize}
 	
-	Scopul inițial al procesoarelor grafice erau pentru procesarea video, astfel solicitând utilizatorii să înțeleagă limbaje specifice precum OpenGL. În 2007, odată cu lansarea framework-ului (cadru de lucru) NVIDIA CUDA \cite{cuda}, aria utilizării procesoarelor grafice a fost extinsă. CUDA se bazează pe limbajul de programare C și oferă un API (application programmin interface) pe care dezvoltatorii îl pot folosi pentru a aplica puterea de computație oferită de placa video în sarcinile de machine learning.
+	Scopul inițial al procesoarelor grafice erau pentru procesarea video, astfel solicitând utilizatorii să înțeleagă limbaje specifice precum OpenGL. În 2007, odată cu lansarea framework-ului NVIDIA CUDA \cite{cuda}, aria utilizării procesoarelor grafice a fost extinsă. CUDA se bazează pe limbajul de programare C și oferă un API (application programmin interface) pe care dezvoltatorii îl pot folosi pentru a aplica puterea de computație oferită de placa video în sarcinile de machine learning.
 	
 	Odată ce NVIDIA a introdus CUDA, au fost dezvoltate mai multe framework-uri pentru învățarea profundă, precum PyTorch și TensorFlow. Aceste tehnologii se folosesc de capabilitățile oferite de CUDA, oferind o accesibilitate mai mare pentru implementările moderne de deep learning.
 	

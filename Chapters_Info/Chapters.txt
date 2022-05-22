@@ -54,7 +54,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- QT Designer DONE
 				- Layout, widgets, buttons, sliders, labels , QML etc DONE
 				- Prezentare layout-uri DONE
-22.05
+23.05
 			- Pachete/Biblioteci reprezentative utilizaate: tenserflow (keras), PyAudio, matplotlib(plotting), opencv, librosa, MongoDb)
 			- desing pattern-uri: Singleton, state machine
 
@@ -72,7 +72,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- Adding Sinus Noise pentru a scapa de oferfitting
 			- Accuracy, matrix confusion
 			- Testing
-23.05
+24.05
 		- Facial emotion regonition
 			- Face detection
 				- Open CV (prezentare, diferite exemple la ce se poate folosi si la ce a fost folosit in aplicatie)
@@ -131,7 +131,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- identificarea emotiilor la 4 secunde pentru audio
 				- identificarea emotiilor la 4 secunde pentru video
 				- identificarea emotiilor/caracterului din text
-24.05
+25.05
 			- Generarea raportului candidatului
 				- salvarea in mongodb + mongofs
 				- ce se salveaza
@@ -147,7 +147,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- label audio pentru predictie
 				- label text pentru predictie
 				- highlight text
-25.05
+26.05
 	- Imbunatariri viitoare
 	- Concluzii
 	- Corectare 
