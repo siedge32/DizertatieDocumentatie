@@ -173,5 +173,24 @@
   Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in
   North American English}
   \endentry
+
+  \entry{xception}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={Chollet},
+         familyi={C\bibinitperiod},
+         given={François},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://arxiv.org/abs/1610.02357/}}
+    \field{note}{Accessed: 24.05.2022}
+    \field{title}{Xception: Deep Learning with Depthwise Separable
+  Convolutions}
+  \endentry
 \enddatalist
 \endinput

@@ -67,26 +67,27 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- Dataset (infos, etc) DONE
 				- Preprocesare DONE
 24.05
-				- Training - layere utilizate(LSTM, Layer)
-					- LSTM
-					- TimeDistributed
-					- Adding Sinus Noise pentru a scapa de oferfitting
-				- Accuracy, matrix confusion
-				- Testing
+				- Training - layere utilizate(LSTM, Layer) DONE
+					- LSTM DONE
+					- TimeDistributed DONE
+					- Adding Sinus Noise pentru a scapa de oferfitting DONE
+				- Accuracy, matrix confusion DONE
+				- Testing DONE
 
 			- Facial emotion regonition
+				- Introduction DONE
 				- Face detection
-					- Open CV (prezentare, diferite exemple la ce se poate folosi si la ce a fost folosit in aplicatie)
-					- Features
-					- Eyes, mouth, jaw, eyes closed/opened, glasses on/off 
-				- Dataset (infos, etc)
-				- Training (different models)
-					- modele (layere folosite), normalizare, shape
-					- Image generator pentru a scapa de overfitting
-				- Accuracy, matrix confusion
-				- Testing
-				- Using with opencv, pentru capturare imagini din cameraweb
-				- Detalii de implementare (poate bucati de cod reprezentative)
+					- Open CV (prezentare, diferite exemple la ce se poate folosi si la ce a fost folosit in aplicatie) DONE
+					- Features DONE
+					- Eyes, mouth, jaw, eyes closed/opened, glasses on/off  DONE
+				- Dataset (infos, etc) DONE
+				- Training
+					- modele (layere folosite), normalizare, shape DONE
+					- Image generator pentru a scapa de overfitting DONE
+				- Testing DONE
+				- Using with opencv, pentru capturare imagini din camera web DONE
+				- matrice de confuzie + accuracy
+25.05
 			- Text emotion recognition -> Prezentare minima deoarece Cristi are ownership
 				- Speech to text (de prezentat)
 				- Dataset (infos etc)
@@ -122,6 +123,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 						- cum  este gandit pipeline-ul ?
 						- layere-le utilizate
 						- de ce sunt aceste layere utilizate ?
+26.05
 		- Prezentarea aplicatiei propiu zisa
 			- Ghid de utilizare
 			- Interfata (white theme/dark theme) + explicare context State Machine
@@ -132,7 +134,6 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- identificarea emotiilor la 4 secunde pentru audio
 				- identificarea emotiilor la 4 secunde pentru video
 				- identificarea emotiilor/caracterului din text
-25.05
 			- Generarea raportului candidatului
 				- salvarea in mongodb + mongofs
 				- ce se salveaza
@@ -148,7 +149,7 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- label audio pentru predictie
 				- label text pentru predictie
 				- highlight text
-26.05
+27.05
 	- Imbunatariri viitoare
 	- Concluzii
 	- Corectare 
