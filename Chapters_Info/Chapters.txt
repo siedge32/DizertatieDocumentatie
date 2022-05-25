@@ -89,9 +89,9 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 				- matrice de confuzie + accuracy
 25.05
 			- Text emotion recognition -> Prezentare minima deoarece Cristi are ownership
-				- Speech to text (de prezentat)
-				- Dataset (infos etc)
-				- Transformare (preprocesare)
+				- Speech to text (de prezentat) DONE
+				- Dataset (infos etc) DONE
+				- Transformare (preprocesare) DONE
 					- fiecare text trece prin urmatorul proces:
 						- curatare cu diferite regex-uri
 						- apoi fiecare text: 
@@ -120,9 +120,8 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 								- se foloseste de WordNet pentru a lematiza (https://www.machinelearningplus.com/nlp/lemmatization-examples-python/) impreuna cu ‘part-of-speech’ tag corect 
 								- vectorizare
 					- Predictie
-						- cum  este gandit pipeline-ul ?
-						- layere-le utilizate
-						- de ce sunt aceste layere utilizate ?
+						- layere-le utilizate			DONE
+						- de ce sunt aceste layere utilizate ?	DONE
 26.05
 		- Prezentarea aplicatiei propiu zisa
 			- Ghid de utilizare

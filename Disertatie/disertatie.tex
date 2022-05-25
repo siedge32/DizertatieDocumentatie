@@ -381,7 +381,7 @@
 	
 	\clearpage
 	\subsection{Tehnologii utilizate}
-	"Multimodal Emotion Recognition" este o aplicație în care au fost folosite o serie de tehnologii. Aceste unelte fac posibilă atât navigarea printr-o interfață grafică prietenoasă utilizatorului, cât și cele mai importante funcționalități de bază, precum identificarea emoțiilor. Este o aplicație desktop, care oferă utilizatorului posibilitatea de a revizui un interviu, cu scopul identificării unor momente cheie, care au fost omise în procesul interviului.
+	"Multimodal Emotion Detection" este o aplicație în care au fost folosite o serie de tehnologii. Aceste unelte fac posibilă atât navigarea printr-o interfață grafică prietenoasă utilizatorului, cât și cele mai importante funcționalități de bază, precum identificarea emoțiilor. Este o aplicație desktop, care oferă utilizatorului posibilitatea de a revizui un interviu, cu scopul identificării unor momente cheie, care au fost omise în procesul interviului.
 	
 	În funcție de cerințele și necesitățile aplicației, direcția aleasă în materie de tehnologii și limbaje de programare trebuie să fie una justificabilă. Așteptările construite în faza de proiecție, testare sau design trebuie menținute, iar rezultatul să fie sustenabil în raport cu tehnologiile alese pentru a realiza aplicația dorită. Primul pas înspre proiectare a fost alegerea unui limbaj de programare, care să satisfacă așteptările create. Această alegere poate deveni un grea, atunci când se ia în calcul beneficiile și dezavantajele fiecărui limbaj de programare. Având în vedere decizia care trebuie făcută, limbajele de programare se grupează în 2 categorii:
 	\begin{itemize}
@@ -555,8 +555,7 @@
 	
 	Aplicând formula \ref{to_mel_scale}, spectrograma inițial creată este transformată în spațiul Mel, domeniu care se aseamănă mai mult cu modul in care urechea umană percepe sunetul.
 	
-	%Diacritice
-	Avand acest rezultat intermediar, pentru o acuratete mai mare a modelului, umatorul pas in procesul de preprocesare a fost segmantare in unitati egale intercalate. Acest pas este sustinut de sporirea eficacitatii modelului precum si de cresterea granularitatii datelor.
+	Având acest rezultat intermediar, pentru o acuratețe mai mare a modelului, următorul pas în procesul de preprocesare a fost segmentarea în unități egale intercalate. Acest pas este susținut de sporirea eficacității modelului precum și de creșterea granularității datelor.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -566,9 +565,9 @@
 		\label{fig:audio_model}
 	\end{figure}
 	
-	In Figura \ref{fig:audio_model} se poate observa arhitectura modelului utilizat pentru predictiile audio. Este construit din straturi convolutionale, cu numar de filtre variabil (64 sau 128). Pentru stabilizarea procesului de învățare și reducerea dramatică a numărului de epoci de antrenament necesare antrenării rețelei, au fost utilizate straturile care sa normalizeze batch-urile. Pentru reducerea spatiala a parametrilor utilizati in calcule si pentru evitarea overfitting-ului, dupa fiecare strat convolutional, a fost adaugat un strat max pooling. Functia de activare folosita preponderent in acest model este Exponential Linear Unit.
-	
-	Mai mult decat atat, fiecare strat metionat mai sus a fost invelit intr-un strat de timpul long short-term memory, eficient de utilizat in cazul predictiilor in care datele sunt de tipul secventa. Datorita preprocesarii anterioare si a imapartirii pe segmente intercalate, acest strat s-a dovedit util de folosit, datorita proprietatii de stocare interna a memoriei.
+ 	În Figura \ref{fig:audio_model} se poate observa arhitectura modelului utilizat pentru predicțiile audio. Este construit din straturi convolutionale, cu număr de filtre variabil (64 sau 128). Pentru stabilizarea procesului de învățare și reducerea dramatică a numărului de epoci de antrenament necesare antrenării rețelei, au fost utilizate straturile care să normalizeze batch-urile. Pentru reducerea spațială a parametrilor utilizați în calcule și pentru evitarea overfitting-ului, după fiecare strat convolutional, a fost adăugat un strat max pooling. Funcția de activare folosită preponderent în acest model este Exponențial Linear Unit. 
+ 	
+ 	Mai mult decât atât, fiecare strat menționat mai sus a fost învelit într-un strat de timpul long short-term memory, eficient de utilizat în cazul predicțiilor în care datele sunt de tipul secvență. Datorită preprocesării anterioare și a împărțirii pe segmente intercalate, acest strat s-a dovedit util de folosit, datorită proprietății de stocare internă a memoriei.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -578,7 +577,7 @@
 		\label{fig:audio_model_accuracy}
 	\end{figure}
 	
-	Acuratetea inregistrata pe datele de testare este una ridicata, aproximativ 95.91\%. In Figura \ref{fig:audio_model_accuracy} se poate observa procesul de invatare al modelului, precum si plafonarea pe care acesta o are la final, datorita numarul de epoci si batch-uri executate.
+	Acuratețea înregistrată pe datele de testare este una ridicată, aproximativ 95.91\%. În Figura \ref{fig:audio_model_accuracy} se poate observa procesul de învățare al modelului, precum și plafonarea pe care acesta o are la final, datorită numărul de epoci și batch-uri executate.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -588,21 +587,21 @@
 		\label{fig:audio_confusion_matrix}
 	\end{figure}
 
-	Figura \ref{fig:audio_confusion_matrix} se observa matricea de confuzie asociata predictiilor pe datele de testare. Se poate observa cum modelul a facut confuzie intre starea de frica si cea de surprinde, care pot fi destul de asemanatoare.
+	Figura \ref{fig:audio_confusion_matrix} se observă matricea de confuzie asociată predicțiilor pe datele de testare. Se poate observa cum modelul a făcut confuzie între starea de frică și cea de surprinde, care pot fi destul de asemănătoare din punct de vedere vocal.
 	
 	%In cadrul acestei persepective, emotiile sunt transmise prin intermediul vocii. Analizand aproximativ 4 secunde de date la rata de esantionare de 16 kHz, se vor aduna suficiente date pentru a se putea face o predictie in timp real.
 	
 	\clearpage
 	\subsubsection{Recunoașterea emoțiilor video}
-	Pentru identificarea starilor si emotiilor din expresiile faciale, a fost nevoie de conceperea unui set de pasi:
+	Pentru identificarea stărilor și emoțiilor din expresiile faciale, a fost nevoie de conceperea unui set de pași:
 	\begin{itemize}
-		\item Detectarea faciala.
+		\item Detectarea facială.
 				
-		Pentru acest pas al algoritmului creat, Dlib ne pune la dispozitie doua retele prin care se pot identifica fete umane. Este vorba despre: HOG + Linear SVM si Max-Margin (MMOD) CNN. Prima tehnica este mai eficienta si mai rapida, dar nu la fel de precisa cum este a doua. In aplicatie, s-a facut un compromis pentru a avea performante mai ridicate, utilizand prima retea de recunoastere. 
+		Pentru acest pas al algoritmului creat, Dlib ne pune la dispoziție două rețele prin care se pot identifica fețe umane. Este vorba despre: HOG + Linear SVM și Max-Margin (MMOD) CNN. Prima tehnică este mai eficientă și mai rapidă, dar nu la fel de precisă cum este a două. În aplicație, s-a făcut un compromis pentru a avea performanțe mai ridicate, utilizând prima rețea de recunoaștere. 
 		
 		\item Identificarea marginilor zonei faciale.
 		
-		Ca rezultat in urma identificarii faciale, acesta va fi reprezentat de catre coordonatele xoy ale dreptunghiului in care fata umana a fost identificata.
+		Ca rezultat în urmă identificării faciale, acesta va fi reprezentat de către coordonatele XOY ale dreptunghiului în care față umană a fost identificată.
 		
 		\begin{figure}[H]
 			\begin{subfigure}[b]{0.5\textwidth}
@@ -620,29 +619,29 @@
 			\label{fig:face}
 		\end{figure}
 	
-		Prin intermediul pachetului OpenCv, putem trasa mai departe diferite forma geometrice (exemplu Figura \ref{fig:video_face_detection}) care sa evidentieze zona de interes.
+		Prin intermediul pachetului OpenCv, putem trasa mai departe diferite forme geometrice (exemplu Figura \ref{fig:video_face_detection}) care să evidențieze zona de interes.
 		
-		\item Decuparea fetei.
+		\item Decuparea feței.
 		
-		Deoarece mai departe ese nevoie de strict de zona fetei pentru a se putea face predictia referitor la emotiile candidatului, aceasta va fi salvata separat pentru a putea fi procesata. 
+		Deoarece mai departe este nevoie de strict de zona feței pentru a se putea face predicția referitor la emoțiile candidatului, aceasta va fi salvată separat pentru a putea fi procesată. 
 		
-		\item Evidentierea trasaturilor fetei.
+		\item Evidențierea trăsăturilor feței.
 		
-		Pentru a putea oferi o interfata mai prietenoasa utilizatorului, sunt evidentiate urmatoarele trasaturi ale fetei: sprancene, ochi, nas, gura si conturul maxilarului (Figura \ref{fig:video_face_features}). 
+		Pentru a putea oferi o interfață mai prietenoasă utilizatorului, sunt evidențiate următoarele trăsături ale fetei: sprâncene, ochi, nas, gură și conturul maxilarului (Figura \ref{fig:video_face_features}). 
 		
-		\item Transformarea in nuante de gri.
+		\item Transformarea în nuanțe de gri.
 		
-		Deoarece in setul de date utilizat, datele au fost in grey-scale, a trebuit sa facem aceasta transformare. Motivatia din spate este data de eficientizarea calculelor, fiind suficient ca operatiile matematice sa fie efectuat pe singurul canal disponibil, gri.
+		Pentru că în setul de date utilizat, datele sunt în grey-scale, nu a mai fost necesar să facem această transformare. Motivația din spate este dată de eficientizarea calculelor, fiind suficient că operațiile matematice să fie efectuat pe singurul canal disponibil, gri.
 		
-		\item Predictia zonei de interes.
+		\item Predicția zonei de interes.
 		
-		Avand acest rezultat intermediar, datele aferente fetei vor fi procesate mai apoi de catre modelul de IA folosit pentru predictia emotiilor din expresiile faciale.
+		Având acest rezultat intermediar, datele aferente feței vor fi procesate mai apoi de către modelul de IA folosit pentru predicția emoțiilor din expresiile faciale.
 		
 	\end{itemize}
 	
-	Datele utilizate pentru antrenare retelei artificiale provin din setul de date "Facial Emotion Recognition" (FER 2013). Datele constau din imagini de 48x48 pixeli în tonuri de gri ale fețelor, fiind in numar de 28709 poze. Fețele au fost înregistrate automat, astfel încât fața să fie mai mult sau mai puțin centrată și să ocupe aproximativ aceeași cantitate de spațiu în fiecare imagine. Categoriile de emotii sunt: 0 = Furios, 1 = Dezgust, 2 = Frica, 3 = Fericit, 4 = Trist, 5 = Surpriză, 6 = Neutru.
+	Datele utilizate pentru antrenare rețelei artificiale provin din setul de date "Facial Emotion Recognition" (FER 2013). Datele constau din imagini de 48x48 pixeli în tonuri de gri ale fețelor, fiind în număr de 28709 poze. Fețele au fost înregistrate automat, astfel încât fața să fie mai mult sau mai puțin centrată și să ocupe aproximativ aceeași cantitate de spațiu în fiecare imagine. Categoriile de emoții sunt: 0 = Furios, 1 = Dezgust, 2 = Frică, 3 = Fericit, 4 = Trist, 5 = Surpriză, 6 = Neutru.
 	
-	Informatiile sunt retinute in format csv, avand doua coloane: emotie si pixeli. Pe coloana emotie, contine un numar de la 0 la 6 pentru emotia reprezentata in imagine. Coloana pixeli conține un șir de numere între ghilimele pentru fiecare imagine. Conținutul acestui șir are valori de pixeli separate de spațiu în ordinea majoră a rândurilor. In Figura \ref{fig:video_dataset_example}, este printata un exemplu din setul de date.
+	Informațiile sunt reținute în format csv, având două coloane: emoție și pixeli. Pe coloana emoție, conține un număr de la 0 la 6 pentru emoția reprezentată în imagine. Coloana pixeli conține un șir de numere între ghilimele pentru fiecare imagine. Conținutul acestui șir are valori de pixeli separate de spațiu în ordinea majoră a rândurilor. În Figura \ref{fig:video_dataset_example}, este printată un exemplu din setul de date.
 	
 	\begin{figure}[H]
 		\begin{center} 
@@ -652,13 +651,13 @@
 		\label{fig:video_dataset_example}
 	\end{figure}
 	
-	In etapa de preprocesare, a fost urmata o structura mai usoara. Deoarece datele erau deja in tonuri gri, ultimul pas care trebuia aplicat era cel de normalizare al datelor. Astfel, datele care reprezinta pixelii (intensitatea de gri), au fost normalizate intre 0 si 1, pentru a spori performantele in timpul antrenarii al modelului.
+	În etapa de preprocesare, a fost urmată o structură mai ușoară. Deoarece datele erau deja în tonuri gri, ultimul pas care trebuia aplicat era cel de normalizare al datelor. Astfel, datele care reprezintă pixelii (intensitatea de gri), au fost normalizate între 0 și 1, pentru a spori performanțele în timpul antrenării modelului.
 	
-	Arhitectura utilizata pentru modelul de invatare video este inspirata din celebrul model Xception \cite{xception}, creat chiar de fondatorul pachetului Keras. Modelul este construit astfel, din 3 etape: fluxul de intratre, mijloc si final. Fiecare dintre aceste nivele se bazeaza pe perechi de straturi convolutional separabil, normalizare si activare. 
+	Arhitectură utilizată pentru modelul de învățare video este inspirată din model Xception \cite{xception}, creat chiar de fondatorul pachetului Keras. Modelul este construit astfel, în 3 etape: fluxul de intratre, mijloc și final. Fiecare dintre aceste nivele se bazează pe perechi de straturi convolutional separabil, normalizare și activare. 
 	
-	Pentru a elimina riscul de overfiting, se utilizeaza un generator sintetic de date, care are rolul a crea date destul de asemanatoare celor date, adaugand urmatoarele operatii asupra lor: marirea, rotirea, mutarea ei in cele patru directii cardinale precum si intoarcecrea ei pe oriziontala si verticala. In acest sens, minimazam pe cat este posibil riscul de overfitting al modelului pe datele de antrenare.
+	Pentru a elimina riscul de overfiting, se utilizează un generator sintetic de date, care are rolul a crea date destul de asemănătoare celor date, adăugând următoarele operații asupra lor: mărirea, rotirea, mutarea ei în cele patru direcții cardinale precum și întoarcerea ei pe orizontală și verticală. În acest sens, minimizăm pe cât posibil riscul de overfitting al modelului pe datele de antrenare.
 	
-	In scop de testare, prin izolarea a primelor straturi din retea, am putut observa modul in care reteaua neurala isi creaza harti de caracteristici pe baza unei poze date. Este de retinut ca in acest pas, reteaua nu este antrenata, caracteristicile gasite putand sa fie schimbate de la o epoca la alta.
+	În scop de testare, prin izolarea a primelor straturi din rețea, am putut observa modul în care rețeaua neurală își creează hărți de caracteristici pe baza unei poze date. Este de reținut că în acest pas, rețeaua nu este antrenată, caracteristicile găsite putând să fie schimbate de la o epoca la altă.
 	
 	\begin{figure}
 		\centering
@@ -668,39 +667,74 @@
 			\label{fig:video_model_layers_visualisation}
 		\end{subfigure}
 		\begin{subfigure}[b]{0.4\textwidth}
-			 \includegraphics[width=1\linewidth]{images/audio_confusion_matrix.png}
+			 \includegraphics[width=1\linewidth]{images/video_confusion_matrix.png}
 			\caption{Matrice de confuzie model video}
 			\label{fig:video_confusion_matrix}
 		\end{subfigure}
 	\end{figure}
 
-	In Figura \ref{fig:video_model_layers_visualisation} se poate observa ca, in urma unei procesari care a permis vizualizarea datelor intr-o forma mai lizibila, imaginea data pentru predictie este descompusa si analizata de retea.
-	
-	Din punct de vedere al acuratetii, acestea retea are performante bune pentru acest set de date, avand o precizie de xx. Se poate obseva mai jos in Figura \ref{fig:video_confusion_matrix} performantele modelului video din prisma matricei de confuzie.
+	În Figura \ref{fig:video_model_layers_visualisation} se poate observa că, în urmă unei procesări care a permis vizualizarea datelor într-o formă mai lizibilă, imaginea dată pentru predicție este descompusă și analizată de rețea.
+
+	Din punct de vedere al acurateței, acestă rețea are performanțe bune pentru acest set de date, având o precizie de 93.46\% pentru setul de validare, iar cazul setului de testare,  65.45\%. Se poate observa mai jos în Figura \ref{fig:video_confusion_matrix} performanțele modelului video din prisma matricei de confuzie.
 	
 	\clearpage
 	\subsubsection{Recunoașterea emoțiilor din text}
+	% Diacritice
+	In cadrul detectarii emotiilor din text, setul de date uilizat se bazeaza pe rezultatul obitnut din studiul "Linguistic styles: Language use as an individual difference" \cite{text_dataset}. In realizarea acestui articol, au fost inregistrate 15 jurnale ale unor pacienti internati pentru abuz de substante, sarcinile zilnice ale a 35 de studenti si rezumatele jurnalelor a 40 de psihologi sociali. Obiectivul acestui studiu a fost acela de a demonstra ca, limbajul pe care il avem cand scriem ne paote reflecta personalitatea.
 	
-		% Preprocesare
-	% Model
-	% Accuracy
-	% Matrice de confuzie
-	% Poza la final cu predictie si fata + determinare
+	Din acest set date, au fost utilizate 2.468 de articole scrise ale celor 35 de studenti. Din cele 35 de persoane care au participat la studiu, au fost 29 de femei si 5 barbati, cu varste cuprinsne in 18 si 67 ani, media varstei fiind de 27. Articolele folosite ca date, au fost sub forma unor sarcini fara evaluare. 
 	
-	\clearpage
-	\subsection{Setări}
+	Pentru fiecare tema, studentii trebuiau sa scrie minim 20 de minute pe zi despre un anumit subiect. Datele au fost colectate în timpul unui curs de vară de 2 săptămâni între 1993 și 1996. Fiecare student și-a completat scrisul zilnic timp de 10 zile consecutive. 
+	
+	Scorurile de personalitate ale studentilor au fost evalaute prin completarea chestionarului Big Five Inventory (BFI). BFI este un chestionar alcatuit din 44 de itemi care ofera un scor pentru fiecare din cele 5 trasaturi de personalitate (OCEAN). O intrare din setul de date utilizat este contstruit din urmatorul format: 
+	\begin{itemize}
+		\item Id: identificatorul unic al fiecai articol
+		\item Text: este sris in limba engleza, si in mare parte, fiecare student isi exprima gandurile, starea si actiunile pe care le-a facut in ziua respectiva
+		\item Cele 5 categorii de personalitate: pentru fiecare eticheta utilizata, i-a fost acordat "da", fie "nu", pentru a indica un punctaj ridicat sau scazut pentru o anumita trasatura.
+	\end{itemize}
+
+	Umreaza un fragment folosit in setul de date: "Well, right now I just woke up from a mid-day nap. It\'s sort of weird, but ever since I moved to Texas, I have had problems concentrating on things. I remember starting my homework in  10th grade as soon as the clock struck 4 and not stopping until it was done. Of course it was easier, but I still did it."
+
+	Este important de remarcat faptul ca etichetele de clasificare au fost aplicate in functie de raspunsurile la un chestionar destul de scurt. Datele pot fi "biased" sau atat de veridice precum am banui, datorita autoevaluarii studentilor printr-un set de intrebari scurte. Ce se doreste sa se remarce in acest paragraf este faptul ca emotiile si personalitatile umane sunt complexe.
+	
+	Preprocesarera datelor pentru a fi analizate in contexul detectarii emotiilor trebuie sa fie una amanuntia. S-a urmat astfel, urmatorul set de pasi:
+	\begin{itemize}
+		\item Eliminarea caracterlor non alfla-numerice, curatarea textului de diferite preprozitii si/sau prescurtari utilizand regex.
+		\item Tokenizarea textului in propozitii, urmand mai poi ca pentru fiecare sa se aplice urmatoare operatii:
+		\item Impartirea propozitiei in cuvinte, determinad mai apoi ce parte a propozitiei este fiecare cuvant (subiect, verb, adjectiv etc).
+		\item Eliminarea cuvintelor de oprire si procesarea celor care trec ma ideparte de acest filtru prin reducerea la cuvintelor la minuscula.
+		\item Aducerea cuvintelor in forma lor initiala utilizand procesul de lematizare WordNet. Se foloseste acest procedeu in loc de alegerea radacinii cuvantului pentru a aduce la o forma mai apropiata in contextul dat.
+		\item Vectorizare, prin transofrmarea perechilor identificate in numere
+	\end{itemize}
+	
+	\bigskip
+	
+	Reteaua neurala antrenata utilizand acest set de date este construita din layerre de tipul: embedding, conv1d, maxpooling1d, batchNormalization si LSTM.
+	
+	Pentru a putea lucra cu date de tip text, trebuie ca datele lexicale sa fie transformate in numere. Pentru retele care se ocupa cu predictia pe diferite clase, se poate utiliza one hot encoding. Dar pentru cuvinte, aceasta tehnica ne poate ingreuna procesul de invatare datorita sirurile mari de 0 si 1 care s-ar crea. O tehnica mai eficienta este reprezentata de utilizarea straturilor embedding, care vor ajuta la reprezentarea cuvintelor prin numere intregi. Stratul convolutional 1d este asemanator cu cel utilizat in cadrul imaginilor, singura diferenta fiind intre numarul de dimensiuni in care se face glisarea filtrelor.
+	
+	Predictia pentru identificarea personalitatii pe baza interviului va avea loc la final, deoarece sunt nevoie de cat mai multe date pentru a avea o acuratete ridicata.
 	
 	\clearpage
 	\subsection{Utilizare modul identificare emotii}
+	% Explicat start
+	% 4s date audio
+	% 4s date video
+	% speech-to-text
 	
 	\clearpage
 	\subsubsection{Generarera raportului}
+	% explicat cum fiecare thread stocheaza predictiile intr-un manager, care la final se vor propaga in MongoDb
 	
 	\clearpage
 	\subsection{Vizulizarea tuturor rapoartelor}
 	
 	\clearpage
 	\subsection{Vizualizare raport individual}
+	
+	\clearpage
+	\subsection{Setări}
+	% de incluse light and dark theme
 	
 	\clearpage
 	\section{Concluzii}

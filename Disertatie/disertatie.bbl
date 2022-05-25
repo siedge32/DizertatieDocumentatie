@@ -192,5 +192,35 @@
     \field{title}{Xception: Deep Learning with Depthwise Separable
   Convolutions}
   \endentry
+
+  \entry{text_dataset}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PJ}{%
+         family={Pennebaker},
+         familyi={P\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={King},
+         familyi={K\bibinitperiod},
+         given={Laura},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJKL1}
+    \strng{fullhash}{PJKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1037//0022-3514.77.6.1296
+    \endverb
+    \field{pages}{1296\bibrangedash 312}
+    \field{title}{Linguistic styles: Language use as an individual difference}
+    \field{volume}{77}
+    \field{journaltitle}{Journal of personality and social psychology}
+    \field{month}{01}
+    \field{year}{2000}
+  \endentry
 \enddatalist
 \endinput
