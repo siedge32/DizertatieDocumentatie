@@ -310,7 +310,7 @@
 
 	În mod natural, vocea este transmisă urechii umane printr-o undă acustică care se deplasează prin intermediul aerului, cu viteză sunetului. Din momentul în care este înregistrată de către un microfon, sunetul este transmis printr-un fir ca un semnal electric care se deplasează cu viteză luminii. Pentru a face acest eveniment posibil, semnalul acustic generat de corzile vocale umane trebuie mai întâi transformat într-un semnal electric și apoi convertit într-o formă acustică, pentru a putea fi înțeles de către oameni. Semnalul electric convertit este în mod convențional într-o formă analogică. Adică este reprezentat ca o tensiune care variază continuu într-un interval dat (0 și 1). Datorată degradării semnalului electric în cazul stocării, a deplasării acestuia pe distanțe lungi sau a procesării de către un calculator, se preferă transformarea lui într-o formă digitală.
 
-	Indiferent de domeniul utilizat (timpului sau frecventelor), următorii termeni prezentați mai jos vor ajută în înțelegerea procesului de identificare a emoțiilor:
+	Indiferent de domeniul utilizat (timpului sau frecvențelor), următorii termeni prezentați mai jos vor ajută în înțelegerea procesului de identificare a emoțiilor:
 	
   	\begin{itemize} 
   		\item Rata de eșantionare (Sample rate): reprezintă numărul de date (sample-uri) care sunt înregistrate într-o secundă. Cu cât avem rată de eșantionare mai mare, cu atât calitatea semnalului va fi mai ridicată. Spre exemplu, rata de eșantionare folosită în general pentru scrierea CD-urilor cu muzică este de 44.1 KHz (kilo Hertzi). Asta înseamnă că o dată la o secundă, 44100 de date sunt înregistrate, pe care le putem studia. 
@@ -377,7 +377,7 @@
 		\label{fig:spectogram}
 	\end{figure} 
 
-	Rezultatul obținut în urma aplicării transformatei Fourier pe termen scurt poate fi interpret sub forma unui grafic care poartă denumirea de spectogramă sau cascadă (waterfall). În exemplul din Figura \ref{fig:spectogram}, într-un spațiu cartezian XOY, axa OX reprezintă timpul iar cealaltă axa arată puterea lui. În funcție de intensitatea culorilor, putem determina degradarea precum și anvelopa acustică a semnalului sonor.
+	Rezultatul obținut în urma aplicării transformatei Fourier pe termen scurt poate fi interpret sub forma unui grafic care poartă denumirea de spectogramă sau cascadă (waterfall). În exemplul din Figura \ref{fig:spectogram}, într-un spațiu cartezian XOY, axa OX reprezintă timpul iar cealaltă axă arată puterea lui. În funcție de intensitatea culorilor, putem determina degradarea precum și anvelopa acustică a semnalului sonor.
 	
 	\clearpage
 	\subsection{Tehnologii utilizate}
@@ -386,8 +386,8 @@
 	În funcție de cerințele și necesitățile aplicației, direcția aleasă în materie de tehnologii și limbaje de programare trebuie să fie una justificabilă. Așteptările construite în faza de proiecție, testare sau design trebuie menținute, iar rezultatul să fie sustenabil în raport cu tehnologiile alese pentru a realiza aplicația dorită. Primul pas înspre proiectare a fost alegerea unui limbaj de programare, care să satisfacă așteptările create. Această alegere poate deveni un grea, atunci când se ia în calcul beneficiile și dezavantajele fiecărui limbaj de programare. Având în vedere decizia care trebuie făcută, limbajele de programare se grupează în 2 categorii:
 	\begin{itemize}
 		\item Limbaje de nivel jos: sunt folosite pentru a scrie programe în raport la arhitectură și hardware-ul specific unui anumit tip de computer. Sunt aproape de limbajul nativ al unui calculator (binar), devenind astfel greu de înțeles de către programatori.
-		Programele scrise în limbaje de nivel jos sunt rapide și eficiente din punct de vedere al memoriei. Acestea sunt utilizate în principal pentru a dezvolta sisteme de operare, drivere de dispozitiv, baze de date și aplicații care necesită acces direct la hardware. La rândul lor, se împart în două categorii: limbaj mașină și limbaj de asamblare.
-		\item Limbaje de nivel înalt: sunt similare cu limbajul uman, prietenoase cu programatorii, ușor de scris, depanat și întreținut. Ele nu interacționează direct cu hardware-ul, ci mai degrabă, se concentrează cu operațiile complexe, eficientizarea scrisului de cod și lizibilitatea lui. Ca exemple, putem oferi: Python, Java, C\# etc. Programele concepute în limbaje de nivel înalt necesită compilator/interpretor (fiind la rândul ei un criteriu de clasificare) care să traducă codul sursă în limbajul mașinii. De asemenea, în funcție de paradigmă utilizată, limbaje de programare de nivel înalt se pot clasifică în: funcțională, procedurală și obiect orientată.
+		Programele scrise în limbaje de nivel jos sunt rapide și eficiente din punct de vedere al memoriei. Acestea sunt utilizate în principal pentru a dezvolta sisteme de operare, drivere pentru dispozitiv, baze de date și aplicații care necesită acces direct la hardware. La rândul lor, se împart în două categorii: limbaj mașină și limbaj de asamblare.
+		\item Limbaje de nivel înalt: sunt similare cu limbajul uman, prietenoase cu programatorii, ușor de scris, depanat și întreținut. Ele nu interacționează direct cu hardware-ul, ci mai degrabă, se concentrează cu operațiile complexe, eficientizarea scrisului de cod și lizibilitatea lui. Ca exemple, putem oferi: Python, Java, C\# etc. Programele concepute în limbaje de nivel înalt necesită compilator/interpretor (fiind la rândul ei un criteriu de clasificare) care să traducă codul sursă în limbajul mașinii. De asemenea, în funcție de paradigma utilizată, limbajele de programare de nivel înalt se pot clasifică în: funcțional, procedural și obiect orientat.
 	\end{itemize}
 	
 	Acest program este conceput și scris în întregime utilizând limbajul de programare Python \cite{python}. Motivele care susțin decizia făcută sunt: capabilitatea de a programa în diferite paradigme (folositoare în etapă explorării și testării unor funcționalități), compatibilitatea cu majoritatea platformelor și a sistemelor de operare precum și accesul la o multitudine de biblioteci care au ajutat în cadrul dezvoltării aplicației.
@@ -398,12 +398,12 @@
 
 	Oferind suport pentru multiple paradigme de programare (funcțională, procedurală și obiect orientată), python utilizează ca alte limbaje de nivel înalt, un mecanism numit "garbage collector". Cu ajutorul acestui sistem, programatorul scapă de necesitatea eliberării în mod manual a memoriei utilizate în timpul execuției programului. Această funcție gestionează în mod automat zonele de memorie utilizate, iar printr-o rutină internă, dealocă zona atunci când aceasta nu mai este accesată. 
 
-	Adesea, utilizat împreună cu limbajul de programare python este un sistem care să administreze pachetele instalate, mediile de lucru create precum și versiunea limbajului utilizată. Distribuția Anaconda \cite{anaconda} este un astfel de sistem, avantajos de folosit atunci când dorim să lucrăm cu diferite pachete pentru manipularea datelor (numpy, pandas) sau pentru învățarea automată (scikit-learn). Dacă sunt nevoie de pachete suplimentare după instalarea acestei distribuții, din aplicația de administrare se pot instala manual bibliotecile necesare. O unealtă folositoare care se instalează odată cu această distribuție este Jupyter Notebook. Este o aplicație web folosită pentru rularea și editarea codului python, fiind executat local, fără a fi nevoie de acces la internet. Nucleul utilizat (kernel) facilitează rularea secvențială a codului, făcând posibilă ca variabilele să fie stocate și accesibile din memorie pe toată durata vieții acestuia. 
+	Adesea, utilizat împreună cu limbajul de programare python este un sistem care să administreze pachetele instalate, mediile de lucru create precum și versiunea limbajului utilizată. Distribuția Anaconda \cite{anaconda} este un astfel de sistem, avantajos de folosit atunci când dorim să lucrăm cu diferite pachete pentru manipularea datelor (numpy, pandas) sau pentru învățarea automată (scikit-learn). Dacă este nevoie de pachete suplimentare după instalarea acestei distribuții, din aplicația de administrare se pot instala manual bibliotecile necesare. O unealtă folositoare care se instalează odată cu această distribuție este Jupyter Notebook. Este o aplicație web folosită pentru rularea și editarea codului python, fiind executat local, fără a fi nevoie de acces la internet. Nucleul utilizat (kernel) facilitează rularea secvențială a codului, făcând posibilă ca variabilele să fie stocate și accesibile din memorie pe toată durata vieții acestuia. 
 	
 	\subsubsection{Qt}
- 	Qt \cite{qt} este un framework open-source de tipul GUI (graphical user interface), folosit în general pentru creare interfețelor grafice. Această tehnologie este realizată și inițial dedicată limbajului de programare C++. Însă, după o perioadă de timp, s-a creat o interfață API, prin care codul Qt poate fi apelat și dintr-o manieră pitonică. Printre pachetele care oferă suport în acest sens, putem menționa: PyQt, PySide (dezvoltat de Qt Company). 
+ 	Qt \cite{qt} este un framework open-source de tipul GUI (graphical user interface), folosit în general pentru crearea interfețelor grafice. Această tehnologie este realizată și inițial dedicată limbajului de programare C++. Însă, după o perioadă de timp, s-a creat o interfață API, prin care codul Qt poate fi apelat și dintr-o manieră pitonică. Printre pachetele care oferă suport în acest sens, putem menționa: PyQt, PySide (dezvoltat de Qt Company). 
  
- 	Printre uneltele puse la dispoziție de către Qt, Qt Desginer a facilitat crearea interfeței grafice într-o manieră interactivă și 	 dinamică. Această aplicație grafică ne pune la îndemna o serie funcționalități pentru adăugare de diverse elemente, cu ajutorul cărora putem construi o fereastră dorită. 
+ 	Printre uneltele puse la dispoziție de către Qt, Qt Desginer a facilitat crearea interfeței grafice într-o manieră interactivă și 	 dinamică. Această aplicație grafică ne pune la îndemna o serie de funcționalități pentru adăugarea de diverse elemente, cu ajutorul cărora putem construi fereastra dorită. 
  	
  	După cum se poate observă în Figura \ref{fig:qt_designer}, în panoul din stânga avem acces la o multitudine de "widget"-uri, fiecare dintre ele având un comportament și aspect diferit. Acestea sunt principalele componente pe care le putem folosi pentru a crea un window, dar Qt ne pune la dispoziție și un modul, prin care utilizatorul își poate crea elementele proprii într-o mod customizabil.
 	
@@ -454,19 +454,19 @@
 	
 		\item PyAudio: ne oferă suport pentru ascultarea, înregistrarea și salvarea fișierelor audio. Este definit cu un strat adițional pentru a permite apelarea metodelor din platforma PortAudio. Pachetul respectiv a oferit posibilitatea de a înregistra vocea candidatului în timpul interviului, precum și salvări de fișiere temporare, folosite în scopul analizei și a predicției emoției.
 	
-		\item Matplotlib: fiind o biblioteca cu utilizări în mai multe platforme, este folosit cu scopul vizualizării datelor grafice în python și extensia să numerică numpy. Utilizarea acestui pachet în aplicație a fost împlinită prin afișarea datelor grafice precum: anvelopa acustică a uni fișier audio, spectogramele secvențelor de 4 secunde din date.
+		\item Matplotlib: fiind o biblioteca cu utilizări în mai multe platforme, este folosit cu scopul vizualizării datelor grafice în python și extensia sa numerică numpy. Utilizarea acestui pachet în aplicație a fost împlinită prin afișarea datelor grafice precum: anvelopa acustică a unui fișier audio, spectogramele secvențelor de 4 secunde din date.
 	
-		\item OpenCv-Python: reprezintă un pachet de tipul înveliș, care face posibilă utilizarea funcționalității din OpenCv prin apelarea metodelor scrise în C/C++. Acesta oferă suport pentru utilizarea camerei web, precum și diferite metode folosite în computer vision: calcularea de histograme, transformarea imaginilor în diferite canale (RGB, gri), modificare individuală a pixelilor, aplicarea de filtre. Prin utilizarea acestui pachet, s-a putut realiza afișarea informațiilor referitoare la emoții în timp real, desenarea trăsăturilor feței (ochi, nas, gură etc).
+		\item OpenCv-Python: reprezintă un pachet de tipul API, care face posibilă utilizarea funcționalității din OpenCv prin apelarea metodelor scrise în C/C++. Acesta oferă suport pentru utilizarea camerei web, precum și diferite metode folosite în computer vision: calcularea de histograme, transformarea imaginilor în diferite canale (RGB, gri), modificare individuală a pixelilor, aplicarea de filtre. Prin utilizarea acestui pachet împreună cu Dlib, s-a putut realiza afișarea informațiilor referitoare la emoții în timp real, desenarea trăsăturilor feței (ochi, nas, gură etc).
 	
-		\item Librosa: este un pachet utilizat în special pentru analiza sunetelor. Permite funcționalități precum încărcarea fișierelor audio, scrierea de fișiere audio în diferite formatori dar mai presus de menționat, aplicarea tehnicilor de procesare de semnal, precum transformata Fourier, spectograme în scala Mel etc.
+		\item Librosa: este un pachet utilizat în special pentru analiza sunetelor. Permite funcționalități precum încărcarea/scrierea fișierelor audio în diferite extensii dar mai presus de menționat, aplicarea tehnicilor de procesare de semnal, precum transformata Fourier, spectograme în scala Mel etc.
 	
 		\item Pymongo: funcționează pe post de driver, făcând posibilă apelarea principalelor funcționalități ale MongodDb prin intermediul limbajului de programare python.
 	\end{itemize}
 	
 	\subsubsection{Șabloane de proiectare}
-	Șabloanele de proiectare au luat naștere din cauza problemelor de proiectare recurente și similare. Prin urmare, a devenit necesară conceptualizarea problemelor de proiectare în așa fel încât aceleași răspunsuri să fie refolosite de fiecare dată când a apărut problema.
+	Șabloanele de proiectare au luat naștere din cauza problemelor de proiectare recurente și similare. Prin urmare, a devenit necesară conceptualizarea problemelor de proiectare în așa fel încât aceleași răspunsuri să fie refolosite de fiecare dată când apare o problemă similară.
 
-	O problema care s-a rezolvat utilizând șablonul "State Machine" este referitoare la administrarea ferestrelor precum și a navigabilității între acestea. Nu dorim ca utilizatorul să aibă șansa să comute între cadre atunci când este în timpul procesului de recunoaștere a emoțiilor. Astfel, mai jos sunt definite stările aplicației (\ref{fig:state}): acasă (meniul principal), recunoaștere, start recunoaștere, pauză recunoaștere, stop recunoaștere, rapoarte, vizualizare raport, ieșire.
+	O problemă care s-a rezolvat utilizând șablonul "State Machine" este referitoare la administrarea ferestrelor precum și a navigabilității între acestea. Nu dorim ca utilizatorul să aibă șansa să comute între cadre atunci când este în timpul procesului de recunoaștere a emoțiilor. Astfel, mai jos sunt definite stările aplicației (\ref{fig:state}): acasă (meniul principal), recunoaștere, start recunoaștere, pauză recunoaștere, stop recunoaștere, rapoarte, vizualizare raport, ieșire.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -494,18 +494,18 @@
 
 	Când pornim aplicația, suntem întâmpinați de fereastra de introducere. Aceasta este construită dintr-o imagine de tip logo, o scurtă descriere a aplicației precum și o serie de setări, pe care utilizatorul le poate modifică după bunul plac.
 	
-	Aplicația oferă utilizatorului prilejul de a își introduce numele precum și alegerea dispozitivului audio pe care dorește să îl utilizeze. Mai mult decât atât, se poate (dez)activa fiecare funcționalitate majoră a aplicației (recunoaștere audio, video și text), în funcție de preferințele și modul de utilizare.
+	Aplicația oferă utilizatorului prilejul de a își introduce numele precum și alegerea dispozitivului audio pe care dorește să îl utilizeze pentru înregistrare. Mai mult decât atât, se poate activa/dezactiva fiecare funcționalitate majoră a aplicației (recunoaștere audio, video și text), în funcție de preferințele și modul de utilizare.
 	
 	Din acest moment, avem la dispoziție următoarele interacționări pe care le putem avea cu aplicația: recunoașterea emoțiilor în timp real sau vizualizarea rapoartelor.
 	
 	În cadrul recunoașterii emoțiilor în timp real, automatul de stare ne constrânge interacțiunea cu interfața grafică, pentru a nu crea probleme notabile în securitatea aplicației. Toate rapoartele asociate cu persoană intervievată vor fi încărcate în momentul în care se decide schimbarea numelui din setări. Dacă se dorește analiza unui raport generat în urma interviului, se va putea face într-un mod dedicat, unde se vor putea detecta informații esențiale și prețioase referitoare la emoțiile candidatului.
 	
 	\bigskip
-	Pentru început, vom vorbi despre fiecare funcționalitățile asociate primului modul, urmând mai apoi să fie prezentate aspecte referitoare interfeței grafice utilizate. Se vor detalia elementele de design grafic folosite în aplicație, precum și modul în care acestea ar trebui folosite. După prezentarea primului modul, se va începe o discuție referitoare la modulul de analizare a raportului, împreună cu funcționalitățile disponibile în acesta.
+	Pentru început, vom vorbi despre fiecare dintre funcționalitățile asociate primului modul, urmând mai apoi să fie prezentate aspecte referitoare interfeței grafice utilizate. Se vor detalia elementele de design grafic folosite în aplicație, precum și modul în care acestea ar trebui folosite. După prezentarea primului modul, se va începe o discuție referitoare la modulul de analizare a raportului, împreună cu funcționalitățile disponibile în acesta.
 	
 	\clearpage
 	\subsection{Identificare emoțiilor în timp real}
-	Fereastra pentru identificarea emoțiilor în timp real este alcătuită din 3 secțiuni (Figura \ref{fig:emotion_recog_clean}. Prima secțiunea este reprezentată de eticheta "Video", unde fluxul video va fi redat împreună cu predicțiile din expresia facială.
+	Fereastra pentru identificarea emoțiilor în timp real este alcătuită din 3 secțiuni (Figura \ref{fig:emotion_recog_clean}). Prima secțiunea este reprezentată de eticheta "Video", unde fluxul video va fi redat împreună cu predicțiile din expresia facială.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -515,9 +515,9 @@
 		\label{fig:emotion_recog_clean}
 	\end{figure} 
 	
-	În partea din dreapta, se poate observa un widget, în care graficul va fi actualizat conform cu impulsurilor din vocea candidatului. Microfonul se poate selecta, în funcție de cel dorit pentru a putea fi utilizat în identificarea emoțiilor. Mai jos, se poate observa un pătrat destinat afișajului de text. Utilizând tehnologia de speech-to-text oferită de Google, vom putea afișa dialog avut de către candidat.
+	În partea din dreapta, se poate observa un grafic, în care acesta va fi actualizat conform cu impulsurilor din vocea candidatului. Microfonul se poate selecta, în funcție de cel dorit pentru a putea fi utilizat în identificarea emoțiilor. Mai jos, se poate observa o secțiune destinată afișajului de text. Utilizând tehnologia de speech-to-text oferită de Google, vom putea afișa dialogul avut de către candidat.
 	
-	Pentru ca aplicația să suporte predicția emoțiilor în timp real, fără a bloca firul de execuție principal, este nevoia ca fiecare dintre cele 3 funcționalități să lucreze pe fir de execuție separat. În acest fel, interacționarea cu interfață grafică nu va fi blocată, iar utilizatorul va avea o experiență plăcută.
+	Pentru ca aplicația să suporte predicția emoțiilor în timp real fără a bloca firul de execuție principal, este nevoia ca fiecare dintre cele 3 funcționalități să lucreze pe fir de execuție separat. În acest fel, interacționarea cu interfață grafică nu va fi blocată, iar utilizatorul va avea o experiență plăcută.
 	
 	Funcționalitățile de baza ale acestui modul sunt următoarele: recunoașterea emoțiilor audio, video și text.	
 	
@@ -530,17 +530,17 @@
 	
 	\begin{itemize}
 		\item Modalitatea: 01 = audio-video, 02 = video, 03 = audio;
-		\item Interpretare: 01 = vorbit, 02 = cantat;
+		\item Interpretare: 01 = vorbit, 02 = cântat;
 		\item Emoție: 01 = neutru, 02 = calm, 03 = fericit, 04 = trist, 05 = furios, 06 = teamă, 07 = dezgust, 08 = surprins;
 		\item Intensitate emoțională: 01 = normal, 02 = puternic;
 		\item Propoziția rostită: 01 = "Kids are talking by the door", 02 = "Dogs are sitting by the door";
 		\item Numarul de repetări: 01 = o repetare, 02 = două repetări;
-		\item Identificatorul actorului: de la 01 la 23; Actorii cu număr impar sunt barbați iar cei cu număr par femei.
+		\item Identificatorul actorului: de la 01 la 23; actorii cu număr impar sunt barbați iar cei cu număr par femei.
 	\end{itemize}
 
 	Motivația din spatele alegerii acestui set de date este susținută de calitatea înaltă a vocilor înregistrate, cât și performanțele ridicate ale actorilor care interpretează propozițiile.
 	
-	În Figura \ref{fig:audio_plot} este reprezentat un fișier audio într-o manieră grafică. În procesul de preprocesare al datelor, a fost nevoie de o normalizare a lor. Deoarece unele fișiere nu erau de aceeași dimensiune, în procesul de normalizare a fost nevoie să se trunchieze sau să adăugăm date până când toate acestea să aibă dimensiunea de 48000.
+	În Figura \ref{fig:audio_plot} este reprezentat un fișier audio într-o manieră grafică. În procesul de preprocesare al datelor, a fost nevoie de o normalizare a lor. Deoarece unele fișiere nu erau de aceeași dimensiune, în procesul de normalizare a fost nevoie să se trunchieze sau să extrapolăam date până când toate acestea să aibă dimensiunea de 48000.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -552,7 +552,7 @@
 	
 	Adițional, a fost utilizat z-score (standard score), o tehnică care indică la câte deviații standard se află datele față de medie. Scopul aplicării acestei normalizări este de a sporii eficientă rețelei neurale în faza antrenării. Mai mult decât atât, pentru a reduce riscul de overfitting al modelului, a fost creată o copie, peste care s-a adăugat un semnal de tipul sinus. Teoretic, se va adaugă un zgomot de fundal, scăzând șansele modelului a se specializa în profunzime pe aceste date.
 	
-	După pasul de preprocesare, este nevoie ca din datele să fie extrase caracteristicile esențiale pe care dorim ca modelul să le învețe. Deoarece în domeniul frecvențelor putem găsi mai multe informații, utilizând STFT, fiecare fișier audio va fi adus în această gama. Rezultatul obținut prin aplicarea acestei tehnici va reprezenta o spectrogramă simplă, care nu este îndeajuns pentru a putea face o distincție corectă dintre emoțiile vocii umane. 
+	După pasul de preprocesare, este nevoie ca din datele să fie extrase caracteristicile esențiale pe care dorim ca modelul să le învețe. Deoarece în domeniul frecvențelor putem găsi mai multe informații, utilizând STFT, fiecare fișier audio va fi adus în această gamă. Rezultatul obținut prin aplicarea acestei tehnici va reprezenta o spectrogramă simplă, care nu este îndeajuns pentru a putea face o distincție corectă dintre emoțiile vocii umane. 
 	
 	Problema reiese din cauza modului în care urechea umană este construită. Urechea umană este de așa natură încât să poată distinge foarte ușor schimbările semnalelor acustice emise la frecvențe joase față de cele înalte. Altfel spus, vom putea distinge cu ușurință sunetele care au o frecvență joasă (spre exemplu, un robinet deschis are o frecvență de aproximativ 250 Hz) față de cele înalte (un fluier cu ultrasunete folosit în dresajul câinilor, având o frecvență cuprinsă între 2000 și 25000 Hz). Practic modul în care urechea umană percepe sunetul este asemănător cu funcția logaritm.
 	
@@ -574,7 +574,7 @@
 		\label{fig:audio_model}
 	\end{figure}
 	
- 	În Figura \ref{fig:audio_model} se poate observa arhitectura modelului utilizat pentru predicțiile audio. Este construit din straturi convolutionale, cu număr de filtre variabil (64 sau 128). Pentru stabilizarea procesului de învățare și reducerea dramatică a numărului de epoci de antrenament necesare antrenării rețelei, au fost utilizate straturile care să normalizeze batch-urile. Pentru reducerea spațială a parametrilor utilizați în calcule și pentru evitarea overfitting-ului, după fiecare strat convolutional, a fost adăugat un strat max pooling. Funcția de activare folosită preponderent în acest model este Exponențial Linear Unit. 
+ 	În Figura \ref{fig:audio_model} se poate observa arhitectura modelului utilizat pentru predicțiile audio. Este construit din straturi convolutionale, cu număr de filtre variabil (64 sau 128). Pentru stabilizarea procesului de învățare și reducerea drastică a numărului de epoci de antrenament necesare antrenării rețelei, au fost utilizate straturile care să normalizeze batch-urile. Pentru reducerea spațială a parametrilor utilizați în calcule și pentru evitarea overfitting-ului, după fiecare strat convoluțional, a fost adăugat un strat max pooling. Funcția de activare folosită preponderent în acest model este Exponential Linear Unit. 
  	
  	Mai mult decât atât, fiecare strat menționat mai sus a fost învelit într-un strat de timpul long short-term memory, eficient de utilizat în cazul predicțiilor în care datele sunt de tipul secvență. Datorită preprocesării anterioare și a împărțirii pe segmente intercalate, acest strat s-a dovedit util de folosit, datorită proprietății de stocare internă a memoriei.
 	
@@ -596,7 +596,7 @@
 		\label{fig:audio_confusion_matrix}
 	\end{figure}
 
-	Figura \ref{fig:audio_confusion_matrix} se observă matricea de confuzie asociată predicțiilor pe datele de testare. Se poate observa cum modelul a făcut confuzie între starea de frică și cea de surprinde, care pot fi destul de asemănătoare din punct de vedere vocal.
+	Prin Figura \ref{fig:audio_confusion_matrix} se observă matricea de confuzie asociată predicțiilor pe datele de testare. Se poate observa cum modelul a făcut confuzie între starea de frică și cea de surprinde, care pot fi destul de asemănătoare din punct de vedere vocal.
 	
 	%In cadrul acestei persepective, emotiile sunt transmise prin intermediul vocii. Analizand aproximativ 4 secunde de date la rata de esantionare de 16 kHz, se vor aduna suficiente date pentru a se putea face o predictie in timp real.
 	
@@ -636,11 +636,11 @@
 		
 		\item Evidențierea trăsăturilor feței.
 		
-		Pentru a putea oferi o interfață mai prietenoasă utilizatorului, sunt evidențiate următoarele trăsături ale fetei: sprâncene, ochi, nas, gură și conturul maxilarului (Figura \ref{fig:video_face_features}). 
+		Pentru a putea oferi o interfață mai prietenoasă utilizatorului, sunt evidențiate următoarele trăsături ale feței: sprâncene, ochi, nas, gură și conturul maxilarului (Figura \ref{fig:video_face_features}). 
 		
 		\item Transformarea în nuanțe de gri.
 		
-		Pentru că în setul de date utilizat, datele sunt în grey-scale, nu a mai fost necesar să facem această transformare. Motivația din spate este dată de eficientizarea calculelor, fiind suficient că operațiile matematice să fie efectuat pe singurul canal disponibil, gri.
+		Pentru că în setul de date utilizat, datele sunt în grey-scale, nu a mai fost necesar să facem această transformare. Motivația din spate este dată de eficientizarea calculelor, fiind suficient ca operațiile matematice să fie efectuat pe singurul canal disponibil, gri.
 		
 		\item Predicția zonei de interes.
 		
@@ -648,7 +648,7 @@
 		
 	\end{itemize}
 	
-	Datele utilizate pentru antrenare rețelei artificiale provin din setul de date "Facial Emotion Recognition" (FER 2013). Datele constau din imagini de 48x48 pixeli în tonuri de gri ale fețelor, fiind în număr de 28709 poze. Fețele au fost înregistrate automat, astfel încât fața să fie mai mult sau mai puțin centrată și să ocupe aproximativ aceeași cantitate de spațiu în fiecare imagine. Categoriile de emoții sunt: 0 = Furios, 1 = Dezgust, 2 = Frică, 3 = Fericit, 4 = Trist, 5 = Surpriză, 6 = Neutru.
+	Datele utilizate pentru antrenare rețelei artificiale provin din setul de date "Facial Emotion Recognition" (FER 2013). Datele constau din imagini de 48x48 pixeli în tonuri de gri ale fețelor, fiind în număr de 28709 poze. Fețele au fost înregistrate automat, astfel încât fața să fie mai mult sau mai puțin centrată și să ocupe aproximativ aceeași cantitate de spațiu în fiecare imagine. Categoriile de emoții sunt: 0 = Furios, 1 = Dezgust, 2 = Frică, 3 = Fericit, 4 = Trist, 5 = Surprins, 6 = Neutru.
 	
 	Informațiile sunt reținute în format csv, având două coloane: emoție și pixeli. Pe coloana emoție, conține un număr de la 0 la 6 pentru emoția reprezentată în imagine. Coloana pixeli conține un șir de numere între ghilimele pentru fiecare imagine. Conținutul acestui șir are valori de pixeli separate de spațiu în ordinea majoră a rândurilor. În Figura \ref{fig:video_dataset_example}, este printată un exemplu din setul de date.
 	
@@ -666,7 +666,7 @@
 	
 	Pentru a elimina riscul de overfiting, se utilizează un generator sintetic de date, care are rolul a crea date destul de asemănătoare celor date, adăugând următoarele operații asupra lor: mărirea, rotirea, mutarea ei în cele patru direcții cardinale precum și întoarcerea ei pe orizontală și verticală. În acest sens, minimizăm pe cât posibil riscul de overfitting al modelului pe datele de antrenare.
 	
-	În scop de testare, prin izolarea a primelor straturi din rețea, am putut observa modul în care rețeaua neurală își creează hărți de caracteristici pe baza unei poze date. Este de reținut că în acest pas, rețeaua nu este antrenată, caracteristicile găsite putând să fie schimbate de la o epoca la altă.
+	În scop de testare, prin izolarea a primelor straturi din rețea, am putut observa modul în care rețeaua neurală își creează hărți de caracteristici pe baza unei poze date. Este de reținut că în acest pas, rețeaua nu este antrenată, caracteristicile găsite putând să fie schimbate de la o epocă la altă.
 	
 	\begin{figure}
 		\centering
@@ -682,15 +682,15 @@
 		\end{subfigure}
 	\end{figure}
 
-	În Figura \ref{fig:video_model_layers_visualisation} se poate observa că, în urmă unei procesări care a permis vizualizarea datelor într-o formă mai lizibilă, imaginea dată pentru predicție este descompusă și analizată de rețea.
+	În Figura \ref{fig:video_model_layers_visualisation} se poate observa că, în urma unei procesări care a permis vizualizarea datelor într-o formă mai lizibilă, imaginea dată pentru predicție este descompusă și analizată de rețea.
 
-	Din punct de vedere al acurateței, acestă rețea are performanțe bune pentru acest set de date, având o precizie de 93.46\% pentru setul de validare, iar cazul setului de testare,  65.45\%. Se poate observa mai jos în Figura \ref{fig:video_confusion_matrix} performanțele modelului video din prisma matricei de confuzie.
+	Din punct de vedere al acurateței, acestă rețea are performanțe bune pentru acest set de date, având o precizie de 93.46\% pentru setul de validare, iar cazul setului de testare,  65.45\%. Se poate observa în Figura \ref{fig:video_confusion_matrix} performanțele modelului video din prisma matricei de confuzie.
 	
 	\clearpage
 	\subsubsection{Recunoașterea emoțiilor din text}
 	În cadrul detectării emoțiilor din text, setul de date utilizat se bazează pe rezultatul obținut din studiul "Linguistic styles: Language use aș an individual difference" \cite{text_dataset}. În realizarea acestui articol, au fost înregistrate 15 jurnale ale unor pacienți internați pentru abuz de substanțe, sarcinile zilnice ale a 35 de studenți și rezumatele jurnalelor a 40 de psihologi sociali. Obiectivul acestui studiu a fost acela de a demonstra că, limbajul pe care îl avem când scriem ne poate reflecta personalitatea.
 
-	Din acest set date, au fost utilizate 2.468 de articole scrise ale celor 35 de studenți. Din cele 35 de persoane care au participat la studiu, au fost 29 de femei și 5 bărbați, cu vârste cuprinse între 18 și 67 ani, media vârstei fiind de 27. Articolele folosite ca date, au fost sub forma unor sarcini fără evaluare. 
+	Din acest set date, au fost utilizate 2468 de articole scrise ale celor 35 de studenți. Din cele 35 de persoane care au participat la studiu, au fost 29 de femei și 5 bărbați, cu vârste cuprinse între 18 și 67 ani, media vârstei fiind de 27. Articolele folosite ca date, au fost sub forma unor sarcini fără evaluare. 
 
 	Pentru fiecare temă, studenții trebuiau să scrie minim 20 de minute pe zi despre un anumit subiect. Datele au fost colectate în timpul unui curs de vară de 2 săptămâni între 1993 și 1996. Fiecare student și-a completat proba scrisă zilnic timp de 10 zile consecutive. 
 
@@ -701,7 +701,7 @@
 		\item Cele 5 categorii de personalitate: pentru fiecare eticheta utilizată, i-a fost acordat "da", fie "nu", pentru a indica un punctaj ridicat sau scăzut pentru o anumită trăsătură.
 	\end{itemize}
 
-	Urmează un fragment folosit în setul de date: "Well, right now I just woke up from a mid-day nap. It\'s șorț of weird, but ever since I moved to Texas, I have had problems concentrating on things. I remember starting my homework în  10th grade aș soon aș the clock struck 4 and not stopping until it was done. Of course it was easier, but I still did it."
+	Urmează un fragment folosit în setul de date: "Well, right now I just woke up from a mid-day nap. It is sort of weird, but ever since I moved to Texas, I have had problems concentrating on things. I remember starting my homework in 10th grade as soon as the clock struck 4 and not stopping until it was done. Of course it was easier, but I still did it."
 	
 	Este important de remarcat faptul că etichetele de clasificare au fost aplicate în funcție de răspunsurile la un chestionar destul de scurt. Datele pot fi "biased" sau nu atât de veridice precum am bănui, datorită autoevaluării studenților printr-un set de întrebări scurte. Ce se dorește să se remarce în acest paragraf este faptul că emoțiile și personalitățile umane sunt complexe.
 	
@@ -725,7 +725,7 @@
 	
 	\clearpage
 	\subsection{Utilizare modul identificare emoții}
-	Pentru a putea începe recunoașterea emoțiilor în timp real, suntem nevoiți să comutăm pe fereastra de identificare a emoțiilor. Înainte de a apasă pe butonul start, vom fi întâmpinați de o fereastră asemănătoare cu Figura \ref{fig:emotion_recog_clean}. Această fereastră este un curată, nefiind trecută prin procesul de intervievare. 
+	Pentru a putea începe recunoașterea emoțiilor în timp real, suntem nevoiți să comutăm pe fereastra de identificare a emoțiilor. Înainte de a apasă pe butonul start, vom fi întâmpinați de o fereastră asemănătoare cu Figura \ref{fig:emotion_recog_clean}. Această fereastră este una curată, nefiind trecută prin procesul de intervievare. 
 
 	După ce începem procesul de identificare a emoțiilor în timp real, în funcție de dispozitivele hardware disponibile (microfon, camera-web), aceasta vor înregistra datele necesare și le vom putea vizualiza în cele două panouri superioare.
 	
@@ -750,7 +750,7 @@
 
 	Textul identificat din conversația candidatului este procesat, urmând mai apoi să fie transmis către clasa care se ocupă cu gestionarea datelor. 	
 
-	Odată ce s-a oprit recunoașterea în timp real, iar atât datele audio, video și text au fost colectate, urmează generarea raportului. Cu ajutorul datelor colectate, se va crea o structura în care datele salvate și predicțiile vor fi persistate. Pentru a oferi oportunitatea ca interviul să fie revizuit, este necesar ca datele să fie salvate. Utilizând baza de date non-relațională MongoDb, am reușit să obținem persistarea datelor la nivel local.
+	Odată ce s-a oprit recunoașterea în timp real, iar atât datele audio, video și text au fost colectate, urmează generarea raportului. Cu ajutorul datelor colectate, se va crea o structură în care datele salvate și predicțiile vor fi persistate. Pentru a oferi oportunitatea ca interviul să fie revizuit, este necesar ca datele să fie salvate. Utilizând baza de date non-relațională MongoDb, am reușit să obținem persistarea datelor la nivel local.
 
 	MongoDb având limitarea pentru mărimea colecțiilor (8 MB), datele care reprezintă cadrele foto, cât și segmentele audio în care s-au făcut predicțiile sunt stocate într-un mod binar, fiind înlănțuite pentru a putea face o reconstrucție într-un mod eficient. În momentul în care se dorește vizualizarea datelor, în funcție de numele introdus al candidatului, vor fi aduse datele aferente interviurilor lui. În cazul în care nu se introduce niciun nume, rapoartele vor fi salvate sub denumirea de "No Name".
 	% diacritice
@@ -778,7 +778,7 @@
 		\item Durata interviului
 	\end{itemize}
 	
-	De asemenea, se poate deschide un meniu contextual prin apăsarea click dreapta pe unul dintre rapoartele afișate. În cadrul acestei opțiuni, avem alegerea de a șterge raportul. Pentru vizualizarea într-o manieră amănunțită, putem face dublu click pe un raport, urmând ca fereastra să se comute pe una dedicată vizionării raportului.
+	De asemenea, se poate deschide un meniu contextual prin apăsarea click dreapta pe unul dintre rapoartele afișate. În cadrul acestei opțiuni, avem alegerea de a șterge raportul. În momentul în care se va dori ștergerea raportului, acesta va fi sters atât din baza de date, cât și din modul tabelar de vizualizare. Pentru vizualizarea într-o manieră amănunțită, putem face dublu click pe un raport, urmând ca fereastra să se comute pe una dedicată vizionării raportului.
 	
 	\clearpage
 	\subsection{Vizualizare raport individual}
@@ -810,7 +810,7 @@
 		\label{fig:settings}
 	\end{figure}
 
-	În funcție de modurile de identificare pe care dorim să le utilizăm, fereastră din Figura \ref{fig:emotion_recog} se va aranja astfel încât spațiile lipsă să fie ocupate.
+	În funcție de modurile de identificare pe care dorim să le utilizăm, fereastra din Figura \ref{fig:emotion_recog} se va redimensiona astfel încât să se păstreze un aspect plăcut al interfeței grafice.
 	
 	\begin{figure}[H]
 		\begin{center}
@@ -820,21 +820,36 @@
 		\label{fig:light_theme}
 	\end{figure}
 	
-	Aplicația oferă disponibilitatea schimbărilor de aspect. Sunt oferite două teme: luminoasă și întunecată. În Figura \ref{fig:light_theme} se observătema luminată, cu un aspect plăcut care pune accent pe culoarea mov.
+	Aplicația oferă disponibilitatea schimbărilor de aspect. Sunt oferite două teme: luminoasă și întunecată. În Figura \ref{fig:light_theme} se observă tema luminată, cu un aspect deschis la culoare care pune accent pe nuanța mov.
 
 	Modul preferabil de utilizare al aplicației este acela de a lansa în execuție "Multimodal Emotion Detection" prin intermediul unui fișier bat. În timpul rulării fișierului, utilizatorul va fi interogat de tema pe care dorește să o folosească([d]ark/[l]ight). Este suficient de a introduce prima litera pentru a putea selecta tema dorită. În cazul în care utilizatorul introduce date invalide, va fi utilizată tema prestabilită, aceea fiind tema întunecată.
 
 	\clearpage
 	\section{Concluzii}
-	% adaugat si 
-	%\bigskip
+	Putem afirma faptul că utilizarea învățării automate în domeniul identificării emoțiilor în timp real este o abordare rar întâlnită și puțin explorată. Utilizând tehnici de procesare digitală de semnal (transformata Fourier pe termen scurt, spectrograme în scala Mel, fereastră Hamming), preprocesare de imagini și text, am fost capabili să putem antrena modele inteligente de învățare automată precum rețele neurale recurente sau convolutionale.
+
+	Prin aplicația "Multimodal Emotion Detection" s-a realizat on interfață grafică în Qt, scrisă în limbajul de programare python, care vine în sprijinul identificării emoțiilor faciale, acustice și text în timpul realizării unui interviu. În cursul identificării emoțiilor, candidatul are feedback constant din partea aplicației, afișând prin intermediul interfeței grafice emoțiile identificate. 
+
+	Automatul de stare adăugat în arhitectura aplicației are rolul de a restricționa accesul utilizatorului la anumite funcționalități, în concordanță cu starea care se află. Această limitare este impusă pentru a nu strica fluxul și modul de utilizare al aplicației. Cele trei butoane care fac posibilă comunicarea cu modurile de recunoaștere ale aplicației sunt administrate de către automatul de stare.
+
+	Din punct de vedere personal, am realizat că învățarea automată aplicată identificării emoțiilor este o sarcină complexă, trecând peste așteptările pe care le-am setat. Primul obstacol pe care l-am întâmpinat a fost în înțelegerea modului în care o rețea ar putea identifica și recunoaște diferite șabloane în seturile de date. Emoțiile sunt mai complexe decât am putea să le înțeleagă un test pentru identificarea personalității sau o serie de actori care interpretează aceste emoții în mod artificial, fără vreun stimul extern. Al doilea obstacol întâlnit în procesul dezvoltării aplicației a fost cauzat de modul în care modelele ar putea executa recunoașterea în timp real, fără a se crea o decalare cu firul principal de execuție.
+
+	Aceste obstacole au fost depășite cu succes, și mai mult decât atât, s-a oferit prilejul de a dezvolta un mod de vizualizare a 	rapoartelor generate în urma terminării interviurilor. Fiind un mod interactiv de vizualizare, se poate analiza fiecare segment creat, datorită proprietăților oferite de intervale, modul de stocare al datelor la acest nivel. Într-un nivel mai superior, datele fiind stocate în MongoDb, ne oferă un suport nativ pentru interogarea lor.
+
+	Însă întotdeauna este loc îmbunătățire. Printre direcțiile care se doresc a fi implementate, se vizează:
+	
+	\begin{itemize}
+		\item consolidarea performanței și a acurateței oferite de către modelele de identificare a emoțiilor;
+		\item migrarea aplicației într-o interfață web, pentru a nu solicita calculatorul utilizatorului;
+		\item adăugarea unui modul de înregistrare și autentificare a utilizatorilor.
+	\end{itemize}
 	
 	\clearpage
     \printbibliography
     \clearpage
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=0.4]{images/plagiat.PNG}
+			\includegraphics[scale=0.8]{images/plagiat.PNG}
 		\end{center}
 		\caption{Disertație similaritate}
 		\label{fig:sim}
