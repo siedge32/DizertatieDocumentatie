@@ -32,30 +32,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.3.3}MongoDb}{23}{subsubsection.0.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.4}Biblioteci utilizate}{24}{subsubsection.0.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.4}Biblioteci utilizate}{23}{subsubsection.0.4.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.3.5}Șabloane de proiectare}{25}{subsubsection.0.4.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Aplicația Multimodal Emotion Detection}{27}{section.0.5}%
+\contentsline {section}{\numberline {5}Aplicația Multimodal Emotion Detection}{26}{section.0.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Introducere}{27}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.1}Introducere}{26}{subsection.0.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Identificare emoțiilor în timp real}{28}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {5.2}Identificare emoțiilor în timp real}{27}{subsection.0.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}Recunoașterea emoțiilor audio}{29}{subsubsection.0.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.1}Recunoașterea emoțiilor audio}{28}{subsubsection.0.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2}Recunoașterea emoțiilor video}{33}{subsubsection.0.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2}Recunoașterea emoțiilor video}{32}{subsubsection.0.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.3}Recunoașterea emoțiilor din text}{36}{subsubsection.0.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3}Recunoașterea emoțiilor din text}{35}{subsubsection.0.5.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Utilizare modul identificare emotii}{38}{subsection.0.5.3}%
+\contentsline {subsection}{\numberline {5.3}Utilizare modul identificare emoții}{37}{subsection.0.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1}Generarera raportului}{39}{subsubsection.0.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1}Generarera raportului}{38}{subsubsection.0.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Vizulizarea tuturor rapoartelor}{40}{subsection.0.5.4}%
+\contentsline {subsection}{\numberline {5.4}Vizulizarea tuturor rapoartelor}{39}{subsection.0.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}Vizualizare raport individual}{41}{subsection.0.5.5}%
+\contentsline {subsection}{\numberline {5.5}Vizualizare raport individual}{40}{subsection.0.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6}Setări}{42}{subsection.0.5.6}%
+\contentsline {subsection}{\numberline {5.6}Setări}{41}{subsection.0.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Concluzii}{43}{section.0.6}%
+\contentsline {section}{\numberline {6}Concluzii}{42}{section.0.6}%

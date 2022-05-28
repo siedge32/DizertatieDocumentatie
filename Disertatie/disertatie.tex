@@ -163,7 +163,7 @@
 		
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[scale=0.8]{images/AI_ML_DL.png}
+			\includegraphics[scale=0.7]{images/AI_ML_DL.png}
 		\end{center}
 		\caption{Dezvoltarea inteligenței artificiale\newline
 			\hspace{\linewidth}https://towardsdatascience.com/artificial-intelligence-vs-machine-learning-vs-deep-learning-2210ba8cc4ac/}
@@ -409,7 +409,7 @@
 	
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=0.4]{images/qt_designer.png}
+			\includegraphics[scale=0.3]{images/qt_designer.png}
 		\end{center}
 		\caption{Qt Designer}
 		\label{fig:qt_designer}
@@ -491,8 +491,17 @@
 	 	\item \textbf{Identificarea emoțiilor în timp real}: funcționalitate în care în timp real, sunt identificate emoțiile candidatului percepute din voce, expresii faciale precum și dialogul contextual recunoscut prin intermediul speech-to-text
 		\item \textbf{Vizualizarea raportului}: după ce raportul interviului a fost generat, acesta poate fi vizualizat într-o fereastră dedicată
 	\end{itemize}
+
+	Când pornim aplicația, suntem întâmpinați de fereastra de introducere. Aceasta este construită dintr-o imagine de tip logo, o scurtă descriere a aplicației precum și o serie de setări, pe care utilizatorul le poate modifică după bunul plac.
 	
-	Pentru început, vom vorbi despre fiecare funcționalitățile asociate primului modul, urmând mai apoi să fie prezentate aspecte referitoare interfeței grafice utilizate.
+	Aplicația oferă utilizatorului prilejul de a își introduce numele precum și alegerea dispozitivului audio pe care dorește să îl utilizeze. Mai mult decât atât, se poate (dez)activa fiecare funcționalitate majoră a aplicației (recunoaștere audio, video și text), în funcție de preferințele și modul de utilizare.
+	
+	Din acest moment, avem la dispoziție următoarele interacționări pe care le putem avea cu aplicația: recunoașterea emoțiilor în timp real sau vizualizarea rapoartelor.
+	
+	În cadrul recunoașterii emoțiilor în timp real, automatul de stare ne constrânge interacțiunea cu interfața grafică, pentru a nu crea probleme notabile în securitatea aplicației. Toate rapoartele asociate cu persoană intervievată vor fi încărcate în momentul în care se decide schimbarea numelui din setări. Dacă se dorește analiza unui raport generat în urma interviului, se va putea face într-un mod dedicat, unde se vor putea detecta informații esențiale și prețioase referitoare la emoțiile candidatului.
+	
+	\bigskip
+	Pentru început, vom vorbi despre fiecare funcționalitățile asociate primului modul, urmând mai apoi să fie prezentate aspecte referitoare interfeței grafice utilizate. Se vor detalia elementele de design grafic folosite în aplicație, precum și modul în care acestea ar trebui folosite. După prezentarea primului modul, se va începe o discuție referitoare la modulul de analizare a raportului, împreună cu funcționalitățile disponibile în acesta.
 	
 	\clearpage
 	\subsection{Identificare emoțiilor în timp real}
@@ -679,65 +688,145 @@
 	
 	\clearpage
 	\subsubsection{Recunoașterea emoțiilor din text}
-	% Diacritice
-	In cadrul detectarii emotiilor din text, setul de date uilizat se bazeaza pe rezultatul obitnut din studiul "Linguistic styles: Language use as an individual difference" \cite{text_dataset}. In realizarea acestui articol, au fost inregistrate 15 jurnale ale unor pacienti internati pentru abuz de substante, sarcinile zilnice ale a 35 de studenti si rezumatele jurnalelor a 40 de psihologi sociali. Obiectivul acestui studiu a fost acela de a demonstra ca, limbajul pe care il avem cand scriem ne paote reflecta personalitatea.
-	
-	Din acest set date, au fost utilizate 2.468 de articole scrise ale celor 35 de studenti. Din cele 35 de persoane care au participat la studiu, au fost 29 de femei si 5 barbati, cu varste cuprinsne in 18 si 67 ani, media varstei fiind de 27. Articolele folosite ca date, au fost sub forma unor sarcini fara evaluare. 
-	
-	Pentru fiecare tema, studentii trebuiau sa scrie minim 20 de minute pe zi despre un anumit subiect. Datele au fost colectate în timpul unui curs de vară de 2 săptămâni între 1993 și 1996. Fiecare student și-a completat scrisul zilnic timp de 10 zile consecutive. 
-	
-	Scorurile de personalitate ale studentilor au fost evalaute prin completarea chestionarului Big Five Inventory (BFI). BFI este un chestionar alcatuit din 44 de itemi care ofera un scor pentru fiecare din cele 5 trasaturi de personalitate (OCEAN). O intrare din setul de date utilizat este contstruit din urmatorul format: 
+	În cadrul detectării emoțiilor din text, setul de date utilizat se bazează pe rezultatul obținut din studiul "Linguistic styles: Language use aș an individual difference" \cite{text_dataset}. În realizarea acestui articol, au fost înregistrate 15 jurnale ale unor pacienți internați pentru abuz de substanțe, sarcinile zilnice ale a 35 de studenți și rezumatele jurnalelor a 40 de psihologi sociali. Obiectivul acestui studiu a fost acela de a demonstra că, limbajul pe care îl avem când scriem ne poate reflecta personalitatea.
+
+	Din acest set date, au fost utilizate 2.468 de articole scrise ale celor 35 de studenți. Din cele 35 de persoane care au participat la studiu, au fost 29 de femei și 5 bărbați, cu vârste cuprinse între 18 și 67 ani, media vârstei fiind de 27. Articolele folosite ca date, au fost sub forma unor sarcini fără evaluare. 
+
+	Pentru fiecare temă, studenții trebuiau să scrie minim 20 de minute pe zi despre un anumit subiect. Datele au fost colectate în timpul unui curs de vară de 2 săptămâni între 1993 și 1996. Fiecare student și-a completat proba scrisă zilnic timp de 10 zile consecutive. 
+
+	Scorurile de personalitate ale studenților au fost evaluate prin completarea chestionarului Big Five Inventory (BFI). BFI este un chestionar alcătuit din 44 de itemi care oferă un scor pentru fiecare din cele 5 trăsături de personalitate (OCEAN). O intrare din setul de date utilizat este construit din următorul format: 
 	\begin{itemize}
-		\item Id: identificatorul unic al fiecai articol
-		\item Text: este sris in limba engleza, si in mare parte, fiecare student isi exprima gandurile, starea si actiunile pe care le-a facut in ziua respectiva
-		\item Cele 5 categorii de personalitate: pentru fiecare eticheta utilizata, i-a fost acordat "da", fie "nu", pentru a indica un punctaj ridicat sau scazut pentru o anumita trasatura.
+		\item Id: identificatorul unic al fiecărui articol
+		\item Text: este scris în limba engleză, și în mare parte, fiecare student își exprimă gândurile, starea și acțiunile pe care le-a făcut în ziua respectivă
+		\item Cele 5 categorii de personalitate: pentru fiecare eticheta utilizată, i-a fost acordat "da", fie "nu", pentru a indica un punctaj ridicat sau scăzut pentru o anumită trăsătură.
 	\end{itemize}
 
-	Umreaza un fragment folosit in setul de date: "Well, right now I just woke up from a mid-day nap. It\'s sort of weird, but ever since I moved to Texas, I have had problems concentrating on things. I remember starting my homework in  10th grade as soon as the clock struck 4 and not stopping until it was done. Of course it was easier, but I still did it."
-
-	Este important de remarcat faptul ca etichetele de clasificare au fost aplicate in functie de raspunsurile la un chestionar destul de scurt. Datele pot fi "biased" sau atat de veridice precum am banui, datorita autoevaluarii studentilor printr-un set de intrebari scurte. Ce se doreste sa se remarce in acest paragraf este faptul ca emotiile si personalitatile umane sunt complexe.
+	Urmează un fragment folosit în setul de date: "Well, right now I just woke up from a mid-day nap. It\'s șorț of weird, but ever since I moved to Texas, I have had problems concentrating on things. I remember starting my homework în  10th grade aș soon aș the clock struck 4 and not stopping until it was done. Of course it was easier, but I still did it."
 	
-	Preprocesarera datelor pentru a fi analizate in contexul detectarii emotiilor trebuie sa fie una amanuntia. S-a urmat astfel, urmatorul set de pasi:
+	Este important de remarcat faptul că etichetele de clasificare au fost aplicate în funcție de răspunsurile la un chestionar destul de scurt. Datele pot fi "biased" sau nu atât de veridice precum am bănui, datorită autoevaluării studenților printr-un set de întrebări scurte. Ce se dorește să se remarce în acest paragraf este faptul că emoțiile și personalitățile umane sunt complexe.
+	
+	Preprocesarea datelor pentru a fi analizate în contextul detectării emoțiilor trebuie să fie una amănunțită. S-a urmat astfel, următorul set de pași:
 	\begin{itemize}
-		\item Eliminarea caracterlor non alfla-numerice, curatarea textului de diferite preprozitii si/sau prescurtari utilizand regex.
-		\item Tokenizarea textului in propozitii, urmand mai poi ca pentru fiecare sa se aplice urmatoare operatii:
-		\item Impartirea propozitiei in cuvinte, determinad mai apoi ce parte a propozitiei este fiecare cuvant (subiect, verb, adjectiv etc).
-		\item Eliminarea cuvintelor de oprire si procesarea celor care trec ma ideparte de acest filtru prin reducerea la cuvintelor la minuscula.
-		\item Aducerea cuvintelor in forma lor initiala utilizand procesul de lematizare WordNet. Se foloseste acest procedeu in loc de alegerea radacinii cuvantului pentru a aduce la o forma mai apropiata in contextul dat.
-		\item Vectorizare, prin transofrmarea perechilor identificate in numere
+		\item Eliminarea caracterelor non alfa-numerice, curățarea textului de diferite prepoziții și/sau prescurtări utilizând regex.
+		\item Tokenizarea textului în propoziții, urmând mai apoi ca pentru fiecare să se aplice următoare operații:
+		\item Împărțirea propoziției în cuvinte, determinând ce parte a propoziției este fiecare cuvânt (subiect, verb, adjectiv etc).
+		\item Eliminarea cuvintelor de oprire și procesarea celor care trec mai departe de acest filtru prin reducerea cuvintelor la minusculă.
+		\item Aducerea cuvintelor în formă lor inițială utilizând procesul de lematizare din WordNet. Se folosește acest procedeu în loc de alegerea rădăcinii cuvântului pentru a aduce la o formă mai apropiată în contextul dat.
+		\item Vectorizare, prin transformarea perechilor identificate în numere
 	\end{itemize}
 	
 	\bigskip
 	
-	Reteaua neurala antrenata utilizand acest set de date este construita din layerre de tipul: embedding, conv1d, maxpooling1d, batchNormalization si LSTM.
-	
-	Pentru a putea lucra cu date de tip text, trebuie ca datele lexicale sa fie transformate in numere. Pentru retele care se ocupa cu predictia pe diferite clase, se poate utiliza one hot encoding. Dar pentru cuvinte, aceasta tehnica ne poate ingreuna procesul de invatare datorita sirurile mari de 0 si 1 care s-ar crea. O tehnica mai eficienta este reprezentata de utilizarea straturilor embedding, care vor ajuta la reprezentarea cuvintelor prin numere intregi. Stratul convolutional 1d este asemanator cu cel utilizat in cadrul imaginilor, singura diferenta fiind intre numarul de dimensiuni in care se face glisarea filtrelor.
-	
-	Predictia pentru identificarea personalitatii pe baza interviului va avea loc la final, deoarece sunt nevoie de cat mai multe date pentru a avea o acuratete ridicata.
-	
-	\clearpage
-	\subsection{Utilizare modul identificare emotii}
-	% Explicat start
-	% 4s date audio
-	% 4s date video
-	% speech-to-text
+ 	Rețeaua neurală antrenată utilizând acest set de date este construită din straturi de tipul: embedding, conv1d, maxpooling1d, batchNormalization și LSTM.
+
+	Pentru a putea lucra cu date de tip text, trebuie ca datele lexicale să fie transformate în numere. Pentru rețele care se ocupă cu predicția pe diferite clase, se poate utiliza one hot encoding. Dar pentru cuvinte, această tehnică ne poate îngreuna procesul de învățare datorită șirurile mari de 0 și 1 care s-ar crea. O tehnică mai eficientă este reprezentată de utilizarea straturilor embedding, care vor ajuta la reprezentarea cuvintelor prin numere întregi. Stratul convolutional 1d este asemănător cu cel utilizat în cadrul imaginilor, singură diferența fiind între numărul de dimensiuni în care se face glisarea filtrelor.
+
+	Predicția pentru identificarea personalității pe baza interviului va avea loc la final, deoarece sunt nevoie de cât mai multe date pentru a avea o acuratețe ridicată.
 	
 	\clearpage
+	\subsection{Utilizare modul identificare emoții}
+	Pentru a putea începe recunoașterea emoțiilor în timp real, suntem nevoiți să comutăm pe fereastra de identificare a emoțiilor. Înainte de a apasă pe butonul start, vom fi întâmpinați de o fereastră asemănătoare cu Figura \ref{fig:emotion_recog_clean}. Această fereastră este un curată, nefiind trecută prin procesul de intervievare. 
+
+	După ce începem procesul de identificare a emoțiilor în timp real, în funcție de dispozitivele hardware disponibile (microfon, camera-web), aceasta vor înregistra datele necesare și le vom putea vizualiza în cele două panouri superioare.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.35]{images/emotion_recognition.png}
+		\end{center}
+		\caption{Identificarea emoțiilor în timp real}
+		\label{fig:emotion_recog}
+	\end{figure} 
+
+	În Figura \ref{fig:emotion_recog}, este prezentată fereastra activă, în care se fac recunoașterile emoțiilor în timp real. În panoul situat în stânga, dedicat fluxului video, sunt afișate datele captate de camera web împreună cu procesarea live făcută de rețeaua neurală pentru predicția imaginilor. În partea stânga a imaginii, sunt afișate probabilitățile aferente fiecărei clase, precum și emoția expresiei faciale identificată. 
+
+	În partea opusă, este prezentat un grafic, care afișează impulsurile audio captate de microfon. Inițial este precizat numele microfonului utilizat, urmând mai apoi să fie afișat emoțiile identificate. Inferior față de cele două zone discutate, se află un chenar în care textul recunoscut din dialogul candidatului este interpretat în cuvinte și atașat.
+
+	Datorită restricțiilor impuse de către automatul de stare, în timpul recunoașterii emoțiilor, avem două acțiuni accesibile de către utilizator. Poate să pună pe pauză, mod în care determinarea emoțiilor este oprită sau poate să oprească definitiv acest proces, care va determina generarea raportului. Pe parcursul interviului, se poate vedea starea curentă a aplicației (Running, Paused, Stopped).
+
 	\subsubsection{Generarera raportului}
-	% explicat cum fiecare thread stocheaza predictiile intr-un manager, care la final se vor propaga in MongoDb
-	
+	Pentru ca procesul de identificare a emoțiilor să fie în timp real, fiecare funcționalitate de recunoaștere este pornită într-un fir de execuția separat. Acest proces facilitează atât interfață grafică de a fi receptivă cu utilizatorul. Setul de date utilizat pentru antrenarea audio este construit din fișiere cu aproximativ lungime de 4 secunde. Având această constrângere, când firul care execută recunoașterea audio va înregistra 4 secunde de date, se va face o predicție, care va fi afișată și mai apoi, depozitată într-o clasă care colectează aceste date. 
+
+	În cazul predicției video, în funcție de performanțele camerei (camera utilizată poate să acumuleze aproximativ 20 cadre pe secundă), cadrele sunt procesate, iar informațiile aferente afișate către utilizator, împreună cu rata de încredere a modelului pentru fiecare clasă. Pentru a reține doar cele mai reprezentative cadre necesare vizualizării raportului, la fiecare 4 secunde se alege acel cadru care cu cea mai proeminentă predicție și rată de încredere.
+
+	Textul identificat din conversația candidatului este procesat, urmând mai apoi să fie transmis către clasa care se ocupă cu gestionarea datelor. 	
+
+	Odată ce s-a oprit recunoașterea în timp real, iar atât datele audio, video și text au fost colectate, urmează generarea raportului. Cu ajutorul datelor colectate, se va crea o structura în care datele salvate și predicțiile vor fi persistate. Pentru a oferi oportunitatea ca interviul să fie revizuit, este necesar ca datele să fie salvate. Utilizând baza de date non-relațională MongoDb, am reușit să obținem persistarea datelor la nivel local.
+
+	MongoDb având limitarea pentru mărimea colecțiilor (8 MB), datele care reprezintă cadrele foto, cât și segmentele audio în care s-au făcut predicțiile sunt stocate într-un mod binar, fiind înlănțuite pentru a putea face o reconstrucție într-un mod eficient. În momentul în care se dorește vizualizarea datelor, în funcție de numele introdus al candidatului, vor fi aduse datele aferente interviurilor lui. În cazul în care nu se introduce niciun nume, rapoartele vor fi salvate sub denumirea de "No Name".
+	% diacritice
 	\clearpage
 	\subsection{Vizulizarea tuturor rapoartelor}
+	După generarea raportului, din Figura \ref{fig:state}, se poate observă că vom reveni într-o stare, care ne permite navigarea către fereastră de afișare a rapoartelor. Așa cum a fost explicat în secțiunea anterioară, rapoartele interviurilor vor fi aduse din baza de date MongoDb în funcție de numele introdus pentru candidate.
+	
+	Rapoartele vor fi listate într-o formă tabelară, alcătuită din 5 coloane.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.35]{images/reports.png}
+		\end{center}
+		\caption{Vizualizarea rapoartelor}
+		\label{fig:emotion_reports}
+	\end{figure}
+
+	Din Figura \ref{fig:emotion_reports}, observăm denumirea coloanelor. Acestea sunt:
+	
+	\begin{itemize}
+		\item Numele candidatului: pe baza acestui nume, rapoartele individului vor fi aduse din baza de date
+		\item Numele persoanei care intervieveaza
+		\item Data începerii interviului
+		\item Data terminării interviului
+		\item Durata interviului
+	\end{itemize}
+	
+	De asemenea, se poate deschide un meniu contextual prin apăsarea click dreapta pe unul dintre rapoartele afișate. În cadrul acestei opțiuni, avem alegerea de a șterge raportul. Pentru vizualizarea într-o manieră amănunțită, putem face dublu click pe un raport, urmând ca fereastra să se comute pe una dedicată vizionării raportului.
 	
 	\clearpage
 	\subsection{Vizualizare raport individual}
+	În momentul schimbării în modul vizualizării de raport, vom fi întâmpinați de Figura \ref{fig:emotion_report}.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.35]{images/emotion_report_visualize.png}
+		\end{center}
+		\caption{Vizualizarea raport}
+		\label{fig:emotion_report}
+	\end{figure}
+	
+	Elementele interactive din această fereastră sunt: glisorul, prin care se poate derula pe întreg interviul, precum și butonul pentru start/stop. În momentul interacționării cu raportul, se va crea un arbore, în care fiecare perspectivă de recunoașterea a emoțiilor vor fi stocate sub forma unor intervale. Având acces rapid datorită proprietăților oferite de arbori, ne vom putea folosi de glisor pentru a observa detalii din interviu.
+	
+	Pe lângă imaginea extrasă ca fiind cea mai sugestivă, este prezentată o etichetă, care să arate emoția prezisă de către modelul inteligent. În partea dreapta de fereastră video, putem observă o spectrogramă a intervalului audio. Este compusă din 4 secunde de date, având rolul de a evidenția anvelopa acustică, precum și degradarea sunetului. Asemănător etichetei pentru afișarea predicției video, putem observa o etichetă dedicată predicției audio.
+	
+	În funcție de mișcările glisorului, se va face evidențierea textului din intervalul dat (cu culoarea galbenă), identificat de către funcționalitate de speech-to-text. Deasupra glisorului se află cele 5 personalități precum și o valoare de adevăr, dacă valorile acestor indici trec de un anumit prag.
 	
 	\clearpage
 	\subsection{Setări}
-	% de incluse light and dark theme
+	Printre setările pe care le poate accesa utilizatorul (Fgura \ref{fig:settings}), enumerăm selectarea microfonului pe care dorim să îl utilizăm pentru detectarea emoțiilor precum și identificarea textului, numele candidatului și a persoanei care intervievează, precum și funcționalitățile de detectare a emoțiilor pe care dorim să le utilizăm.
 	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.65]{images/settings.png}
+		\end{center}
+		\caption{Setările aplicației}
+		\label{fig:settings}
+	\end{figure}
+
+	În funcție de modurile de identificare pe care dorim să le utilizăm, fereastră din Figura \ref{fig:emotion_recog} se va aranja astfel încât spațiile lipsă să fie ocupate.
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.3]{images/light_theme.png}
+		\end{center}
+		\caption{Temă luminoasă}
+		\label{fig:light_theme}
+	\end{figure}
+	
+	Aplicația oferă disponibilitatea schimbărilor de aspect. Sunt oferite două teme: luminoasă și întunecată. În Figura \ref{fig:light_theme} se observătema luminată, cu un aspect plăcut care pune accent pe culoarea mov.
+
+	Modul preferabil de utilizare al aplicației este acela de a lansa în execuție "Multimodal Emotion Detection" prin intermediul unui fișier bat. În timpul rulării fișierului, utilizatorul va fi interogat de tema pe care dorește să o folosească([d]ark/[l]ight). Este suficient de a introduce prima litera pentru a putea selecta tema dorită. În cazul în care utilizatorul introduce date invalide, va fi utilizată tema prestabilită, aceea fiind tema întunecată.
+
 	\clearpage
 	\section{Concluzii}
+	% adaugat si 
 	%\bigskip
 	
 	\clearpage

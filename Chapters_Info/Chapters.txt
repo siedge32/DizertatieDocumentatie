@@ -125,32 +125,35 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 26.05
 		- Prezentarea aplicatiei propiu zisa
 			- Ghid de utilizare
-			- Interfata (white theme/dark theme) + explicare context State Machine
-			- Activarea/Dezactivarea modulelor
-			- Selectarea microfonului
-			- Modul intervievare
-				- Buton Start, Stop, Pause
-				- identificarea emotiilor la 4 secunde pentru audio
-				- identificarea emotiilor la 4 secunde pentru video
-				- identificarea emotiilor/caracterului din text
-			- Generarea raportului candidatului
-				- salvarea in mongodb + mongofs
-				- ce se salveaza
-				- aducerea date
-			- Vizualizarea tuturor rapoartelor persoanei care este intervievata
-				- campurile afisate
-				- delete
-				- export (TO DO)
-			- Modul vizualizare raport
-				- explicatie imagine video
-				- explicatie spectograma audio
-				- label video pentru predictie
-				- label audio pentru predictie
-				- label text pentru predictie
-				- highlight text
+				- Modul intervievare
+					- Buton Start, Stop, Pause 	DONE
+				- Generarea raportului candidatului
+					- identificarea emotiilor la 4 secunde pentru audio DONE
+					- identificarea emotiilor la 4 secunde pentru video DONE
+					- identificarea emotiilor/caracterului din text	DONE
+					- salvarea in mongodb + mongofs	DONE
+					- ce se salveaza DONE
+					- aducerea date DONE
+				- Vizualizarea tuturor rapoartelor persoanei care este intervievata
+					- campurile afisate DONE
+					- delete DONE
+					- export (TO DO)
+				- Modul vizualizare raport
+					- explicatie imagine video      DONE
+					- explicatie spectograma audio  DONE
+					- label video pentru predictie  DONE
+					- label audio pentru predictie  DONE
+					- label text pentru predictie 	DONE
+					- highlight text	DONE
+				- Settings
+					- Interfata (white theme/dark theme) DONE
+					- Introducere nume utilizatori DONE
+					- Activarea/Dezactivarea modulelor DONE
+					- Selectarea microfonului DONE
 27.05
-	- Imbunatariri viitoare
 	- Concluzii
+		- Imbunatariri viitoare
+	
 	- Corectare 
 	- Mici modificari legate de structura
 	- Schimbat sintagme care apac ca plagiat
