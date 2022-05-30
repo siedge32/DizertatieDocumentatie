@@ -24,7 +24,7 @@
 \graphicspath{ {./images/} }
 
 
-\usepackage[margin=3.2cm]{geometry}
+\usepackage[margin=3.5cm]{geometry}
 %\usepackage[none]{hyphenat}
 
 \usepackage{mathtools}
@@ -69,13 +69,16 @@
 
 
 \begin{document}
-	
+	\nocite{*}
 	\include{./cover/cover}
 	\include{./cover/innercover}
 	\newpage
 	\tableofcontents
 	\newpage
 	\pagenumbering{arabic}
+	\renewcommand\lstlistlistingname{Secvențe de cod}
+	\renewcommand{\lstlistingname}{Secvență de cod}
+	
 	\section{Abstract}	
 	Această lucrare de disertație este elaborată în jurul problematicii identificării emoțiilor unei persoane. Utilizând metode de învățare automată, datele sunt înregistrate prin intermediul unor canale multiple (audio, video și text). 
 	
@@ -111,7 +114,7 @@
 	
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[scale=0.7]{images/ocean.png}
+			\includegraphics[scale=0.5]{images/ocean.png}
 		\end{center}
 		\caption{Cele cinci mari trăsături de personalitate\newline
 			\hspace{\linewidth}https://blog.adioma.com/5-personality-traits-infographic/}
@@ -222,7 +225,6 @@
 		\item \textbf{Strat(uri) de conectare}: sunt folosite cu scopul conectării neuronilor către stratul de ieșire, unde în funcție de valorile ponderilor fiecărui neuron în parte, se va putea face calculul posibilității apartenenței la o anumită clasă
 	\end{itemize} 
 	
-	\clearpage
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[scale=0.29]{images/cnn.png}
@@ -279,7 +281,7 @@
 	
 	\clearpage
 	\subsubsection{Antrenare utilizând procesorul grafic}
-	Procesorle grafice (graphical proccesing unit), dezvoltate inițial pentru accelerarea procesării grafice, pot îmbunătăți performanțele calculelor realizate într-o rețea neurală cu mai multe straturi. Au devenit o parte esențială a  infrastructurii inteligenței artificiale, iar procesoarele grafice noi au devenit specializate în acest domeniu.
+	Procesoarele grafice (graphical proccesing unit), dezvoltate inițial pentru accelerarea procesării grafice, pot îmbunătăți performanțele calculelor realizate într-o rețea neurală cu mai multe straturi. Au devenit o parte esențială a  infrastructurii inteligenței artificiale, iar procesoarele grafice noi au devenit specializate în acest domeniu.
 	
 	Principalul beneficiu al utilizării procesorului grafic este dat de paralelizarea sau procesarea simultană a datelor. Există patru tipuri de arhitecturi folosite pentru procesarea datelor în mod pparalel :
 	
@@ -296,11 +298,15 @@
 	
 	Procesoarele grafice pot efectua calcule simultan. Acest lucru permite distribuirea proceselor de instruire și poate accelera semnificativ operațiile de învățare automată. Folosind numărul mare de nuclee, putem utiliza mai puține resurse fără a sacrifica eficiența sau puterea.
 	
+	Procesoarele grafice sunt rapide în comparație cu CPU și pentru multe cazuri de aplicații AI, GPU-urile sunt o necesitate. Dar sunt instanțe în care utilizarea acestora pot suprasolicita resursele programului, astfel îngreunând procesarea. Datorită faptului că procesoarele grafice sunt mai rapide față de cele centrale, costurile lor sunt semnificativ mai mari.
+	
 	Când se definește o arhitectură pentru rețelele deep learning, următorii factori pot influență decizia de a utiliza sau nu un procesor grafic:
 	\begin{itemize}
 		\item Lățimea bandei de memorie: datorită memoriei video dedicată (VRAM), GPU-urile pot oferi lățimea de bandă necesară pentru a acomoda seturi de date
 		\item Dimensiunea setului de date: procesoarele grafice legate în paralel scalează mult mai rapid decât procesoarele centrale, permițând procesarea a unor seturi de date masiv din punct de vedere cantitativ
 	\end{itemize}
+	
+	% de adaugat text
 	
 	Datorită puterii de procesare a plăcilor grafice, modelele de deep learning folosite în aplicație au fost antrenate cu ajutorul procesorului grafic. Placa video utilizată în cauză este un GeForece RTX 2060 (ediția laptop), oferind 1920 procesoare CUDA și 240 procesoare Tensor.
 	\clearpage
@@ -466,8 +472,19 @@
 	\subsubsection{Șabloane de proiectare}
 	Șabloanele de proiectare au luat naștere din cauza problemelor de proiectare recurente și similare. Prin urmare, a devenit necesară conceptualizarea problemelor de proiectare în așa fel încât aceleași răspunsuri să fie refolosite de fiecare dată când apare o problemă similară.
 
-	O problemă care s-a rezolvat utilizând șablonul "State Machine" este referitoare la administrarea ferestrelor precum și a navigabilității între acestea. Nu dorim ca utilizatorul să aibă șansa să comute între cadre atunci când este în timpul procesului de recunoaștere a emoțiilor. Astfel, mai jos sunt definite stările aplicației (\ref{fig:state}): acasă (meniul principal), recunoaștere, start recunoaștere, pauză recunoaștere, stop recunoaștere, rapoarte, vizualizare raport, ieșire.
+	O problemă care s-a rezolvat utilizând șablonul "State Machine" este referitoare la administrarea ferestrelor precum și a navigabilității între acestea. Nu dorim ca utilizatorul să aibă șansa să comute între cadre atunci când este în timpul procesului de recunoaștere a emoțiilor. Astfel, mai jos sunt definite stările aplicației (\ref{fig:state}): 
 	
+	\begin{itemize}
+		\item Acasă (meniul principal): starea inițială în care se află utilizatorul;
+		\item Recunoaștere: declanșată în momentul în care se face comutarea pe fereastra de identificare a emoțiilor;
+		\item Start recunoaștere: utilizatorul începe procesul de predicție a emoțiilor vizuale, acustice și text;
+		\item Pauză recunoaștere: utilizatorul suspendă acest proces;
+		\item Stop recunoaștere: oprirea identificării emoțiilor;
+		\item Rapoarte: comutarea ferestrei pe tabelul aferent tuturor rapoartelor;
+		\item Vizualizare raport: vizualizarea unui raport într-o fereastră dedicată;
+		\item Ieșire: închiderea aplicației.
+	\end{itemize}
+
 	\begin{figure}[H]
 		\begin{center}
 			\includegraphics[scale=0.2]{images/state_diagram.png}
@@ -475,6 +492,16 @@
 		\caption{State machine aplicație}
 		\label{fig:state}
 	\end{figure} 	
+
+	\begin{lstlisting}[language=python, caption=Snip creare state machine, label=lst:state_machine]
+		states = ['Home', 'Recognition', 'Recognition_Start', 'Recognition_Pause', 'Recognition_Stop', 'Reports', 'Report_View', 'Exit']
+		state_machine = Machine(model=self, states=StateManager.states, initial='Home')
+		state_machine.add_transition(trigger='button_recognition_clicked', source='Home', dest='Recognition', before="change_frame")
+		state_machine.add_transition(trigger='button_recognition_clicked', source='Reports', dest='Recognition', before="change_frame")
+		state_machine.add_transition(trigger='button_recognition_clicked', source='Report_View', dest='Recognition', before="change_frame")
+	\end{lstlisting}
+	
+	În Secvența de cod \ref{lst:state_machine}, se poate observa o parte din modul în care automatul de stare a fost creat. Pentru a trece dintr-o stare în alta, sunt nevoie de tranziții. Pentru a se putea începe o tranziție, sunt apelate funcții denumite declanșatori, care au rolul de a pornit mecanismul de comutare.
 	
 	Pentru folosirea logging-ului, am ales utilizarea șablonului "Chain of Responsability". Acesta șablon funcționează după următorul principiu: dacă se întâmplă un eveniment care depășește capabilitățile de manevrare a obiectului în cauză, acesta va apela un superior, care va fi în stare să se ocupe de acest aspect. Logarea informațiilor este un proces important, deoarece printr-o analiză a datelor salvate, putem înțelege dacă s-a produs vreo malfuncție în timpul rulării. Șablonul are aplicabilitate în acest caz în momentul în care se produce o eroare. În funcție de severitatea erorilor, acestea vor fi manevrate de câte o clasa specială. 
 	
@@ -588,17 +615,15 @@
 	
 	Acuratețea înregistrată pe datele de testare este una ridicată, aproximativ 95.91\%. În Figura \ref{fig:audio_model_accuracy} se poate observa procesul de învățare al modelului, precum și plafonarea pe care acesta o are la final, datorită numărul de epoci și batch-uri executate.
 	
+	Prin Figura \ref{fig:audio_confusion_matrix} se observă matricea de confuzie asociată predicțiilor pe datele de testare. Se poate observa cum modelul a făcut confuzie între starea de frică și cea de surprinde, care pot fi destul de asemănătoare din punct de vedere vocal.
+	
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=0.7]{images/audio_confusion_matrix.png}
+			\includegraphics[scale=0.4]{images/audio_confusion_matrix.png}
 		\end{center}
 		\caption{Matrice de confuzie model audio}
 		\label{fig:audio_confusion_matrix}
 	\end{figure}
-
-	Prin Figura \ref{fig:audio_confusion_matrix} se observă matricea de confuzie asociată predicțiilor pe datele de testare. Se poate observa cum modelul a făcut confuzie între starea de frică și cea de surprinde, care pot fi destul de asemănătoare din punct de vedere vocal.
-	
-	%In cadrul acestei persepective, emotiile sunt transmise prin intermediul vocii. Analizand aproximativ 4 secunde de date la rata de esantionare de 16 kHz, se vor aduna suficiente date pentru a se putea face o predictie in timp real.
 	
 	\clearpage
 	\subsubsection{Recunoașterea emoțiilor video}
@@ -685,6 +710,23 @@
 	În Figura \ref{fig:video_model_layers_visualisation} se poate observa că, în urma unei procesări care a permis vizualizarea datelor într-o formă mai lizibilă, imaginea dată pentru predicție este descompusă și analizată de rețea.
 
 	Din punct de vedere al acurateței, acestă rețea are performanțe bune pentru acest set de date, având o precizie de 93.46\% pentru setul de validare, iar cazul setului de testare,  65.45\%. Se poate observa în Figura \ref{fig:video_confusion_matrix} performanțele modelului video din prisma matricei de confuzie.
+	
+	Pentru a demonstra fluxul în care este utilizat recunoașterea emoțiilor faciale, vom defini următoarea secvență de cod:
+	
+	\begin{lstlisting}[language=python, caption=Execuție recunoaștere emoțiilor faciale, label=lst:video_recognition]
+		while is_running:
+			rects = face_detect(image)
+			if(seconds_passed > target_time):
+				max_prediction = max(predictions_map, key=predictions_map.get)
+				highest_class_index = [k for k, v in self._classes.items() if v == max_prediction][0]
+				representative_frame = get_representative_frame(frame_to_predictions, highest_class_index)
+				data_store_manager.insert_video((seconds, (representative_frame, max_prediction)))
+				
+			if not is_paused:	
+				draw_feature_face()
+	\end{lstlisting}
+	
+	Într-un scurt comentariu asupra secvenței \ref{lst:video_recognition}, această rutină oferă pe întregul interviu feedback constat candidatului referitor la emoțiile pe care acesta le afișează. În momentul în care, 4 secunde de date au fost înregistrate, se va alege cea mai reprezentativă imagine pentru a fi stocată în raport. Criteriile folosite pentru alegerea acestei imagini sunt reprezentate de gradul de confidență pe care modelul l-a avut în momentul recunoașterii, precum și clasa în care au fost înregistrate cele mai multe emoții.
 	
 	\clearpage
 	\subsubsection{Recunoașterea emoțiilor din text}
@@ -834,9 +876,7 @@
 
 	Din punct de vedere personal, am realizat că învățarea automată aplicată identificării emoțiilor este o sarcină complexă, trecând peste așteptările pe care le-am setat. Primul obstacol pe care l-am întâmpinat a fost în înțelegerea modului în care o rețea ar putea identifica și recunoaște diferite șabloane în seturile de date. Emoțiile sunt mai complexe decât am putea să le înțeleagă un test pentru identificarea personalității sau o serie de actori care interpretează aceste emoții în mod artificial, fără vreun stimul extern. Al doilea obstacol întâlnit în procesul dezvoltării aplicației a fost cauzat de modul în care modelele ar putea executa recunoașterea în timp real, fără a se crea o decalare cu firul principal de execuție.
 
-	Aceste obstacole au fost depășite cu succes, și mai mult decât atât, s-a oferit prilejul de a dezvolta un mod de vizualizare a 	rapoartelor generate în urma terminării interviurilor. Fiind un mod interactiv de vizualizare, se poate analiza fiecare segment creat, datorită proprietăților oferite de intervale, modul de stocare al datelor la acest nivel. Într-un nivel mai superior, datele fiind stocate în MongoDb, ne oferă un suport nativ pentru interogarea lor.
-
-	Însă întotdeauna este loc îmbunătățire. Printre direcțiile care se doresc a fi implementate, se vizează:
+	Aceste obstacole au fost depășite cu succes, și mai mult decât atât, s-a oferit prilejul de a dezvolta un mod de vizualizare a 	rapoartelor generate în urma terminării interviurilor. Fiind un mod interactiv de vizualizare, se poate analiza fiecare segment creat, datorită proprietăților oferite de intervale, modul de stocare al datelor la acest nivel. Într-un nivel mai superior, datele fiind stocate în MongoDb, ne oferă un suport nativ pentru interogarea lor. Însă întotdeauna este loc îmbunătățire. Printre direcțiile care se doresc a fi implementate, se vizează:
 	
 	\begin{itemize}
 		\item consolidarea performanței și a acurateței oferite de către modelele de identificare a emoțiilor;
@@ -846,6 +886,8 @@
 	
 	\clearpage
     \printbibliography
+    \clearpage
+    \lstlistoflistings
     \clearpage
 	\begin{figure}[H]
 		\begin{center}

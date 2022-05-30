@@ -35,50 +35,6 @@
   and Applications}
   \endentry
 
-  \entry{audio_emotion_recognition0}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=ACNGIIT}{%
-         family={Anagnostopoulos C\bibnamedelima N},
-         familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
-  N\bibinitperiod},
-         suffix={Iliou\bibnamedelima T},
-         suffixi={I\bibinitperiod\bibinitdelim T\bibinitperiod},
-         given={Giannoukos\bibnamedelima I.},
-         giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ACNITGI1}
-    \strng{fullhash}{ACNITGI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{Artificial Intelligence Review, 2015, 43(2):155-177.
-  (in NETHERLANDS)}
-    \field{note}{Accessed: 16.05.2022}
-    \field{title}{Features and classifiers for emotion recognition from speech:
-  a survey from 2000 to 2011}
-  \endentry
-
-  \entry{google_speech_to_text}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://cloud.google.com/speech-to-text/}}
-    \field{note}{Accessed: 17.05.2022}
-    \field{title}{Google Speech to Text}
-  \endentry
-
-  \entry{big_five_personality_wiki}{misc}{}
-    \field{labeltitlesource}{title}
-  \field{howpublished}{\url{https://en.wikipedia.org/wiki/Big_Five_personality_traits/}}
-    \field{note}{Accessed: 17.05.2022}
-    \field{title}{Big Five personality traits}
-  \endentry
-
-  \entry{open_cv}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://opencv.org/}}
-    \field{note}{Accessed: 17.05.2022}
-    \field{title}{OpenCv}
-  \endentry
-
   \entry{human_body_lang_darwin}{misc}{}
     \name{author}{2}{}{%
       {{hash=DC}{%
@@ -101,77 +57,6 @@
     \field{howpublished}{Oxford University Press, USA, 1998}
     \field{note}{Accessed: 17.05.2022}
     \field{title}{The expression of the emotions in man and animals}
-  \endentry
-
-  \entry{noldus}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://www.noldus.com/facereader/}}
-    \field{note}{Accessed: 17.05.2022}
-    \field{title}{Noldus FaceReader}
-  \endentry
-
-  \entry{imotions}{misc}{}
-    \field{labeltitlesource}{title}
-  \field{howpublished}{\url{https://imotions.com/biosensor/fea-facial-expression-analysis/}}
-    \field{note}{Accessed: 17.05.2022}
-    \field{title}{IMotions Fea - Facial Expression Analysis}
-  \endentry
-
-  \entry{cuda}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://developer.nvidia.com/cuda-zone/}}
-    \field{note}{Accessed: 19.05.2022}
-    \field{title}{NVIDIA CUDA}
-  \endentry
-
-  \entry{ft}{misc}{}
-    \field{labeltitlesource}{title}
-  \field{howpublished}{\url{https://ro.wikipedia.org/wiki/Transformata_Fourier/}}
-    \field{note}{Accessed: 19.05.2022}
-    \field{title}{Transformata Fourier}
-  \endentry
-
-  \entry{python}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://www.python.org/}}
-    \field{note}{Accessed: 20.05.2022}
-    \field{title}{Python}
-  \endentry
-
-  \entry{anaconda}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://www.anaconda.com/products/distribution/}}
-    \field{note}{Accessed: 23.05.2022}
-    \field{title}{Anaconda Distribution}
-  \endentry
-
-  \entry{qt}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://www.qt.io/}}
-    \field{note}{Accessed: 23.05.2022}
-    \field{title}{Qt}
-  \endentry
-
-  \entry{ravdess}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=SRLFAR}{%
-         family={Steven R.\bibnamedelima Livingstone},
-         familyi={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
-  L\bibinitperiod},
-         given={Frank A.\bibnamedelima Russo},
-         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
-  R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SRLFAR1}
-    \strng{fullhash}{SRLFAR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-  \field{howpublished}{\url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196391/}}
-    \field{note}{Accessed: 23.05.2022}
-    \field{title}{The Ryerson Audio-Visual Database of Emotional Speech and
-  Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in
-  North American English}
   \endentry
 
   \entry{xception}{misc}{}
@@ -221,6 +106,98 @@
     \field{journaltitle}{Journal of personality and social psychology}
     \field{month}{01}
     \field{year}{2000}
+  \endentry
+
+  \entry{ravdess}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SRLFAR}{%
+         family={Steven R.\bibnamedelima Livingstone},
+         familyi={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+         given={Frank A.\bibnamedelima Russo},
+         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SRLFAR1}
+    \strng{fullhash}{SRLFAR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196391/}}
+    \field{note}{Accessed: 23.05.2022}
+    \field{title}{The Ryerson Audio-Visual Database of Emotional Speech and
+  Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in
+  North American English}
+  \endentry
+
+  \entry{anaconda}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.anaconda.com/products/distribution/}}
+    \field{note}{Accessed: 23.05.2022}
+    \field{title}{Anaconda Distribution}
+  \endentry
+
+  \entry{big_five_personality_wiki}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://en.wikipedia.org/wiki/Big_Five_personality_traits/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{Big Five personality traits}
+  \endentry
+
+  \entry{google_speech_to_text}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://cloud.google.com/speech-to-text/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{Google Speech to Text}
+  \endentry
+
+  \entry{imotions}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://imotions.com/biosensor/fea-facial-expression-analysis/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{IMotions Fea - Facial Expression Analysis}
+  \endentry
+
+  \entry{noldus}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.noldus.com/facereader/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{Noldus FaceReader}
+  \endentry
+
+  \entry{cuda}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://developer.nvidia.com/cuda-zone/}}
+    \field{note}{Accessed: 19.05.2022}
+    \field{title}{NVIDIA CUDA}
+  \endentry
+
+  \entry{open_cv}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://opencv.org/}}
+    \field{note}{Accessed: 17.05.2022}
+    \field{title}{OpenCv}
+  \endentry
+
+  \entry{python}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.python.org/}}
+    \field{note}{Accessed: 20.05.2022}
+    \field{title}{Python}
+  \endentry
+
+  \entry{ft}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://ro.wikipedia.org/wiki/Transformata_Fourier/}}
+    \field{note}{Accessed: 19.05.2022}
+    \field{title}{Transformata Fourier}
+  \endentry
+
+  \entry{qt}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.qt.io/}}
+    \field{note}{Accessed: 23.05.2022}
+    \field{title}{Qt}
   \endentry
 \enddatalist
 \endinput

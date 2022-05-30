@@ -151,8 +151,8 @@ NU UITA DE REFERINTE LA ARTICOLE/CARTI/REVISTE
 					- Activarea/Dezactivarea modulelor DONE
 					- Selectarea microfonului DONE
 27.05
-	- Concluzii
-		- Imbunatariri viitoare
+	- Concluzii DONE
+	- Imbunatariri viitoare DONE
 	
 	- Corectare 
 	- Mici modificari legate de structura

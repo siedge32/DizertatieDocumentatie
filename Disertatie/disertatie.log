@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.11.2 (MiKTeX 2.9.7300 64-bit)  (format=lualatex 2020.2.12)  28 MAY 2022 21:12
+This is LuaTeX, Version 1.11.2 (MiKTeX 2.9.7300 64-bit)  (format=lualatex 2020.2.12)  30 MAY 2022 13:45
  restricted system commands enabled.
 **disertatie.tex
 (./disertatie.tex
@@ -1243,15 +1243,15 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(91.04872pt, 415.41043pt, 91.04872pt)
-* v-part:(T,H,B)=(91.04872pt, 662.9494pt, 91.04872pt)
+* h-part:(L,W,R)=(99.58464pt, 398.3386pt, 99.58464pt)
+* v-part:(T,H,B)=(99.58464pt, 645.87756pt, 99.58464pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=415.41043pt
-* \textheight=662.9494pt
-* \oddsidemargin=18.77873pt
-* \evensidemargin=18.77873pt
-* \topmargin=-18.22127pt
+* \textwidth=398.3386pt
+* \textheight=645.87756pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-9.68535pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -1333,7 +1333,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 File: ./images/Logo-UT-MI-SPOT-RO.pdf Graphic file (type pdf)
 <use ./images/Logo-UT-MI-SPOT-RO.pdf>
 Package luatex.def Info: ./images/Logo-UT-MI-SPOT-RO.pdf  used on input line 5.
-(luatex.def)             Requested size: 332.3296pt x 140.70703pt.
+(luatex.def)             Requested size: 318.67209pt x 134.92508pt.
  [1
 
 
@@ -1344,7 +1344,7 @@ Package luatex.def Info: ./images/Logo-UT-MI-SPOT-RO.pdf  used on input line 5.
 File: ./images/Logo-UT-MI-SPOT-RO.pdf Graphic file (type pdf)
 <use ./images/Logo-UT-MI-SPOT-RO.pdf>
 Package luatex.def Info: ./images/Logo-UT-MI-SPOT-RO.pdf  used on input line 5.
-(luatex.def)             Requested size: 332.3296pt x 140.70703pt.
+(luatex.def)             Requested size: 318.67209pt x 134.92508pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
@@ -1360,516 +1360,623 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 
 ]
-Overfull \hbox (11.68948pt too wide) in paragraph at lines 80--81
-[]\TU/UTSans(0)/m/n/12 Această lu-crare de dis-er-tație este elab-o-rată în
- ju-rul prob-lem-aticii iden-ti-ficării emoți-
- []
-
-
-Overfull \hbox (0.15352pt too wide) in paragraph at lines 86--87
-\TU/UTSans(0)/m/n/12 ca ur-mare dez-voltarea apli-cației ”Mul-ti-modal Emo-t
-ion De-tec-tion” care să vină în spri-
- []
-
-
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1]
-Overfull \hbox (1.52951pt too wide) in paragraph at lines 90--91
-[]\TU/UTSans(0)/m/n/12 Apli-cația ”Mul-ti-modal Emo-tion De-tec-tion” are 
-ca au-di-ență per-soanele care doresc
- []
-
-
-Overfull \hbox (16.0935pt too wide) in paragraph at lines 90--91
-\TU/UTSans(0)/m/n/12 reg-is-trate, care pot fi mai apoi vizual-izate de către 
-uti-liza-tor prin in-ter-mediul framework-
- []
-
-
-Overfull \hbox (11.4735pt too wide) in paragraph at lines 92--93
-\TU/UTSans(0)/m/n/12 două pro-cedee sunt sub-cat-e-gorii ale dome-ni-u-lui nu-
-mit in-teligență ar-ti-fi-cială (IA), dome-
- []
-
-[2
+[1] [2
 
 ]
-<images/ocean.png, id=187, 510.40688pt x 495.35063pt>
-File: images/ocean.png Graphic file (type png)
-<use images/ocean.png>
-Package luatex.def Info: images/ocean.png  used on input line 114.
-(luatex.def)             Requested size: 357.28238pt x 346.74307pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Citation 'audio_emotion_recognition0' on page 3 undefined on inpu
+t line 109.
 
 [3
 
 ]
-Overfull \hbox (2.54549pt too wide) in paragraph at lines 123--124
-[]\TU/UTSans(0)/m/n/12 De-schidere (Open-ness): această trăsă-tură prez-int
-ă car-ac-ter-is-tici pre-cum imag-
- []
-
-[4<./images/ocean.png>]
-Overfull \hbox (17.14148pt too wide) in paragraph at lines 130--131
-[]\TU/UTSans(0)/m/n/12 Agre-abil-i-tate (Agree-able-ness ): pen-tru această pe
-r-son-al-i-tate, sunt in-cluse atribute
+<images/ocean.png, id=193, 510.40688pt x 495.35063pt>
+File: images/ocean.png Graphic file (type png)
+<use images/ocean.png>
+Package luatex.def Info: images/ocean.png  used on input line 117.
+(luatex.def)             Requested size: 255.2028pt x 247.67471pt.
+ [4<./images/ocean.png>]
+Overfull \hbox (2.71338pt too wide) in paragraph at lines 142--143
+[]\TU/UTSans(0)/m/n/12 Tipurile de iden-ti-fi-care a emoți-ilor uti-lizate și
+ de-scrise mai sus sunt doar câteva
  []
 
 [5]
-Overfull \hbox (9.31754pt too wide) in paragraph at lines 148--149
-\TU/UTSans(0)/m/n/12 Emo-tion De-tec-tion”, este reprezen-tată de ca-pac-i-t
-ate re-cunoaș-terii în timp real a emoți-
+Overfull \hbox (9.55595pt too wide) in paragraph at lines 153--154
+\TU/UTSans(0)/m/n/12 gen-eral de per-soanele care trec prin pro-ce-sul de in-te
+r-vievare. Dar asta nu înseamnă
  []
 
 [6] [7]
-<images/AI_ML_DL.png, id=227, 524.71031pt x 262.73157pt>
+<images/AI_ML_DL.png, id=225, 524.71031pt x 262.73157pt>
 File: images/AI_ML_DL.png Graphic file (type png)
 <use images/AI_ML_DL.png>
-Package luatex.def Info: images/AI_ML_DL.png  used on input line 166.
+Package luatex.def Info: images/AI_ML_DL.png  used on input line 169.
 (luatex.def)             Requested size: 367.29471pt x 183.91083pt.
- [8
 
-<./images/AI_ML_DL.png>]
-Overfull \hbox (2.2975pt too wide) in paragraph at lines 179--180
-[]\TU/UTSans(0)/m/n/12 În-vățare su-per-vizată: este una din cele mai de ba
-ză tipuri de în-vățare au-tomată.
+Overfull \hbox (10.8973pt too wide) in paragraph at lines 178--179
+\TU/UTSans(0)/m/n/12 cât aceste date sunt mai rel-e-vante pen-tru prob-lema ca
+re încearcă să se soluționeze,
  []
 
+[8
 
-Overfull \hbox (10.37752pt too wide) in paragraph at lines 181--182
-\TU/UTSans(0)/m/n/12 sunt în-cu-ra-jate sau ”în-tărite”, iar rezul-tatel
-e greșite sunt de-s-cu-ra-jate sau ”pedep-
+<./images/AI_ML_DL.png>]
+Overfull \hbox (13.25198pt too wide) in paragraph at lines 183--184
+\TU/UTSans(0)/m/n/12 tim-pul pro-gram-a-toru-lui. Per-mit ast-fel al-go-rit-mil
+or să ex-ploreze și să găsească
  []
 
 [9]
-<images/ML_DL.png, id=243, 475.02469pt x 252.945pt>
+<images/ML_DL.png, id=241, 475.02469pt x 252.945pt>
 File: images/ML_DL.png Graphic file (type png)
 <use images/ML_DL.png>
-Package luatex.def Info: images/ML_DL.png  used on input line 194.
+Package luatex.def Info: images/ML_DL.png  used on input line 197.
 (luatex.def)             Requested size: 332.515pt x 177.06029pt.
  [10
 
 <./images/ML_DL.png>]
-Overfull \hbox (10.76549pt too wide) in paragraph at lines 222--223
-[]\TU/UTSans(0)/b/n/12 Strat(uri) de conectare\TU/UTSans(0)/m/n/12 : sunt folos
-ite cu scopul conec-tării neu-ronilor către stratul
+Overfull \hbox (1.85735pt too wide) in paragraph at lines 220--221
+[]\TU/UTSans(0)/b/n/12 Strat(uri) de pool-ing\TU/UTSans(0)/m/n/12 : au rolul de
+ a re-duce sub-stanțial di-men-si-unea spațială,
  []
 
 [11
 
 ]
-<images/cnn.png, id=259, 1419.05156pt x 581.92406pt>
+<images/cnn.png, id=257, 1419.05156pt x 581.92406pt>
 File: images/cnn.png Graphic file (type png)
 <use images/cnn.png>
-Package luatex.def Info: images/cnn.png  used on input line 228.
+Package luatex.def Info: images/cnn.png  used on input line 230.
 (luatex.def)             Requested size: 411.51442pt x 168.75365pt.
 
-Overfull \hbox (0.28412pt too wide) in paragraph at lines 235--236
-\TU/UTSans(0)/m/n/12 pen-tru antrenare, fil-trele apli-cate suc-ce-siv ne vor a
-jută să găsim car-ac-ter-is-tici. Trans-
+Overfull \hbox (13.17583pt too wide) in paragraph at lines 230--231
+ [] 
  []
 
-[12
-
-<./images/cnn.png>]
-Overfull \hbox (15.73347pt too wide) in paragraph at lines 247--248
-\TU/UTSans(0)/m/n/12 Spre ex-em-plu, putem menționa că date secvențiale, dat
-ele fi-nan-ciare sau chiar secvența
- []
-
-<images/fwd_recc.png, id=266, 526.21594pt x 242.40562pt>
+[12<./images/cnn.png>]
+<images/fwd_recc.png, id=264, 526.21594pt x 242.40562pt>
 File: images/fwd_recc.png Graphic file (type png)
 <use images/fwd_recc.png>
-Package luatex.def Info: images/fwd_recc.png  used on input line 253.
+Package luatex.def Info: images/fwd_recc.png  used on input line 255.
 (luatex.def)             Requested size: 247.32152pt x 113.93065pt.
-[13
+ [13
 
-<./images/fwd_recc.png>] [14]
-Overfull \hbox (5.37215pt too wide) in paragraph at lines 282--283
-\TU/UTSans(0)/m/n/12 neu-rală cu mai multe stra-turi. Au de-venit o parte es-e
-nțială a in-fras-truc-turii in-teligenței
+] [14<./images/fwd_recc.png>]
+Overfull \hbox (0.7493pt too wide) in paragraph at lines 278--279
+[]\TU/UTSans(0)/m/n/12 Aceste stra-turi oferă su-port rețelelor re-curente s
+ă-și ”am-intească” input-urile
+ []
+
+[15]
+Overfull \hbox (5.24527pt too wide) in paragraph at lines 284--285
+\TU/UTSans(0)/m/n/12 cel-er-area pro-cesării grafice, pot îm-bunătăți per-
+for-manțele cal-culelor re-al-izate într-
  []
 
 
-Overfull \hbox (4.76007pt too wide) in paragraph at lines 297--298
-[]\TU/UTSans(0)/m/n/12 Pro-ce-soarele grafice pot efec-tua cal-cule si-mul-tan.
- Acest lu-cru per-mite dis-tribuirea
- []
-
-
-Overfull \hbox (1.70547pt too wide) in paragraph at lines 297--298
-\TU/UTSans(0)/m/n/12 pro-ce-selor de in-stru-ire și poate ac-cel-era sem-ni-fi
-ca-tiv op-er-ați-ile de în-vățare au-tomată.
- []
-
-[15
-
-]
-Overfull \hbox (16.27354pt too wide) in paragraph at lines 313--314
-[]\TU/UTSans(0)/m/n/12 In-difer-ent de dome-niul uti-lizat (tim-pu-lui sau frec
-vențelor), ur-mă-torii ter-meni prezen-
+Overfull \hbox (2.96532pt too wide) in paragraph at lines 306--307
+[]\TU/UTSans(0)/m/n/12 Di-men-si-unea se-tu-lui de date: pro-ce-soarele grafice
+ legate în par-alel scalează
  []
 
 [16
 
-]
-Overfull \hbox (21.85657pt too wide) in paragraph at lines 326--327
-[]\TU/UTSans(0)/m/n/12 O put-er-nică un-ealtă matem-at-ică, trans-for-mata F
-ourier (Jean-Baptiset Joseph Fourier)
+] [17]
+Overfull \hbox (0.74933pt too wide) in paragraph at lines 315--316
+[]\TU/UTSans(0)/m/n/12 Aceste tehnici com-plexe de proce-sare au fost uti-lizat
+e în apli-cație pen-tru iden-
  []
 
-<images/signals.png, id=293, 529.22719pt x 124.96687pt>
+[18
+
+]
+Overfull \hbox (11.10527pt too wide) in paragraph at lines 330--331
+\TU/UTSans(0)/m/n/12 atic care ne ajută la tre-cerea unui sem-nal din dome-niu
+l tim-pu-lui în cel al frecvențelor.
+ []
+
+<images/signals.png, id=300, 529.22719pt x 124.96687pt>
 File: images/signals.png Graphic file (type png)
 <use images/signals.png>
-Package luatex.def Info: images/signals.png  used on input line 330.
-(luatex.def)             Requested size: 415.41043pt x 98.09158pt.
-<images/FT_time_to_freq.png, id=295, 526.21594pt x 296.60812pt>
+Package luatex.def Info: images/signals.png  used on input line 336.
+(luatex.def)             Requested size: 398.3386pt x 94.06052pt.
+<images/FT_time_to_freq.png, id=302, 526.21594pt x 296.60812pt>
 File: images/FT_time_to_freq.png Graphic file (type png)
 <use images/FT_time_to_freq.png>
-Package luatex.def Info: images/FT_time_to_freq.png  used on input line 341.
+Package luatex.def Info: images/FT_time_to_freq.png  used on input line 347.
 (luatex.def)             Requested size: 368.34865pt x 207.62427pt.
-[17
+[19
 
 <./images/signals.png><./images/FT_time_to_freq.png>]
-<images/windowing.PNG, id=306, 673.01437pt x 296.60812pt>
+<images/windowing.PNG, id=313, 673.01437pt x 296.60812pt>
 File: images/windowing.PNG Graphic file (type png)
 <use images/windowing.PNG>
-Package luatex.def Info: images/windowing.PNG  used on input line 363.
-(luatex.def)             Requested size: 415.41043pt x 183.08047pt.
- [18<./images/windowing.PNG>]
-<images/spectogram.PNG, id=323, 746.79pt x 371.88937pt>
+Package luatex.def Info: images/windowing.PNG  used on input line 369.
+(luatex.def)             Requested size: 398.3386pt x 175.55396pt.
+
+Overfull \hbox (5.66124pt too wide) in paragraph at lines 376--377
+[]\TU/UTSans(0)/m/n/12 După cum se poate ob-serva în Figura []8[], se aplic
+ă suc-ce-siv trans-for-mata Fourier
+ []
+
+[20<./images/windowing.PNG>]
+<images/spectogram.PNG, id=329, 746.79pt x 371.88937pt>
 File: images/spectogram.PNG Graphic file (type png)
 <use images/spectogram.PNG>
-Package luatex.def Info: images/spectogram.PNG  used on input line 374.
-(luatex.def)             Requested size: 415.41043pt x 206.86635pt.
- [19<./images/spectogram.PNG>]
-Overfull \hbox (17.65353pt too wide) in paragraph at lines 386--387
-[]\TU/UTSans(0)/m/n/12 În funcție de cer-ințele și nece-sitățile apli-ca
-ției, di-recția aleasă în ma-terie de tehnologii
- []
-
-[20
+Package luatex.def Info: images/spectogram.PNG  used on input line 380.
+(luatex.def)             Requested size: 398.3386pt x 198.36584pt.
+ [21<./images/spectogram.PNG>] [22
 
 ]
-<images/qt_designer.png, id=342, 1151.05031pt x 769.37437pt>
+Overfull \hbox (10.92937pt too wide) in paragraph at lines 403--404
+\TU/UTSans(0)/m/n/12 lansarea ofi-cială se în-tâm-plă în 1991, fi-ind uti-
+lizat in-tern în cadrul com-paniei Google.
+ []
+
+[23
+
+]
+<images/qt_designer.png, id=356, 1151.05031pt x 769.37437pt>
 File: images/qt_designer.png Graphic file (type png)
 <use images/qt_designer.png>
-Package luatex.def Info: images/qt_designer.png  used on input line 412.
+Package luatex.def Info: images/qt_designer.png  used on input line 418.
 (luatex.def)             Requested size: 345.31775pt x 230.81409pt.
- [21
 
-]
-Overfull \hbox (16.3775pt too wide) in paragraph at lines 430--431
-\TU/UTSans(0)/m/n/12 apli-cație, este uti-lizat pen-tru a per-mite uti-liza-to
-ru-lui să aleagă în-tre funcțion-
- []
-
-[22<./images/qt_designer.png>]
-Overfull \hbox (3.22144pt too wide) in paragraph at lines 441--442
-[]\TU/UTSans(0)/m/n/12 Ier-arhizarea datelor se face pe colecții, iar fiecare 
-in-for-mație sal-vată într-o colecție
+Overfull \hbox (16.97742pt too wide) in paragraph at lines 424--425
+[]\TU/UTSans(0)/m/n/12 Printre prin-ci-palele el-e-mente uti-lizate pre-pon-der
+-ent în apli-cație, le vom menționa
  []
 
 
-Overfull \hbox (30.5295pt too wide) in paragraph at lines 445--446
-\TU/UTSans(0)/m/n/12 ile este posi-bilă folosind Mon-goDb Com-pass, un ex-plor
-ator care face cu putință vizualizarea
- []
-
-[23]
-Overfull \hbox (2.3255pt too wide) in paragraph at lines 457--458
-\TU/UTSans(0)/m/n/12 Uti-lizarea aces-tui pa-chet în apli-cație a fost îm-pl
-in-ită prin afișarea datelor grafice
+Overfull \hbox (2.16533pt too wide) in paragraph at lines 429--430
+[]\TU/UTSans(0)/m/n/12 Tip or-i-zon-tal: con-strânge ca widget-urile copil s
+ă fie așezate, în funcție
  []
 
 
-Overfull \hbox (12.57748pt too wide) in paragraph at lines 459--460
-\TU/UTSans(0)/m/n/12 în com-puter vi-sion: cal-cu-larea de his-tograme, trans-
-for-marea imag-inilor în diferite
+Overfull \hbox (14.00925pt too wide) in paragraph at lines 434--435
+\TU/UTSans(0)/m/n/12 cației (re-cunoașterea emoți-ilor, sus-pendarea aces-tu
+i pro-ces sau oprirea); 
+ []
+
+[24<./images/qt_designer.png>]
+Overfull \hbox (8.29338pt too wide) in paragraph at lines 451--452
+\TU/UTSans(0)/m/n/12 datelor im-por-tante reținute din in-ter-viu, a fost nevo
+ie de îm-părțirea datelor aseme-
+ []
+
+[25]
+Overfull \hbox (12.16531pt too wide) in paragraph at lines 461--462
+[]\TU/UTSans(0)/m/n/12 PyAu-dio: ne oferă su-port pen-tru as-cultarea, în-reg
+-is-trarea și sal-varea fișierelor
  []
 
 
-Overfull \hbox (4.00952pt too wide) in paragraph at lines 463--464
-[]\TU/UTSans(0)/m/n/12 Py-mongo: funcționează pe post de driver, făcând pos
-i-bilă apelarea prin-ci-palelor
+Overfull \hbox (8.4293pt too wide) in paragraph at lines 463--464
+\TU/UTSans(0)/m/n/12 cu scopul vizual-izării datelor grafice în python și ex
+-ten-sia sa nu-mer-ică numpy.
  []
 
 
-Overfull \hbox (4.71355pt too wide) in paragraph at lines 463--464
-\TU/UTSans(0)/m/n/12 funcțion-al-ități ale Mon-godDb prin in-ter-mediul lim-
-ba-ju-lui de pro-gra-mare python. 
+Overfull \hbox (27.42929pt too wide) in paragraph at lines 463--464
+\TU/UTSans(0)/m/n/12 grafice pre-cum: an-velopa acus-tică a unui fișier au-di
+o, spec-togramele secvențelor
  []
 
-[24]
-<images/state_diagram.png, id=365, 2036.60875pt x 556.0775pt>
+
+Overfull \hbox (8.0933pt too wide) in paragraph at lines 465--466
+\TU/UTSans(0)/m/n/12 Acesta oferă su-port pen-tru uti-lizarea camerei web, pre
+-cum și diferite metode
+ []
+
+
+Overfull \hbox (0.80531pt too wide) in paragraph at lines 465--466
+\TU/UTSans(0)/m/n/12 folosite în com-puter vi-sion: cal-cu-larea de his-togram
+e, trans-for-marea imag-
+ []
+
+[26]
+Overfull \hbox (2.44528pt too wide) in paragraph at lines 473--474
+\TU/UTSans(0)/m/n/12 lemelor de proiectare în așa fel încât ace-leași răs
+pun-suri să fie re-folosite de fiecare
+ []
+
+
+Overfull \hbox (16.88535pt too wide) in paragraph at lines 480--481
+[]\TU/UTSans(0)/m/n/12 Start re-cunoaștere: uti-liza-torul în-cepe pro-ce-sul
+ de predicție a emoți-ilor vizuale,
+ []
+
+<images/state_diagram.png, id=371, 2036.60875pt x 556.0775pt>
 File: images/state_diagram.png Graphic file (type png)
 <use images/state_diagram.png>
-Package luatex.def Info: images/state_diagram.png  used on input line 473.
+Package luatex.def Info: images/state_diagram.png  used on input line 490.
 (luatex.def)             Requested size: 407.31453pt x 111.21352pt.
- [25<./images/state_diagram.png>]
-Overfull \hbox (9.07349pt too wide) in paragraph at lines 497--498
-\TU/UTSans(0)/m/n/12 atât, se poate ac-ti-va/dezac-tiva fiecare funcțion-al-i
--tate ma-joră a apli-cației (re-cunoaștere
+
+Overfull \hbox (8.97594pt too wide) in paragraph at lines 490--491
+ [] 
+ []
+
+[27]
+("C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstlang1.
+sty"
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
+put line 496.
+
+Overfull \hbox (2.48802pt too wide) in paragraph at lines 506--507
+\TU/UTSans(0)/m/n/12 sal-vate, putem înțelege dacă s-a pro-dus vreo mal-func
+ție în tim-pul rulării. Șablonul
+ []
+
+[28<./images/state_diagram.png>]
+Overfull \hbox (10.26001pt too wide) in paragraph at lines 522--523
+[]\TU/UTSans(0)/m/n/12 Când pornim apli-cația, sun-tem în-tâmp-inați de fe
+r-eas-tra de in-tro-duc-ere. Aceasta
  []
 
 
-Overfull \hbox (1.14551pt too wide) in paragraph at lines 499--500
-[]\TU/UTSans(0)/m/n/12 Din acest mo-ment, avem la dis-poz-iție ur-mă-toarele 
-in-ter-acționări pe care le putem
+Overfull \hbox (9.06532pt too wide) in paragraph at lines 524--525
+[]\TU/UTSans(0)/m/n/12 Apli-cația oferă uti-liza-toru-lui prile-jul de a î
+și in-tro-duce nu-mele pre-cum și alegerea
  []
 
-[26
+
+Overfull \hbox (3.8653pt too wide) in paragraph at lines 528--529
+[]\TU/UTSans(0)/m/n/12 În cadrul re-cunoaș-terii emoți-ilor în timp real, a
+u-tomatul de stare ne con-strânge
+ []
+
+
+Overfull \hbox (4.49998pt too wide) in paragraph at lines 528--529
+\TU/UTSans(0)/m/n/12 cate în mo-men-tul în care se de-cide schim-barea nu-mel
+ui din setări. Dacă se dorește
+ []
+
+
+Overfull \hbox (10.84535pt too wide) in paragraph at lines 531--532
+[]\TU/UTSans(0)/m/n/12 Pen-tru în-ceput, vom vorbi de-spre fiecare din-tre fun
+cțion-al-itățile aso-ci-ate primu-
+ []
+
+[29
 
 ]
-<images/emotion_recognition_clean.png, id=378, 1010.27437pt x 631.60968pt>
+<images/emotion_recognition_clean.png, id=399, 1010.27437pt x 631.60968pt>
 File: images/emotion_recognition_clean.png Graphic file (type png)
 <use images/emotion_recognition_clean.png>
 Package luatex.def Info: images/emotion_recognition_clean.png  used on input lin
-e 512.
+e 539.
 (luatex.def)             Requested size: 404.10258pt x 252.63939pt.
 
-Overfull \hbox (13.94946pt too wide) in paragraph at lines 522--523
-[]\TU/UTSans(0)/m/n/12 Funcțion-al-itățile de baza ale aces-tui modul sunt u
-r-mă-toarele: re-cunoașterea emoți-
+Overfull \hbox (5.76399pt too wide) in paragraph at lines 539--540
+ [] 
  []
 
-[27
+[30
 
 <./images/emotion_recognition_clean.png>]
-Overfull \hbox (0.20955pt too wide) in paragraph at lines 541--542
-[]\TU/UTSans(0)/m/n/12 Mo-ti-vația din spatele alegerii aces-tui set de date e
-ste susțin-ută de cal-i-tatea înaltă
+Overfull \hbox (3.78937pt too wide) in paragraph at lines 556--557
+\TU/UTSans(0)/m/n/12 dintr-un iden-ti-fi-ca-tor nu-meric con-struit din 7 păr
+ți (03-01-06-01-02-01-12.wav),
  []
 
-<images/audio_plot.png, id=388, 667.74469pt x 236.38312pt>
+<images/audio_plot.png, id=409, 667.74469pt x 236.38312pt>
 File: images/audio_plot.png Graphic file (type png)
 <use images/audio_plot.png>
-Package luatex.def Info: images/audio_plot.png  used on input line 547.
+Package luatex.def Info: images/audio_plot.png  used on input line 574.
 (luatex.def)             Requested size: 400.6499pt x 141.83096pt.
-[28]
-Overfull \hbox (5.06815pt too wide) in paragraph at lines 555--556
-\TU/UTSans(0)/m/n/12 cile es-ențiale pe care dorim ca mod-elul să le în-ve
-țe. Deoarece în dome-niul frecvențelor
+
+Overfull \hbox (2.31131pt too wide) in paragraph at lines 574--575
+ [] 
  []
 
-<images/audio_model.png, id=398, 990.70125pt x 2628.82124pt>
+[31] [32<./images/audio_plot.png>]
+<images/audio_model.png, id=426, 990.70125pt x 2628.82124pt>
 File: images/audio_model.png Graphic file (type png)
 <use images/audio_model.png>
-Package luatex.def Info: images/audio_model.png  used on input line 571.
+Package luatex.def Info: images/audio_model.png  used on input line 598.
 (luatex.def)             Requested size: 198.13673pt x 525.75494pt.
-[29<./images/audio_plot.png>] [30<./images/audio_model.png>]
-<images/accuracy_audio_model.png, id=415, 1456.44125pt x 618.31pt>
+ [33<./images/audio_model.png>]
+<images/accuracy_audio_model.png, id=434, 1456.44125pt x 618.31pt>
 File: images/accuracy_audio_model.png Graphic file (type png)
 <use images/accuracy_audio_model.png>
-Package luatex.def Info: images/accuracy_audio_model.png  used on input line 583
+Package luatex.def Info: images/accuracy_audio_model.png  used on input line 610
 .
 (luatex.def)             Requested size: 291.28308pt x 123.6598pt.
-
-Overfull \hbox (4.67749pt too wide) in paragraph at lines 589--590
-[]\TU/UTSans(0)/m/n/12 Acu-ratețea în-reg-is-trată pe datele de testare este
- una ridi-cată, aprox-i-ma-tiv 95.91%.
- []
-
-<images/audio_confusion_matrix.png, id=417, 255.95625pt x 196.48407pt>
+<images/audio_confusion_matrix.png, id=437, 255.95625pt x 196.48407pt>
 File: images/audio_confusion_matrix.png Graphic file (type png)
 <use images/audio_confusion_matrix.png>
-Package luatex.def Info: images/audio_confusion_matrix.png  used on input line 5
-93.
-(luatex.def)             Requested size: 179.16814pt x 137.5379pt.
-[31<./images/accuracy_audio_model.png><./images/audio_confusion_matrix.png>]
-<images/face_detected.png, id=427, 316.18124pt x 326.72063pt>
+Package luatex.def Info: images/audio_confusion_matrix.png  used on input line 6
+22.
+(luatex.def)             Requested size: 102.38068pt x 78.59222pt.
+ [34<./images/accuracy_audio_model.png><./images/audio_confusion_matrix.png>]
+<images/face_detected.png, id=446, 316.18124pt x 326.72063pt>
 File: images/face_detected.png Graphic file (type png)
 <use images/face_detected.png>
-Package luatex.def Info: images/face_detected.png  used on input line 617.
-(luatex.def)             Requested size: 207.70522pt x 214.63422pt.
-<images/face_features.png, id=428, 226.59656pt x 277.035pt>
+Package luatex.def Info: images/face_detected.png  used on input line 642.
+(luatex.def)             Requested size: 199.1693pt x 205.81015pt.
+<images/face_features.png, id=447, 226.59656pt x 277.035pt>
 File: images/face_features.png Graphic file (type png)
 <use images/face_features.png>
-Package luatex.def Info: images/face_features.png  used on input line 623.
-(luatex.def)             Requested size: 176.55069pt x 215.8497pt.
+Package luatex.def Info: images/face_features.png  used on input line 648.
+(luatex.def)             Requested size: 169.2951pt x 206.97679pt.
 
-[32
-
-<./images/face_detected.png><./images/face_features.png>]
-<images/video_dataset_example.png, id=438, 212.29312pt x 206.27063pt>
-File: images/video_dataset_example.png Graphic file (type png)
-<use images/video_dataset_example.png>
-Package luatex.def Info: images/video_dataset_example.png  used on input line 65
-7.
-(luatex.def)             Requested size: 148.60417pt x 144.38844pt.
-
-Overfull \hbox (2.0534pt too wide) in paragraph at lines 663--664
-\TU/UTSans(0)/m/n/12 erau deja în tonuri gri, ul-timul pas care tre-buia apli-
-cat era cel de nor-malizare al datelor.
- []
-
-[33<./images/video_dataset_example.png>]
-<images/video_model_layers_visualisation.png, id=447, 703.12688pt x 245.41687pt>
-
-File: images/video_model_layers_visualisation.png Graphic file (type png)
-<use images/video_model_layers_visualisation.png>
-Package luatex.def Info: images/video_model_layers_visualisation.png  used on in
-put line 674.
-(luatex.def)             Requested size: 332.3296pt x 115.99377pt.
-<images/video_confusion_matrix.png, id=448, 264.23718pt x 195.73125pt>
-File: images/video_confusion_matrix.png Graphic file (type png)
-<use images/video_confusion_matrix.png>
-Package luatex.def Info: images/video_confusion_matrix.png  used on input line 6
-79.
-(luatex.def)             Requested size: 166.16164pt x 123.08136pt.
-
-Overfull \hbox (6.9894pt too wide) in paragraph at lines 685--686
-[]\TU/UTSans(0)/m/n/12 În Figura []19a[] se poate ob-serva că, în urma unei 
-pro-cesări care a per-mis vizualizarea
- []
-
-[34<./images/video_model_layers_visualisation.png><./images/video_confusion_matr
-ix.png>]
-Overfull \hbox (0.18552pt too wide) in paragraph at lines 701--702
-[]\TU/UTSans(0)/m/n/12 Cele 5 cat-e-gorii de per-son-al-i-tate: pen-tru fiecare
- eticheta uti-lizată, i-a fost acor-
+Overfull \hbox (2.39735pt too wide) in paragraph at lines 656--657
+[]\TU/UTSans(0)/m/n/12 Prin in-ter-mediul pa-chetu-lui OpenCv, putem trasa mai 
+de-parte diferite forme
  []
 
 [35
 
-]
-Overfull \hbox (3.70557pt too wide) in paragraph at lines 712--713
-[]\TU/UTSans(0)/m/n/12 Îm-părțirea propoz-iției în cu-vinte, de-ter-minân
-d ce parte a propoz-iției este fiecare
+<./images/face_detected.png><./images/face_features.png>]
+<images/video_dataset_example.png, id=457, 212.29312pt x 206.27063pt>
+File: images/video_dataset_example.png Graphic file (type png)
+<use images/video_dataset_example.png>
+Package luatex.def Info: images/video_dataset_example.png  used on input line 68
+2.
+(luatex.def)             Requested size: 148.60417pt x 144.38844pt.
+
+Overfull \hbox (2.22127pt too wide) in paragraph at lines 688--689
+\TU/UTSans(0)/m/n/12 datele erau deja în tonuri gri, ul-timul pas care tre-bui
+a apli-cat era cel de nor-malizare
  []
 
-[36]
-<images/emotion_recognition.png, id=471, 1005.7575pt x 684.30656pt>
+[36<./images/video_dataset_example.png>]
+Overfull \hbox (1.9534pt too wide) in paragraph at lines 690--691
+[]\TU/UTSans(0)/m/n/12 Arhi-tec-tură uti-lizată pen-tru mod-elul de în-vă
+țare video este in-spi-rată din model
+ []
+
+<images/video_model_layers_visualisation.png, id=466, 703.12688pt x 245.41687pt>
+
+File: images/video_model_layers_visualisation.png Graphic file (type png)
+<use images/video_model_layers_visualisation.png>
+Package luatex.def Info: images/video_model_layers_visualisation.png  used on in
+put line 699.
+(luatex.def)             Requested size: 318.67209pt x 111.2267pt.
+<images/video_confusion_matrix.png, id=467, 264.23718pt x 195.73125pt>
+File: images/video_confusion_matrix.png Graphic file (type png)
+<use images/video_confusion_matrix.png>
+Package luatex.def Info: images/video_confusion_matrix.png  used on input line 7
+04.
+(luatex.def)             Requested size: 159.333pt x 118.02502pt.
+
+Overfull \hbox (24.06123pt too wide) in paragraph at lines 710--711
+[]\TU/UTSans(0)/m/n/12 În Figura []19a[] se poate ob-serva că, în urma unei 
+pro-cesări care a per-mis vizualizarea
+ []
+
+[37<./images/video_model_layers_visualisation.png><./images/video_confusion_matr
+ix.png>]
+Overfull \hbox (15.12529pt too wide) in paragraph at lines 729--730
+\TU/UTSans(0)/m/n/12 in-ter-viu feed-back con-stat can-di-dat-u-lui refer-i-tor
+ la emoți-ile pe care acesta le afișează.
+ []
+
+[38] [39
+
+]
+Overfull \hbox (2.93341pt too wide) in paragraph at lines 762--763
+\TU/UTSans(0)/m/n/12 stra-turi de tipul: em-bed-ding, conv1d, max-pool-ing1d, b
+atch-Nor-mal-iza-tion și LSTM. 
+ []
+
+[40]
+<images/emotion_recognition.png, id=509, 1005.7575pt x 684.30656pt>
 File: images/emotion_recognition.png Graphic file (type png)
 <use images/emotion_recognition.png>
-Package luatex.def Info: images/emotion_recognition.png  used on input line 734.
+Package luatex.def Info: images/emotion_recognition.png  used on input line 776.
 
 (luatex.def)             Requested size: 352.0204pt x 239.51088pt.
- [37
+ [41
 
-<./images/emotion_recognition.png>] [38]
-<images/reports.png, id=486, 1117.92656pt x 310.91156pt>
+<./images/emotion_recognition.png>]
+Overfull \hbox (9.60532pt too wide) in paragraph at lines 789--790
+[]\TU/UTSans(0)/m/n/12 Pen-tru ca pro-ce-sul de iden-ti-fi-care a emoți-ilor s
+ă fie în timp real, fiecare funcțion-
+ []
+
+
+Overfull \hbox (10.98932pt too wide) in paragraph at lines 797--799
+[]\TU/UTSans(0)/m/n/12 Mon-goDb având lim-itarea pen-tru mărimea colecți-ilo
+r (8 MB), datele care reprez-
+ []
+
+[42]
+Overfull \hbox (3.80127pt too wide) in paragraph at lines 801--802
+\TU/UTSans(0)/m/n/12 Așa cum a fost ex-pli-cat în secți-unea an-te-rioară, 
+rapoartele in-ter-vi-urilor vor fi aduse
+ []
+
+<images/reports.png, id=523, 1117.92656pt x 310.91156pt>
 File: images/reports.png Graphic file (type png)
 <use images/reports.png>
-Package luatex.def Info: images/reports.png  used on input line 765.
+Package luatex.def Info: images/reports.png  used on input line 807.
 (luatex.def)             Requested size: 391.28015pt x 108.82066pt.
- [39
+[43
 
 <./images/reports.png>]
-<images/emotion_report_visualize.png, id=496, 1003.49907pt x 720.44156pt>
+<images/emotion_report_visualize.png, id=533, 1003.49907pt x 720.44156pt>
 File: images/emotion_report_visualize.png Graphic file (type png)
 <use images/emotion_report_visualize.png>
 Package luatex.def Info: images/emotion_report_visualize.png  used on input line
- 789.
+ 831.
 (luatex.def)             Requested size: 351.22993pt x 252.15831pt.
 
-[40
+Overfull \hbox (11.60132pt too wide) in paragraph at lines 839--840
+[]\TU/UTSans(0)/m/n/12 Pe lângă imag-inea ex-trasă ca fi-ind cea mai sug-es-
+tivă, este prezen-tată o etichetă,
+ []
+
+[44
 
 <./images/emotion_report_visualize.png>]
-<images/settings.png, id=504, 579.66562pt x 149.8097pt>
+<images/settings.png, id=541, 579.66562pt x 149.8097pt>
 File: images/settings.png Graphic file (type png)
 <use images/settings.png>
-Package luatex.def Info: images/settings.png  used on input line 807.
+Package luatex.def Info: images/settings.png  used on input line 849.
 (luatex.def)             Requested size: 376.77818pt x 97.37514pt.
-<images/light_theme.png, id=506, 1001.99344pt x 313.17pt>
+<images/light_theme.png, id=543, 1001.99344pt x 313.17pt>
 File: images/light_theme.png Graphic file (type png)
 <use images/light_theme.png>
-Package luatex.def Info: images/light_theme.png  used on input line 817.
+Package luatex.def Info: images/light_theme.png  used on input line 859.
 (luatex.def)             Requested size: 300.60034pt x 93.95172pt.
- [41
 
-<./images/settings.png><./images/light_theme.png>]
-Overfull \hbox (9.60153pt too wide) in paragraph at lines 829--830
-[]\TU/UTSans(0)/m/n/12 Putem afirma fap-tul că uti-lizarea în-vățării au-t
-o-mate în dome-niul iden-ti-ficării emoți-
- []
-
-[42
-
-]
-
-LaTeX Font Warning: Font shape `TU/UTSans(0)/m/it' undefined
-(Font)              using `TU/UTSans(0)/m/n' instead on input line 848.
-
-
-Overfull \hbox (9.33365pt too wide) in paragraph at lines 849--849
-\TU/UTSans(0)/m/it/12 gence Re-view, 2015, 43(2):155-177. (in NETHER-LANDS). Ac
--cessed: 16.05.2022
+Overfull \hbox (5.11603pt too wide) in paragraph at lines 865--866
+[]\TU/UTSans(0)/m/n/12 Apli-cația oferă disponi-bil-i-tatea schim-bărilor de
+ as-pect. Sunt oferite două teme:
  []
 
 
-Overfull \hbox (15.68254pt too wide) in paragraph at lines 849--849
-[]\TU/UTSans(0)/m/it/12 IMo-tions Fea - Fa-cial Ex-pres-sion Anal-y-sis. []$\TU
-/lmtt/m/n/12 https : / / imotions . com / biosensor /
- []
-
-
-Overfull \hbox (25.88644pt too wide) in paragraph at lines 849--849
-[]\TU/UTSans(0)/m/it/12 Ana-conda Dis-tri-bu-tion. []$\TU/lmtt/m/n/12 https : /
- / www . anaconda . com / products / distribution/$[]\TU/UTSans(0)/m/it/12 .
- []
-
-[43
-
-
-] [44]
-<images/plagiat.PNG, id=565, 556.32843pt x 153.57375pt>
-File: images/plagiat.PNG Graphic file (type png)
-<use images/plagiat.PNG>
-Package luatex.def Info: images/plagiat.PNG  used on input line 852.
-(luatex.def)             Requested size: 445.06335pt x 122.85915pt.
-
-Overfull \hbox (29.65292pt too wide) in paragraph at lines 852--853
- [] 
+Overfull \hbox (43.58134pt too wide) in paragraph at lines 867--868
+\TU/UTSans(0)/m/n/12 fișieru-lui, uti-liza-torul va fi in-tero-gat de tema pe 
+care dorește să o folosească([d]ark/[l]ight).
  []
 
 [45
 
+<./images/settings.png><./images/light_theme.png>]
+Overfull \hbox (0.14539pt too wide) in paragraph at lines 873--874
+[]\TU/UTSans(0)/m/n/12 Prin apli-cația ”Mul-ti-modal Emo-tion De-tec-tion
+” s-a re-al-izat on in-ter-față grafică
+ []
+
+
+Overfull \hbox (2.83604pt too wide) in paragraph at lines 879--880
+\TU/UTSans(0)/m/n/12 minării in-ter-vi-urilor. Fi-ind un mod in-ter-ac-tiv de 
+vizualizare, se poate anal-iza fiecare
+ []
+
+
+Overfull \hbox (1.23332pt too wide) in paragraph at lines 882--883
+[]\TU/UTSans(0)/m/n/12 con-sol-i-darea per-for-manței și a acu-rateței oferi
+te de către mod-elele de iden-
+ []
+
+[46
+
+]
+
+LaTeX Font Warning: Font shape `TU/UTSans(0)/m/it' undefined
+(Font)              using `TU/UTSans(0)/m/n' instead on input line 888.
+
+
+Overfull \hbox (15.49304pt too wide) in paragraph at lines 889--889
+[]\TU/UTSans(0)/m/n/12 K. Vi-maladeví C. Vi-nola. A Sur-vey on Hu-man Emo-tion
+ Recog-ni-tion Ap-proaches,
+ []
+
+
+Overfull \hbox (3.964pt too wide) in paragraph at lines 889--889
+\TU/UTSans(0)/m/it/12 vo-lu-tions. []$\TU/lmtt/m/n/12 https : / / arxiv . org /
+ abs / 1610 . 02357/$[]\TU/UTSans(0)/m/it/12 . Ac-cessed: 24.05.2022
+ []
+
+
+Overfull \hbox (10.47446pt too wide) in paragraph at lines 889--889
+\TU/UTSans(0)/m/it/12 fa-cial and vo-cal ex-pres-sions in North Amer-i-can En-g
+lish. []$\TU/lmtt/m/n/12 https : / / journals .
+ []
+
+
+Overfull \hbox (42.95828pt too wide) in paragraph at lines 889--889
+[]\TU/UTSans(0)/m/it/12 Ana-conda Dis-tri-bu-tion. []$\TU/lmtt/m/n/12 https : /
+ / www . anaconda . com / products / distribution/$[]\TU/UTSans(0)/m/it/12 .
+ []
+
+
+Overfull \hbox (2.35469pt too wide) in paragraph at lines 889--889
+\TU/lmtt/m/n/12 biosensor / fea - facial - expression - analysis/$[]\TU/UTSans(
+0)/m/it/12 . Ac-cessed: 17.05.2022
+ []
+
+[47
+
+
+]
+Overfull \hbox (10.37827pt too wide) in paragraph at lines 889--889
+[]\TU/UTSans(0)/m/it/12 Trans-for-mata Fourier. []$\TU/lmtt/m/n/12 https : / / 
+ro . wikipedia . org / wiki / Transformata _
+ []
+
+[48] (./disertatie.lol)
+\tf@lol=\write7
+
+\openout7 = disertatie.lol
+ [49
+
+
+]
+<images/plagiat.PNG, id=610, 556.32843pt x 153.57375pt>
+File: images/plagiat.PNG Graphic file (type png)
+<use images/plagiat.PNG>
+Package luatex.def Info: images/plagiat.PNG  used on input line 894.
+(luatex.def)             Requested size: 445.06335pt x 122.85915pt.
+
+Overfull \hbox (46.72476pt too wide) in paragraph at lines 894--895
+ [] 
+ []
+
+[50
+
 <./images/plagiat.PNG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 857.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 857.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 899.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 899.
  (./disertatie.aux (./cover/cover.aux)
 (./cover/innercover.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 857.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 857.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 899.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 899.
 Package rerunfilecheck Info: File `disertatie.out' has not changed.
 (rerunfilecheck)             Checksum: 3653713D957C16B4ACB364D723AF87FF;5570.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                disertatie
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'disertatie.run.xml'.
 
 \openout1 = disertatie.run.xml
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 857.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 899.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32561 strings out of 481391
+ 32797 strings out of 481391
  125200,1373583 words of node,token memory allocated
  632 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 15 attribute, 69 glue_spec
 , 15 attribute_list, 2 write, 4 pdf_action nodes
-   avail lists: 1:4,2:716,3:264,4:66,5:424,6:73,7:3850,8:113,9:227,10:8,11:317
- 48370 multiletter control sequences out of 65536+200000
- 66 fonts using 6187475 bytes
- 72i,8n,77p,1059b,1183s stack positions out of 5000i,500n,10000p,200000b,50000s
+   avail lists: 1:4,2:1742,3:212,4:1228,5:1287,6:72,7:4197,8:87,9:3288,10:29,11:
+300
+ 48564 multiletter control sequences out of 65536+200000
+ 67 fonts using 6313563 bytes
+ 72i,8n,80p,1059b,1183s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/bogdy/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmmon
-o12-regular.otf><C:/Users/bogdy/AppData/Local/Microsoft/Windows/Fonts/utsans-reg
-ular.otf><C:/Users/bogdy/AppData/Local/Microsoft/Windows/Fonts/utsans-bold.otf><
-C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmex10.pfb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi12.pfb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bogdy/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bogdy/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bog
-dy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on disertatie.pdf (48 pages, 4255864 bytes).
+o12-regular.otf><c:/users/bogdy/appdata/local/programs/miktex 2.9/fonts/opentype
+/public/lm/lmmono10-regular.otf><C:/Users/bogdy/AppData/Local/Microsoft/Windows/
+Fonts/utsans-regular.otf><C:/Users/bogdy/AppData/Local/Microsoft/Windows/Fonts/u
+tsans-bold.otf><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/bogdy/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bogdy/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bogdy/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users
+/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb>
+Output written on disertatie.pdf (53 pages, 4273544 bytes).
 
-PDF statistics: 620 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 131072)
+PDF statistics: 672 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 131072)
  256 words of extra memory for PDF output out of 10000 (max. 100000000)
 
