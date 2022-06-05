@@ -402,9 +402,9 @@
 	\subsubsection{Python}
 	Python este un limbaj de programare care face partea din categoria limbajelor interpretate. Apariția acestui limbaj are loc la sfârșitul anului 1980 iar prima lansarea oficială se întâmplă în 1991, fiind utilizat intern în cadrul companiei Google. Printre valorile utilizate, creatorul acestui limbaj, Guido van Rossum, abordează ușurința interpretării codului, favorizând un stil identare față cel folosind parantezele.
 
-	Oferind suport pentru multiple paradigme de programare (funcțională, procedurală și obiect orientată), python utilizează ca alte limbaje de nivel înalt, un mecanism numit "garbage collector". Cu ajutorul acestui sistem, programatorul scapă de necesitatea eliberării în mod manual a memoriei utilizate în timpul execuției programului. Această funcție gestionează în mod automat zonele de memorie utilizate, iar printr-o rutină internă, dealocă zona atunci când aceasta nu mai este accesată. 
+	Oferind suport pentru multiple paradigme de programare (funcțională, procedurală și obiect orientată), Python utilizează ca alte limbaje de nivel înalt, un mecanism numit "garbage collector". Cu ajutorul acestui sistem, programatorul scapă de necesitatea eliberării în mod manual a memoriei utilizate în timpul execuției programului. Această funcție gestionează în mod automat zonele de memorie utilizate, iar printr-o rutină internă, dealocă zona atunci când aceasta nu mai este accesată. 
 
-	Adesea, utilizat împreună cu limbajul de programare python este un sistem care să administreze pachetele instalate, mediile de lucru create precum și versiunea limbajului utilizată. Distribuția Anaconda \cite{anaconda} este un astfel de sistem, avantajos de folosit atunci când dorim să lucrăm cu diferite pachete pentru manipularea datelor (numpy, pandas) sau pentru învățarea automată (scikit-learn). Dacă este nevoie de pachete suplimentare după instalarea acestei distribuții, din aplicația de administrare se pot instala manual bibliotecile necesare. O unealtă folositoare care se instalează odată cu această distribuție este Jupyter Notebook. Este o aplicație web folosită pentru rularea și editarea codului python, fiind executat local, fără a fi nevoie de acces la internet. Nucleul utilizat (kernel) facilitează rularea secvențială a codului, făcând posibilă ca variabilele să fie stocate și accesibile din memorie pe toată durata vieții acestuia. 
+	Adesea, utilizat împreună cu limbajul de programare Python este un sistem care să administreze pachetele instalate, mediile de lucru create precum și versiunea limbajului utilizată. Distribuția Anaconda \cite{anaconda} este un astfel de sistem, avantajos de folosit atunci când dorim să lucrăm cu diferite pachete pentru manipularea datelor (numpy, pandas) sau pentru învățarea automată (scikit-learn). Dacă este nevoie de pachete suplimentare după instalarea acestei distribuții, din aplicația de administrare se pot instala manual bibliotecile necesare. O unealtă folositoare care se instalează odată cu această distribuție este Jupyter Notebook. Este o aplicație web folosită pentru rularea și editarea codului Python, fiind executat local, fără a fi nevoie de acces la internet. Nucleul utilizat (kernel) facilitează rularea secvențială a codului, făcând posibilă ca variabilele să fie stocate și accesibile din memorie pe toată durata vieții acestuia. 
 	
 	\subsubsection{Qt}
  	Qt \cite{qt} este un framework open-source de tipul GUI (graphical user interface), folosit în general pentru crearea interfețelor grafice. Această tehnologie este realizată și inițial dedicată limbajului de programare C++. Însă, după o perioadă de timp, s-a creat o interfață API, prin care codul Qt poate fi apelat și dintr-o manieră pitonică. Printre pachetele care oferă suport în acest sens, putem menționa: PyQt, PySide (dezvoltat de Qt Company). 
@@ -451,28 +451,28 @@
 	Datorită constrângerii de memorie per document (8 MB), pentru stocarea datelor importante reținute din interviu, a fost nevoie de împărțirea datelor asemenea unui lanț. Fiecare bloc de date (binar), are o referință bidirecțională, fiind posibilă ca o agregare a acestor segmente să compună datele interviului. Vizualizarea informațiile este posibilă folosind MongoDb Compass, un explorator care face cu putință vizualizarea atât a colecțiilor cât și a conținutului unui document.
 	
 	\subsubsection{Biblioteci utilizate}
-	Datorită alegerii făcute în materie de limbaj de programare, python oferă o gama largă de biblioteci și pachete care s-au dovedit folositoare pe parcursul dezvoltării aplicației. Printre acestea, vom menționa pe cele care au avut un impact semnificativ în perioada definirii proiectului: 
+	Datorită alegerii făcute în materie de limbaj de programare, Python oferă o gama largă de biblioteci și pachete care s-au dovedit folositoare pe parcursul dezvoltării aplicației. Printre acestea, vom menționa pe cele care au avut un impact semnificativ în perioada definirii proiectului: 
 	
 	\begin{itemize}
-	 	\item Keras: este un API de deep learning open source, dezvoltat de Google pentru implementarea rețelelor neurale. Este scris în python și este utilizat pentru a facilita implementarea rețelelor neurale. Oferă o abstractizare de nivel înalt, făcând astfel ca acest pachet să fie prietenos cu utilizatorii. Keras permite comutarea între diferite baze, Tensorflow fiind cea care este utilizată în aplicație. Acest pachet ne oferă un mod de lucru mai intuitiv, care a fost folosit pentru definirea și antrenarea modelelor din aplicația Multimodal Emotion Detection.
+	 	\item Keras: este un API de deep learning open source, dezvoltat de Google pentru implementarea rețelelor neurale. Este scris în Python și este utilizat pentru a facilita implementarea rețelelor neurale. Oferă o abstractizare de nivel înalt, făcând astfel ca acest pachet să fie prietenos cu utilizatorii. Keras permite comutarea între diferite baze, Tensorflow fiind cea care este utilizată în aplicație. Acest pachet ne oferă un mod de lucru mai intuitiv, care a fost folosit pentru definirea și antrenarea modelelor din aplicația Multimodal Emotion Detection.
 	
 		\item Tensorflow: constituite o bibliotecă open source, utilizată în calculul numeric, bazat pe flux de date. A fost dezvoltat inițial de Google Brain Team din cadrul organizației de cercetare Google Machine Intelligence pentru învățarea automată și cercetarea rețelelor neuronale profunde, dar sistemul este suficient de general pentru a fi aplicabil și într-o mare varietate de alte domenii. Tensorflow poate fi utilizat pe diverse procesoare: grafice, centrale și tensoriale. Folosit preponderent în aplicație, Tensorflow a fost utilizat pentru a face posibilă antrenarea modelelor neurale pentru fiecare perspectiva: audio, video și text.
 	
 		\item PyAudio: ne oferă suport pentru ascultarea, înregistrarea și salvarea fișierelor audio. Este definit cu un strat adițional pentru a permite apelarea metodelor din platforma PortAudio. Pachetul respectiv a oferit posibilitatea de a înregistra vocea candidatului în timpul interviului, precum și salvări de fișiere temporare, folosite în scopul analizei și a predicției emoției.
 	
-		\item Matplotlib: fiind o biblioteca cu utilizări în mai multe platforme, este folosit cu scopul vizualizării datelor grafice în python și extensia sa numerică numpy. Utilizarea acestui pachet în aplicație a fost împlinită prin afișarea datelor grafice precum: anvelopa acustică a unui fișier audio, spectogramele secvențelor de 4 secunde din date.
+		\item Matplotlib: fiind o biblioteca cu utilizări în mai multe platforme, este folosit cu scopul vizualizării datelor grafice în Python și extensia sa numerică numpy. Utilizarea acestui pachet în aplicație a fost împlinită prin afișarea datelor grafice precum: anvelopa acustică a unui fișier audio, spectogramele secvențelor de 4 secunde din date.
 	
 		\item OpenCv-Python: reprezintă un pachet de tipul API, care face posibilă utilizarea funcționalității din OpenCv prin apelarea metodelor scrise în C/C++. Acesta oferă suport pentru utilizarea camerei web, precum și diferite metode folosite în computer vision: calcularea de histograme, transformarea imaginilor în diferite canale (RGB, gri), modificare individuală a pixelilor, aplicarea de filtre. Prin utilizarea acestui pachet împreună cu Dlib, s-a putut realiza afișarea informațiilor referitoare la emoții în timp real, desenarea trăsăturilor feței (ochi, nas, gură etc).
 	
 		\item Librosa: este un pachet utilizat în special pentru analiza sunetelor. Permite funcționalități precum încărcarea/scrierea fișierelor audio în diferite extensii dar mai presus de menționat, aplicarea tehnicilor de procesare de semnal, precum transformata Fourier, spectograme în scala Mel etc.
 	
-		\item Pymongo: funcționează pe post de driver, făcând posibilă apelarea principalelor funcționalități ale MongodDb prin intermediul limbajului de programare python.
+		\item Pymongo: funcționează pe post de driver, făcând posibilă apelarea principalelor funcționalități ale MongodDb prin intermediul limbajului de programare Python.
 	\end{itemize}
 	
 	\subsubsection{Șabloane de proiectare}
 	Șabloanele de proiectare au luat naștere din cauza problemelor de proiectare recurente și similare. Prin urmare, a devenit necesară conceptualizarea problemelor de proiectare în așa fel încât aceleași răspunsuri să fie refolosite de fiecare dată când apare o problemă similară.
 
-	O problemă care s-a rezolvat utilizând șablonul "State Machine" este referitoare la administrarea ferestrelor precum și a navigabilității între acestea. Nu dorim ca utilizatorul să aibă șansa să comute între cadre atunci când este în timpul procesului de recunoaștere a emoțiilor. Astfel, mai jos sunt definite stările aplicației (\ref{fig:state}): 
+	O problemă care s-a rezolvat utilizând  "State Machine" este referitoare la administrarea ferestrelor precum și a navigabilității între acestea. Acest șablonul este unul crucial folosit în aplicație, fiind parte din fundația arhitecturii. Șablonul definește un set de stări care pot fi accesate doar în momentul alterării obiectului. Nu dorim ca utilizatorul să aibă șansa să comute între cadre atunci când este în timpul procesului de recunoaștere a emoțiilor. Astfel, mai jos sunt definite stările aplicației (\ref{fig:state}): 
 	
 	\begin{itemize}
 		\item Acasă (meniul principal): starea inițială în care se află utilizatorul;
@@ -484,16 +484,26 @@
 		\item Vizualizare raport: vizualizarea unui raport într-o fereastră dedicată;
 		\item Ieșire: închiderea aplicației.
 	\end{itemize}
-
+	
 	\begin{figure}[H]
+		\vfill
 		\begin{center}
-			\includegraphics[scale=0.2]{images/state_diagram.png}
+			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/state_diagram_001.jpg}
 		\end{center}
-		\caption{State machine aplicație}
-		\label{fig:state}
-	\end{figure} 	
+		\vfill
+	\end{figure}
 
-	\begin{lstlisting}[language=python, caption=Snip creare state machine, label=lst:state_machine]
+	\begin{figure}[H]\ContinuedFloat
+		\vfill
+		\begin{center}
+			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/state_diagram_002.jpg}
+		\end{center}
+		\vfill
+		\caption{Automatul de stări al aplicație}
+		\label{fig:state}
+	\end{figure} 	 	
+
+	\begin{lstlisting}[language=python, caption=Captură creare automat stare, label=lst:state_machine]
 		states = ['Home', 'Recognition', 'Recognition_Start', 'Recognition_Pause', 'Recognition_Stop', 'Reports', 'Report_View', 'Exit']
 		state_machine = Machine(model=self, states=StateManager.states, initial='Home')
 		state_machine.add_transition(trigger='button_recognition_clicked', source='Home', dest='Recognition', before="change_frame")
@@ -505,7 +515,7 @@
 	
 	Pentru folosirea logging-ului, am ales utilizarea șablonului "Chain of Responsability". Acesta șablon funcționează după următorul principiu: dacă se întâmplă un eveniment care depășește capabilitățile de manevrare a obiectului în cauză, acesta va apela un superior, care va fi în stare să se ocupe de acest aspect. Logarea informațiilor este un proces important, deoarece printr-o analiză a datelor salvate, putem înțelege dacă s-a produs vreo malfuncție în timpul rulării. Șablonul are aplicabilitate în acest caz în momentul în care se produce o eroare. În funcție de severitatea erorilor, acestea vor fi manevrate de câte o clasa specială. 
 	
-	În aplicație, sunt definite o serie de clase care este suficientă doar o singură instanța. Utilizând "Singleton", putem forța crearea doar a unei instanțe, precum clasa care să aibă în vedere apelurile de CRUD în baza de date. 
+	În aplicație, sunt definite o serie de clase care este suficientă doar o singură instanța. Utilizând "Singleton", putem permite crearea doar a unei instanțe, precum clasa care să aibă în vedere apelurile de CRUD în baza de date. 
 	
 	Având aceste informații, în următorul capitol vor fi prezentate cele două module definite în aplicație: recunoașterea emoțiilor în timp real și vizualizarea raportului.
 	
@@ -513,7 +523,7 @@
 	\section{Aplicația Multimodal Emotion Detection}
 	\subsection{Introducere}
 	
-	Multimodal Emotion Detection este o aplicație desktop, scrisă în limbajul de programare python, care utilizează tehnici de procesare de semnal, procesare de text și învățare automată cu scopul identificării emoțiilor umane, în contextul unui interviu. Principalele funcționalități ale acestei aplicații sunt reprezentate de:
+	Multimodal Emotion Detection este o aplicație desktop, scrisă în limbajul de programare Python, care utilizează tehnici de procesare de semnal, procesare de text și învățare automată cu scopul identificării emoțiilor umane, în contextul unui interviu. Principalele funcționalități ale acestei aplicații sunt reprezentate de:
 	\begin{itemize}
 	 	\item \textbf{Identificarea emoțiilor în timp real}: funcționalitate în care în timp real, sunt identificate emoțiile candidatului percepute din voce, expresii faciale precum și dialogul contextual recunoscut prin intermediul speech-to-text
 		\item \textbf{Vizualizarea raportului}: după ce raportul interviului a fost generat, acesta poate fi vizualizat într-o fereastră dedicată
@@ -595,7 +605,15 @@
 	
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=0.2]{images/audio_model.png}
+			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/audio_model_001.jpg}
+		\end{center}
+		% \caption{Arhitectura modelului de predicție audio}
+		% \label{fig:audio_model}
+	\end{figure}
+
+	\begin{figure}[H]\ContinuedFloat
+		\begin{center}
+			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/audio_model_002.jpg}
 		\end{center}
 		\caption{Arhitectura modelului de predicție audio}
 		\label{fig:audio_model}
@@ -673,7 +691,17 @@
 		
 	\end{itemize}
 	
-	Datele utilizate pentru antrenare rețelei artificiale provin din setul de date "Facial Emotion Recognition" (FER 2013). Datele constau din imagini de 48x48 pixeli în tonuri de gri ale fețelor, fiind în număr de 28709 poze. Fețele au fost înregistrate automat, astfel încât fața să fie mai mult sau mai puțin centrată și să ocupe aproximativ aceeași cantitate de spațiu în fiecare imagine. Categoriile de emoții sunt: 0 = Furios, 1 = Dezgust, 2 = Frică, 3 = Fericit, 4 = Trist, 5 = Surprins, 6 = Neutru.
+	Datele utilizate pentru antrenare rețelei artificiale provin din setul de date "Facial Emotion Recognition" (FER 2013). Datele constau din imagini de 48x48 pixeli în tonuri de gri ale fețelor, fiind în număr de 28709 poze. Fețele au fost înregistrate automat, astfel încât fața să fie mai mult sau mai puțin centrată și să ocupe aproximativ aceeași cantitate de spațiu în fiecare imagine. Categoriile de emoții sunt: 
+	
+	\begin{itemize}
+		\item 0 = Furios;
+		\item 1 = Dezgust;
+		\item 2 = Frică;
+		\item 3 = Fericit;
+		\item 4 = Trist;
+		\item 5 = Surprins;
+		\item 6 = Neutru.
+	\end{itemize}
 	
 	Informațiile sunt reținute în format csv, având două coloane: emoție și pixeli. Pe coloana emoție, conține un număr de la 0 la 6 pentru emoția reprezentată în imagine. Coloana pixeli conține un șir de numere între ghilimele pentru fiecare imagine. Conținutul acestui șir are valori de pixeli separate de spațiu în ordinea majoră a rândurilor. În Figura \ref{fig:video_dataset_example}, este printată un exemplu din setul de date.
 	
@@ -689,7 +717,7 @@
 	
 	Arhitectură utilizată pentru modelul de învățare video este inspirată din model Xception \cite{xception}, creat chiar de fondatorul pachetului Keras. Modelul este construit astfel, în 3 etape: fluxul de intratre, mijloc și final. Fiecare dintre aceste nivele se bazează pe perechi de straturi convolutional separabil, normalizare și activare. 
 	
-	Pentru a elimina riscul de overfiting, se utilizează un generator sintetic de date, care are rolul a crea date destul de asemănătoare celor date, adăugând următoarele operații asupra lor: mărirea, rotirea, mutarea ei în cele patru direcții cardinale precum și întoarcerea ei pe orizontală și verticală. În acest sens, minimizăm pe cât posibil riscul de overfitting al modelului pe datele de antrenare.
+	Pentru a elimina riscul de overfitting, se utilizează un generator sintetic de date, care are rolul a crea date destul de asemănătoare celor date, adăugând următoarele operații asupra lor: mărirea, rotirea, mutarea ei în cele patru direcții cardinale precum și întoarcerea ei pe orizontală și verticală. În acest sens, minimizăm pe cât posibil riscul de overfitting al modelului pe datele de antrenare.
 	
 	În scop de testare, prin izolarea a primelor straturi din rețea, am putut observa modul în care rețeaua neurală își creează hărți de caracteristici pe baza unei poze date. Este de reținut că în acest pas, rețeaua nu este antrenată, caracteristicile găsite putând să fie schimbate de la o epocă la altă.
 	
@@ -804,7 +832,8 @@
 	
 	\begin{figure}[H]
 		\begin{center}
-			\includegraphics[scale=0.35]{images/reports.png}
+			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/reports.png}
+			%\includegraphics[scale=0.5]{images/reports.png}
 		\end{center}
 		\caption{Vizualizarea rapoartelor}
 		\label{fig:emotion_reports}
@@ -870,7 +899,7 @@
 	\section{Concluzii}
 	Putem afirma faptul că utilizarea învățării automate în domeniul identificării emoțiilor în timp real este o abordare rar întâlnită și puțin explorată. Utilizând tehnici de procesare digitală de semnal (transformata Fourier pe termen scurt, spectrograme în scala Mel, fereastră Hamming), preprocesare de imagini și text, am fost capabili să putem antrena modele inteligente de învățare automată precum rețele neurale recurente sau convolutionale.
 
-	Prin aplicația "Multimodal Emotion Detection" s-a realizat on interfață grafică în Qt, scrisă în limbajul de programare python, care vine în sprijinul identificării emoțiilor faciale, acustice și text în timpul realizării unui interviu. În cursul identificării emoțiilor, candidatul are feedback constant din partea aplicației, afișând prin intermediul interfeței grafice emoțiile identificate. 
+	Prin aplicația "Multimodal Emotion Detection" s-a realizat on interfață grafică în Qt, scrisă în limbajul de programare Python, care vine în sprijinul identificării emoțiilor faciale, acustice și text în timpul realizării unui interviu. În cursul identificării emoțiilor, candidatul are feedback constant din partea aplicației, afișând prin intermediul interfeței grafice emoțiile identificate. 
 
 	Automatul de stare adăugat în arhitectura aplicației are rolul de a restricționa accesul utilizatorului la anumite funcționalități, în concordanță cu starea care se află. Această limitare este impusă pentru a nu strica fluxul și modul de utilizare al aplicației. Cele trei butoane care fac posibilă comunicarea cu modurile de recunoaștere ale aplicației sunt administrate de către automatul de stare.
 
