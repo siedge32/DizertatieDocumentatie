@@ -78,6 +78,29 @@
   Convolutions}
   \endentry
 
+  \entry{audio_emotion_recognition0}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ACNGIIT}{%
+         family={Anagnostopoulos C\bibnamedelima N},
+         familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+         suffix={Iliou\bibnamedelima T},
+         suffixi={I\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Giannoukos\bibnamedelima I.},
+         giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ACNITGI1}
+    \strng{fullhash}{ACNITGI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Artificial Intelligence Review, 2015, 43(2):155-177.
+  (in NETHERLANDS)}
+    \field{note}{Accessed: 16.05.2022}
+    \field{title}{Features and classifiers for emotion recognition from speech:
+  a survey from 2000 to 2011}
+  \endentry
+
   \entry{text_dataset}{article}{}
     \name{author}{2}{}{%
       {{hash=PJ}{%
