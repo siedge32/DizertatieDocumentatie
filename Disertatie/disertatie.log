@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.11.2 (MiKTeX 2.9.7300 64-bit)  (format=lualatex 2020.2.12)  5 JUN 2022 23:14
+This is LuaTeX, Version 1.11.2 (MiKTeX 2.9.7300 64-bit)  (format=lualatex 2020.2.12)  6 JUN 2022 17:49
  restricted system commands enabled.
 **disertatie.tex
 (./disertatie.tex
@@ -1363,15 +1363,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1] [2
 
-]
-
-LaTeX Warning: Citation 'audio_emotion_recognition0' on page 3 undefined on inpu
-t line 109.
-
-[3
+] [3
 
 ]
-<images/ocean.png, id=193, 510.40688pt x 495.35063pt>
+<images/ocean.png, id=195, 510.40688pt x 495.35063pt>
 File: images/ocean.png Graphic file (type png)
 <use images/ocean.png>
 Package luatex.def Info: images/ocean.png  used on input line 117.
@@ -1389,7 +1384,7 @@ r-vievare. Dar asta nu înseamnă
  []
 
 [6] [7]
-<images/AI_ML_DL.png, id=225, 524.71031pt x 262.73157pt>
+<images/AI_ML_DL.png, id=227, 524.71031pt x 262.73157pt>
 File: images/AI_ML_DL.png Graphic file (type png)
 <use images/AI_ML_DL.png>
 Package luatex.def Info: images/AI_ML_DL.png  used on input line 169.
@@ -1409,7 +1404,7 @@ or să ex-ploreze și să găsească
  []
 
 [9]
-<images/ML_DL.png, id=241, 475.02469pt x 252.945pt>
+<images/ML_DL.png, id=243, 475.02469pt x 252.945pt>
 File: images/ML_DL.png Graphic file (type png)
 <use images/ML_DL.png>
 Package luatex.def Info: images/ML_DL.png  used on input line 197.
@@ -1425,7 +1420,7 @@ Overfull \hbox (1.85735pt too wide) in paragraph at lines 220--221
 [11
 
 ]
-<images/cnn.png, id=257, 1419.05156pt x 581.92406pt>
+<images/cnn.png, id=259, 1419.05156pt x 581.92406pt>
 File: images/cnn.png Graphic file (type png)
 <use images/cnn.png>
 Package luatex.def Info: images/cnn.png  used on input line 230.
@@ -1436,7 +1431,7 @@ Overfull \hbox (13.17583pt too wide) in paragraph at lines 230--231
  []
 
 [12<./images/cnn.png>]
-<images/fwd_recc.png, id=264, 526.21594pt x 242.40562pt>
+<images/fwd_recc.png, id=266, 526.21594pt x 242.40562pt>
 File: images/fwd_recc.png Graphic file (type png)
 <use images/fwd_recc.png>
 Package luatex.def Info: images/fwd_recc.png  used on input line 255.
@@ -1477,12 +1472,12 @@ Overfull \hbox (11.10527pt too wide) in paragraph at lines 330--331
 l tim-pu-lui în cel al frecvențelor.
  []
 
-<images/signals.png, id=300, 529.22719pt x 124.96687pt>
+<images/signals.png, id=302, 529.22719pt x 124.96687pt>
 File: images/signals.png Graphic file (type png)
 <use images/signals.png>
 Package luatex.def Info: images/signals.png  used on input line 336.
 (luatex.def)             Requested size: 398.3386pt x 94.06052pt.
-<images/FT_time_to_freq.png, id=302, 526.21594pt x 296.60812pt>
+<images/FT_time_to_freq.png, id=304, 526.21594pt x 296.60812pt>
 File: images/FT_time_to_freq.png Graphic file (type png)
 <use images/FT_time_to_freq.png>
 Package luatex.def Info: images/FT_time_to_freq.png  used on input line 347.
@@ -1490,7 +1485,7 @@ Package luatex.def Info: images/FT_time_to_freq.png  used on input line 347.
 [19
 
 <./images/signals.png><./images/FT_time_to_freq.png>]
-<images/windowing.PNG, id=313, 673.01437pt x 296.60812pt>
+<images/windowing.PNG, id=315, 673.01437pt x 296.60812pt>
 File: images/windowing.PNG Graphic file (type png)
 <use images/windowing.PNG>
 Package luatex.def Info: images/windowing.PNG  used on input line 369.
@@ -1502,7 +1497,7 @@ Overfull \hbox (5.66124pt too wide) in paragraph at lines 376--377
  []
 
 [20<./images/windowing.PNG>]
-<images/spectogram.PNG, id=329, 746.79pt x 371.88937pt>
+<images/spectogram.PNG, id=331, 746.79pt x 371.88937pt>
 File: images/spectogram.PNG Graphic file (type png)
 <use images/spectogram.PNG>
 Package luatex.def Info: images/spectogram.PNG  used on input line 380.
@@ -1518,7 +1513,7 @@ lizat in-tern în cadrul com-paniei Google.
 [23
 
 ]
-<images/qt_designer.png, id=356, 1151.05031pt x 769.37437pt>
+<images/qt_designer.png, id=358, 1151.05031pt x 769.37437pt>
 File: images/qt_designer.png Graphic file (type png)
 <use images/qt_designer.png>
 Package luatex.def Info: images/qt_designer.png  used on input line 418.
@@ -1589,7 +1584,7 @@ Overfull \hbox (16.88535pt too wide) in paragraph at lines 480--481
  de predicție a emoți-ilor vizuale,
  []
 
-<images/state_diagram_001.jpg, id=371, 430.51161pt x 788.75322pt>
+<images/state_diagram_001.jpg, id=373, 430.51161pt x 788.75322pt>
 File: images/state_diagram_001.jpg Graphic file (type jpg)
 <use images/state_diagram_001.jpg>
 Package luatex.def Info: images/state_diagram_001.jpg  used on input line 491.
@@ -1599,7 +1594,7 @@ Overfull \vbox (12.98958pt too high) has occurred while \output is active []
 
 
 [28<./images/state_diagram_001.jpg>]
-<images/state_diagram_002.jpg, id=384, 430.51161pt x 787.97614pt>
+<images/state_diagram_002.jpg, id=386, 430.51161pt x 787.97614pt>
 File: images/state_diagram_002.jpg Graphic file (type jpg)
 <use images/state_diagram_002.jpg>
 Package luatex.def Info: images/state_diagram_002.jpg  used on input line 499.
@@ -1659,7 +1654,7 @@ Overfull \hbox (0.892pt too wide) in paragraph at lines 545--546
 ă de eticheta ”Video”, unde fluxul
  []
 
-<images/emotion_recognition_clean.png, id=408, 1010.27437pt x 631.60968pt>
+<images/emotion_recognition_clean.png, id=410, 1010.27437pt x 631.60968pt>
 File: images/emotion_recognition_clean.png Graphic file (type png)
 <use images/emotion_recognition_clean.png>
 Package luatex.def Info: images/emotion_recognition_clean.png  used on input lin
@@ -1678,7 +1673,7 @@ Overfull \hbox (3.78937pt too wide) in paragraph at lines 566--567
 ți (03-01-06-01-02-01-12.wav),
  []
 
-<images/audio_plot.png, id=418, 667.74469pt x 236.38312pt>
+<images/audio_plot.png, id=420, 667.74469pt x 236.38312pt>
 File: images/audio_plot.png Graphic file (type png)
 <use images/audio_plot.png>
 Package luatex.def Info: images/audio_plot.png  used on input line 584.
@@ -1689,36 +1684,36 @@ Overfull \hbox (2.31131pt too wide) in paragraph at lines 584--585
  []
 
 [33] [34<./images/audio_plot.png>]
-<images/audio_model_001.jpg, id=435, 990.70125pt x 1314.9125pt>
+<images/audio_model_001.jpg, id=437, 990.70125pt x 1314.9125pt>
 File: images/audio_model_001.jpg Graphic file (type jpg)
 <use images/audio_model_001.jpg>
 Package luatex.def Info: images/audio_model_001.jpg  used on input line 608.
 (luatex.def)             Requested size: 398.32938pt x 528.68439pt.
-<images/audio_model_002.jpg, id=436, 990.70125pt x 1313.90875pt>
+<images/audio_model_002.jpg, id=438, 990.70125pt x 1313.90875pt>
 File: images/audio_model_002.jpg Graphic file (type jpg)
 <use images/audio_model_002.jpg>
 Package luatex.def Info: images/audio_model_002.jpg  used on input line 616.
 (luatex.def)             Requested size: 398.32938pt x 528.2808pt.
  [35<./images/audio_model_001.jpg>] [36<./images/audio_model_002.jpg>]
-<images/accuracy_audio_model.png, id=449, 1456.44125pt x 618.31pt>
+<images/accuracy_audio_model.png, id=451, 1456.44125pt x 618.31pt>
 File: images/accuracy_audio_model.png Graphic file (type png)
 <use images/accuracy_audio_model.png>
 Package luatex.def Info: images/accuracy_audio_model.png  used on input line 628
 .
 (luatex.def)             Requested size: 291.28308pt x 123.6598pt.
-<images/audio_confusion_matrix.png, id=452, 255.95625pt x 196.48407pt>
+<images/audio_confusion_matrix.png, id=454, 255.95625pt x 196.48407pt>
 File: images/audio_confusion_matrix.png Graphic file (type png)
 <use images/audio_confusion_matrix.png>
 Package luatex.def Info: images/audio_confusion_matrix.png  used on input line 6
 40.
 (luatex.def)             Requested size: 102.38068pt x 78.59222pt.
  [37<./images/accuracy_audio_model.png><./images/audio_confusion_matrix.png>]
-<images/face_detected.png, id=461, 316.18124pt x 326.72063pt>
+<images/face_detected.png, id=463, 316.18124pt x 326.72063pt>
 File: images/face_detected.png Graphic file (type png)
 <use images/face_detected.png>
 Package luatex.def Info: images/face_detected.png  used on input line 660.
 (luatex.def)             Requested size: 199.1693pt x 205.81015pt.
-<images/face_features.png, id=462, 226.59656pt x 277.035pt>
+<images/face_features.png, id=464, 226.59656pt x 277.035pt>
 File: images/face_features.png Graphic file (type png)
 <use images/face_features.png>
 Package luatex.def Info: images/face_features.png  used on input line 666.
@@ -1732,7 +1727,7 @@ de-parte diferite forme
 [38
 
 <./images/face_detected.png><./images/face_features.png>]
-<images/video_dataset_example.png, id=473, 212.29312pt x 206.27063pt>
+<images/video_dataset_example.png, id=475, 212.29312pt x 206.27063pt>
 File: images/video_dataset_example.png Graphic file (type png)
 <use images/video_dataset_example.png>
 Package luatex.def Info: images/video_dataset_example.png  used on input line 71
@@ -1750,14 +1745,14 @@ Overfull \hbox (1.9534pt too wide) in paragraph at lines 718--719
 țare video este in-spi-rată din model
  []
 
-<images/video_model_layers_visualisation.png, id=481, 703.12688pt x 245.41687pt>
+<images/video_model_layers_visualisation.png, id=483, 703.12688pt x 245.41687pt>
 
 File: images/video_model_layers_visualisation.png Graphic file (type png)
 <use images/video_model_layers_visualisation.png>
 Package luatex.def Info: images/video_model_layers_visualisation.png  used on in
 put line 727.
 (luatex.def)             Requested size: 318.67209pt x 111.2267pt.
-<images/video_confusion_matrix.png, id=482, 264.23718pt x 195.73125pt>
+<images/video_confusion_matrix.png, id=484, 264.23718pt x 195.73125pt>
 File: images/video_confusion_matrix.png Graphic file (type png)
 <use images/video_confusion_matrix.png>
 Package luatex.def Info: images/video_confusion_matrix.png  used on input line 7
@@ -1785,7 +1780,7 @@ atch-Nor-mal-iza-tion și LSTM.
  []
 
 [43]
-<images/emotion_recognition.png, id=524, 1005.7575pt x 684.30656pt>
+<images/emotion_recognition.png, id=526, 1005.7575pt x 684.30656pt>
 File: images/emotion_recognition.png Graphic file (type png)
 <use images/emotion_recognition.png>
 Package luatex.def Info: images/emotion_recognition.png  used on input line 804.
@@ -1811,7 +1806,7 @@ Overfull \hbox (3.80127pt too wide) in paragraph at lines 829--830
 rapoartele in-ter-vi-urilor vor fi aduse
  []
 
-<images/reports.png, id=538, 1229.34282pt x 341.77687pt>
+<images/reports.png, id=540, 1229.34282pt x 341.77687pt>
 File: images/reports.png Graphic file (type png)
 <use images/reports.png>
 Package luatex.def Info: images/reports.png  used on input line 835.
@@ -1819,7 +1814,7 @@ Package luatex.def Info: images/reports.png  used on input line 835.
 [46
 
 <./images/reports.png>]
-<images/emotion_report_visualize.png, id=548, 1003.49907pt x 720.44156pt>
+<images/emotion_report_visualize.png, id=550, 1003.49907pt x 720.44156pt>
 File: images/emotion_report_visualize.png Graphic file (type png)
 <use images/emotion_report_visualize.png>
 Package luatex.def Info: images/emotion_report_visualize.png  used on input line
@@ -1834,12 +1829,12 @@ tivă, este prezen-tată o etichetă,
 [47
 
 <./images/emotion_report_visualize.png>]
-<images/settings.png, id=556, 579.66562pt x 149.8097pt>
+<images/settings.png, id=558, 579.66562pt x 149.8097pt>
 File: images/settings.png Graphic file (type png)
 <use images/settings.png>
 Package luatex.def Info: images/settings.png  used on input line 878.
 (luatex.def)             Requested size: 376.77818pt x 97.37514pt.
-<images/light_theme.png, id=558, 1001.99344pt x 313.17pt>
+<images/light_theme.png, id=560, 1001.99344pt x 313.17pt>
 File: images/light_theme.png Graphic file (type png)
 <use images/light_theme.png>
 Package luatex.def Info: images/light_theme.png  used on input line 888.
@@ -1930,7 +1925,7 @@ ro . wikipedia . org / wiki / Transformata _
 
 
 ]
-<images/plagiat.PNG, id=625, 556.32843pt x 153.57375pt>
+<images/plagiat.PNG, id=627, 556.32843pt x 153.57375pt>
 File: images/plagiat.PNG Graphic file (type png)
 <use images/plagiat.PNG>
 Package luatex.def Info: images/plagiat.PNG  used on input line 923.
@@ -1970,14 +1965,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 928.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32827 strings out of 481391
+ 32831 strings out of 481391
  125200,1373583 words of node,token memory allocated
  632 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 15 attribute, 69 glue_spec
 , 15 attribute_list, 2 write, 4 pdf_action nodes
-   avail lists: 1:4,2:1676,3:212,4:1222,5:1288,6:72,7:4135,8:87,9:3264,10:29,11:
-300
- 48577 multiletter control sequences out of 65536+200000
+   avail lists: 1:4,2:1676,3:215,4:1222,5:1288,6:72,7:4135,8:88,9:3264,10:29,11:
+296
+ 48580 multiletter control sequences out of 65536+200000
  67 fonts using 6313563 bytes
  72i,8n,80p,1059b,1183s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/bogdy/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmmon
@@ -1993,9 +1988,9 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users
 /bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Users/bogdy/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb>
-Output written on disertatie.pdf (56 pages, 4647989 bytes).
+Output written on disertatie.pdf (56 pages, 4648465 bytes).
 
-PDF statistics: 687 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 131072)
+PDF statistics: 689 PDF objects out of 1000 (max. 8388607)
+ 151 named destinations out of 1000 (max. 131072)
  256 words of extra memory for PDF output out of 10000 (max. 100000000)
 
